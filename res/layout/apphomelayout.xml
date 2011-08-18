@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/appbackground"
+    >
+    
+
+
+<ImageButton
+	android:id="@+id/takequizButton"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"	
+	android:background="@drawable/takequizbuttontype2"
+	android:onClick="showQuizHomeActivity"
+	android:layout_gravity="center"
+	android:layout_marginTop="100dip"
+	android:src="@drawable/buttonselector"
+/>
+
+
+<ImageButton
+	android:id="@+id/roadsignsButton"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"	
+	android:background="@drawable/roadsignsbuttontype2"
+	android:layout_gravity="center"
+	android:layout_marginTop="20dip"
+/>
+
+<ImageButton
+	android:id="@+id/conceptsButton"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"	
+	android:background="@drawable/conceptsbuttontype2"
+	android:layout_gravity="center"
+	android:layout_marginTop="20dip"
+/>
+   
+<ImageButton
+	android:id="@+id/scroesButton"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"	
+	android:background="@drawable/scoresbuttontype2"
+	android:layout_gravity="center"
+	android:layout_marginTop="20dip"
+/>
+         
+</LinearLayout>

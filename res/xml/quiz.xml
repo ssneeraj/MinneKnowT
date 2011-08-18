@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>1</questionId>	
+		<questionText>The distance between the driver and the steering should be at least XX inches?</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>10</answerText>
+		<answerText>30</answerText>
+		<answerText>15</answerText>
+		<answerText>5</answerText>				
+	</question>	
+	
+	<question>
+		<questionId>2</questionId>	
+		<questionText>You can stop in an intersection</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>If there is no space in front of you</answerText>
+		<answerText>If there is an emergency vehicle with flashing lights behind you</answerText>
+		<answerText>Under not circumstance</answerText>
+		<answerText>If the light has turned red</answerText>				
+	</question>		
+</quiz>	

@@ -11,23 +11,54 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int icon=0x7f020000;
-        public static final int next=0x7f020001;
-        public static final int prev=0x7f020002;
-        public static final int splash=0x7f020003;
+        public static final int appbackground=0x7f020000;
+        public static final int buttonselector=0x7f020001;
+        public static final int conceptsbuttontype2=0x7f020002;
+        public static final int icon=0x7f020003;
+        public static final int next=0x7f020004;
+        public static final int number1=0x7f020005;
+        public static final int number1gray=0x7f020006;
+        public static final int number1green=0x7f020007;
+        public static final int number2blue=0x7f020008;
+        public static final int number2gray=0x7f020009;
+        public static final int number3gray=0x7f02000a;
+        public static final int number4gray=0x7f02000b;
+        public static final int prev=0x7f02000c;
+        public static final int quizicon=0x7f02000d;
+        public static final int roadsignsbuttontype2=0x7f02000e;
+        public static final int scoresbuttontype2=0x7f02000f;
+        public static final int splash=0x7f020010;
+        public static final int takequizbutton=0x7f020011;
+        public static final int takequizbuttongray=0x7f020012;
+        public static final int takequizbuttontype2=0x7f020013;
     }
     public static final class id {
-        public static final int roadsignButton=0x7f050001;
-        public static final int splashImage=0x7f050002;
-        public static final int takequizButton=0x7f050000;
+        public static final int answerRowItem=0x7f060004;
+        public static final int conceptsButton=0x7f060002;
+        public static final int nextButton=0x7f06000b;
+        public static final int questionText=0x7f06000a;
+        public static final int quizDrillButton1=0x7f060006;
+        public static final int quizDrillButton2=0x7f060007;
+        public static final int quizDrillButton3=0x7f060008;
+        public static final int quizDrillButton4=0x7f060009;
+        public static final int roadsignsButton=0x7f060001;
+        public static final int scroesButton=0x7f060003;
+        public static final int splashImage=0x7f06000c;
+        public static final int takequizButton=0x7f060000;
+        public static final int textView1=0x7f060005;
     }
     public static final class layout {
-        public static final int home=0x7f030000;
-        public static final int quizlayout=0x7f030001;
-        public static final int splashlayout=0x7f030002;
+        public static final int apphomelayout=0x7f030000;
+        public static final int list_item=0x7f030001;
+        public static final int quizhomelayout=0x7f030002;
+        public static final int quizlayout=0x7f030003;
+        public static final int splashlayout=0x7f030004;
     }
     public static final class string {
-        public static final int app_name=0x7f040001;
-        public static final int hello=0x7f040000;
+        public static final int app_name=0x7f050001;
+        public static final int hello=0x7f050000;
+    }
+    public static final class xml {
+        public static final int quiz=0x7f040000;
     }
 }

@@ -1,10 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  android:orientation="vertical"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:background="#FFFF"
-  >
-    
-</LinearLayout>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:background="@drawable/appbackground"
+	>
+	
+	<!-- Display's question -->
+	<TextView 
+			android:id="@+id/questionText"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#FFFF"
+			android:layout_marginTop="15dip"
+			android:layout_marginLeft="25dip"		
+	/>
+	
+	<!-- ListView that shows Quiz answer choices -->	
+	<ListView
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:id="@android:id/list"
+		    android:layout_below="@id/questionText"
+		    android:layout_margin="35dip"   
+    />
+	
+	<!-- 'Next' button to navigate the quiz -->
+	<Button 
+			android:id="@+id/nextButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Next"
+			android:onClick="showNextQuestion"
+			android:layout_alignParentBottom="true"
+	/>	
+	
+</RelativeLayout>
