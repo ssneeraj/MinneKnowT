@@ -33,6 +33,8 @@ public class QuizActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.quizlayout);
 
+		getListView().setCacheColorHint(0);
+
 		showSingleQandA();
 	}
 
@@ -43,6 +45,75 @@ public class QuizActivity extends ListActivity {
 	private void showSingleQandA() {
 
 		QandA singleQandA = quizArrayList.get(currentQuestionIndex);
+
+		TextView questionNumber = (TextView) this
+				.findViewById(R.id.questionNumber);
+		questionNumber.setText("Question: " + singleQandA.getQuestionNumber());
+
+		TextView question = (TextView) this.findViewById(R.id.questionText);
+		question.setText(singleQandA.getQuestionText());
+
+		correct_answer = singleQandA.getCorrectAnswer();
+
+		System.arraycopy(singleQandA.getAnswers(), 0, answerData, 0, 4);
+
+		// We are using ArrayAdapter to bind underlying date (an array of
+		// strings) to ListView in quizlayout
+		if (array_adapter == null) {
+			array_adapter = new ArrayAdapter<String>(this, R.layout.list_item,
+					answerData);
+		}
+
+		// This binds the array adapter to our QuizActvity
+		setListAdapter(array_adapter);
+
+		array_adapter.setNotifyOnChange(true);
+
+	}
+
+	@Override
+	protected void onListItemClick(ListView l, View v, int position, long id) {
+
+		String toastText = null;
+
+		Integer selectedListItemPosition = position;
+
+		// compare if the user select answer choice matches the actual correct
+		// answer
+		if (correct_answer
+				.equalsIgnoreCase(selectedListItemPosition.toString())) {
+			toastText = "correct answer";
+			v.setBackgroundColor(Color.GREEN);
+		} else {
+			toastText = "wrong answer";
+			v.setBackgroundColor(Color.RED);
+		}
+
+		v.setFocusable(false);
+		v.setClickable(false);
+
+		Toast toast = Toast.makeText(QuizActivity.this, toastText,
+				Toast.LENGTH_SHORT);
+		toast.show();
+
+		l.setFocusable(false);
+
+	}
+
+	public void showNextQuestion(View view) {
+
+		// first increment the currentQuestionIndex so that we advance to the
+		// next question
+		currentQuestionIndex++;
+
+		if (currentQuestionIndex > QuizCache.getQuizTotalNumberofQuestion())
+			return;
+
+		QandA singleQandA = quizArrayList.get(currentQuestionIndex);
+
+		TextView questionNumber = (TextView) this
+				.findViewById(R.id.questionNumber);
+		questionNumber.setText("Question: " + singleQandA.getQuestionNumber());
 
 		TextView question = (TextView) this.findViewById(R.id.questionText);
 		question.setText(singleQandA.getQuestionText());
@@ -61,28 +132,4 @@ public class QuizActivity extends ListActivity {
 		// This binds the array adapter to our QuizActvity
 		setListAdapter(array_adapter);
 	}
-
-	@Override
-	protected void onListItemClick(ListView l, View v, int position, long id) {
-
-		String toastText = null;
-
-		Integer selectedListItemPosition = position;
-
-		// compare if the user select answer choice matches the actual correct
-		// answer
-		if (correct_answer
-				.equalsIgnoreCase(selectedListItemPosition.toString())) {
-			toastText = "correct answer";
-		} else {
-			toastText = "wrong answer";
-			v.setBackgroundColor(Color.RED);
-		}
-
-		Toast toast = Toast.makeText(QuizActivity.this, toastText,
-				Toast.LENGTH_SHORT);
-		toast.show();
-
-	}
-
 }

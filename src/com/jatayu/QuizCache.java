@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class QuizCache {
 
-	private ArrayList<QandA> quizArrayList;
+	private static ArrayList<QandA> quizArrayList;
 	private static QuizCache instance;
 
 	private QuizCache() {
@@ -16,7 +16,7 @@ public class QuizCache {
 	}
 
 	public void addQandA(QandA qa) {
-		this.quizArrayList.add(qa);
+		QuizCache.quizArrayList.add(qa);
 	}
 
 	public static synchronized QuizCache getInstance() {
@@ -24,5 +24,12 @@ public class QuizCache {
 			instance = new QuizCache();
 		}
 		return instance;
+	}
+
+	public static int getQuizTotalNumberofQuestion() {
+		if (quizArrayList != null)
+			return quizArrayList.size();
+		else
+			return 0;
 	}
 }

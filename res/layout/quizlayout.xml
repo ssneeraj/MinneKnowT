@@ -5,34 +5,53 @@
 			android:layout_height="fill_parent"
 			android:background="@drawable/appbackground"
 	>
+
+	<!-- Display's question number -->
+	<TextView 
+			android:id="@+id/questionNumber"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#FFFF"
+			android:layout_marginLeft="5dp"
+			android:layout_marginTop="5dp"
+			android:textSize="10sp"
+			android:gravity="left"/>
 	
-	<!-- Display's question -->
+	<!-- Display's question text -->
 	<TextView 
 			android:id="@+id/questionText"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:textColor="#FFFF"
-			android:layout_marginTop="15dip"
-			android:layout_marginLeft="25dip"		
-	/>
+			android:layout_marginTop="5dp"					
+			android:gravity="left"
+			android:textSize="15sp" 
+			android:layout_below="@id/questionNumber"
+			android:layout_marginLeft="5dp"
+			/>
 	
 	<!-- ListView that shows Quiz answer choices -->	
 	<ListView
 		    android:layout_width="fill_parent"
 		    android:layout_height="wrap_content"
 		    android:id="@android:id/list"
-		    android:layout_below="@id/questionText"
-		    android:layout_margin="35dip"   
-    />
+		    android:layout_margin="35dp" 
+		    android:layout_centerInParent="true"
+		    />
 	
 	<!-- 'Next' button to navigate the quiz -->
-	<Button 
+	<ImageButton 
 			android:id="@+id/nextButton"
+			android:src="@drawable/nextbuttonselector"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="Next"
-			android:onClick="showNextQuestion"
-			android:layout_alignParentBottom="true"
-	/>	
+			android:onClick="showNextQuestion" 
+			android:layout_alignParentBottom="true" 
+			android:background="@null"
+			>
+	
+			
+	</ImageButton>	
+			
 	
 </RelativeLayout>

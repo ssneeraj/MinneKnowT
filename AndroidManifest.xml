@@ -13,12 +13,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-		<activity android:name=".AppHomeActivity">
-		</activity>
-		
-		<activity android:name=".QuizHomeActivity">
-		</activity>
 		
 		<activity android:name=".QuizActivity">
 		</activity>
