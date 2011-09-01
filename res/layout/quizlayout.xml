@@ -3,7 +3,7 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 			android:layout_width="fill_parent" 
 			android:layout_height="fill_parent"
-			android:background="#DBD6CC"
+			android:background="#A38552"
 	>
 
 	<!-- Display's question number -->
@@ -31,6 +31,7 @@
 			android:textSize="15sp" 
 			android:layout_below="@id/questionNumber"
 			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
 			android:background="@drawable/quiz_answer_border"
 			/>
 	
@@ -39,10 +40,9 @@
 		    android:layout_width="fill_parent"
 		    android:layout_height="wrap_content"
 		    android:id="@android:id/list"
-		    android:background="#80B2B2"
+		    android:background="#6B7552"
 		    android:layout_below="@id/questionText"
-		    android:layout_margin="10dp"
-		    
+		    android:layout_margin="10dp"		    
 		    />
 	
 	
