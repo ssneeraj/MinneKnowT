@@ -49,15 +49,14 @@
 	<!-- 'Next' button to navigate the quiz -->
 	<ImageButton 
 			android:id="@+id/nextButton"
-			android:src="@drawable/nextbuttonselector"
+			android:src="@drawable/nextbutton"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:onClick="showNextQuestion" 
-			android:layout_alignParentBottom="true" 
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true" 
 			android:background="@null"
 			>
-	
-			
 	</ImageButton>	
 			
 	
