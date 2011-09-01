@@ -31,6 +31,7 @@
 			android:textSize="15sp" 
 			android:layout_below="@id/questionNumber"
 			android:layout_marginLeft="5dp"
+			android:background="@drawable/quiz_answer_border"
 			/>
 	
 	<!-- ListView that shows Quiz answer choices -->	
@@ -41,7 +42,9 @@
 		    android:background="#80B2B2"
 		    android:layout_below="@id/questionText"
 		    android:layout_margin="10dp"
+		    
 		    />
+	
 	
 	<!-- 'Next' button to navigate the quiz -->
 	<ImageButton 
