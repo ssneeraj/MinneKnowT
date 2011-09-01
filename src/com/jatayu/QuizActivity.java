@@ -48,7 +48,8 @@ public class QuizActivity extends ListActivity {
 
 		TextView questionNumber = (TextView) this
 				.findViewById(R.id.questionNumber);
-		questionNumber.setText("Question: " + singleQandA.getQuestionNumber());
+		questionNumber.setText("Question: " + singleQandA.getQuestionNumber()
+				+ " of " + QuizCache.getQuizTotalNumberofQuestion());
 
 		TextView question = (TextView) this.findViewById(R.id.questionText);
 		question.setText(singleQandA.getQuestionText());
@@ -113,7 +114,8 @@ public class QuizActivity extends ListActivity {
 
 		TextView questionNumber = (TextView) this
 				.findViewById(R.id.questionNumber);
-		questionNumber.setText("Question: " + singleQandA.getQuestionNumber());
+		questionNumber.setText("Question: " + singleQandA.getQuestionNumber()
+				+ " of " + QuizCache.getQuizTotalNumberofQuestion());
 
 		TextView question = (TextView) this.findViewById(R.id.questionText);
 		question.setText(singleQandA.getQuestionText());
