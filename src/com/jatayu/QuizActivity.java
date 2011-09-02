@@ -107,8 +107,13 @@ public class QuizActivity extends ListActivity {
 		// next question
 		currentQuestionIndex++;
 
-		if (currentQuestionIndex > QuizCache.getQuizTotalNumberofQuestion())
+		// If Quiz is over and 'Next' is pressed, then show a Toast
+		if (currentQuestionIndex > QuizCache.getQuizTotalNumberofQuestion() - 1) {
+			Toast toast = Toast.makeText(QuizActivity.this, "Quiz Over!",
+					Toast.LENGTH_LONG);
+			toast.show();
 			return;
+		}
 
 		QandA singleQandA = quizArrayList.get(currentQuestionIndex);
 
