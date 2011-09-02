@@ -35,7 +35,16 @@ public class MinneknowTActivity extends Activity {
 	}
 
 	public void showQuizActivity(View view) {
-		new SetupQuizTask(MinneknowTActivity.this).execute();
+
+		// Initiate setup quiz task only if QuizCache is empty
+		if (QuizCache.isQuizcacheEmpty()) {
+			new SetupQuizTask(MinneknowTActivity.this).execute();
+		} else {
+			// since QuizCache is not empty directly show the Quiz
+			Intent intent = new Intent(MinneknowTActivity.this,
+					QuizActivity.class);
+			startActivity(intent);
+		}
 	}
 
 	private class SetupQuizTask extends AsyncTask<Void, Void, Boolean> {
@@ -83,6 +92,10 @@ public class MinneknowTActivity extends Activity {
 				progressDialog.dismiss();
 
 			if (parserResult) { // If quiz was successfully parsed
+
+				// set that the quiz cache is not empty now
+				QuizCache.setQuizcacheEmpty(false);
+
 				Intent intent = new Intent(MinneknowTActivity.this,
 						QuizActivity.class);
 				startActivity(intent);

@@ -6,6 +6,7 @@ public class QuizCache {
 
 	private static ArrayList<QandA> quizArrayList;
 	private static QuizCache instance;
+	private static boolean quizcacheEmpty = true;
 
 	private QuizCache() {
 		quizArrayList = new ArrayList<QandA>();
@@ -22,6 +23,7 @@ public class QuizCache {
 	public static synchronized QuizCache getInstance() {
 		if (instance == null) {
 			instance = new QuizCache();
+			quizcacheEmpty = true; // set quiz cache is empty
 		}
 		return instance;
 	}
@@ -31,5 +33,13 @@ public class QuizCache {
 			return quizArrayList.size();
 		else
 			return 0;
+	}
+
+	public static boolean isQuizcacheEmpty() {
+		return quizcacheEmpty;
+	}
+
+	public static void setQuizcacheEmpty(boolean quizcacheEmpty) {
+		QuizCache.quizcacheEmpty = quizcacheEmpty;
 	}
 }
