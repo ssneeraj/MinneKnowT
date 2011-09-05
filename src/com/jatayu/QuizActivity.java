@@ -3,6 +3,7 @@ package com.jatayu;
 import java.util.ArrayList;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -28,6 +29,13 @@ public class QuizActivity extends ListActivity {
 
 	private String correct_answer;
 
+	private QuizStat quiz_stat = QuizStat.getInstance();
+
+	// If the user selects an incorrect answer or does not attempt to answer,
+	// store a '0' in integer array 'answer_selected_stat' and store a '1' for
+	// correct answer choice
+	private int[] answer_selected_stat = new int[19];
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -36,6 +44,8 @@ public class QuizActivity extends ListActivity {
 		getListView().setCacheColorHint(0);
 
 		showSingleQandA();
+
+		quiz_stat.clearQuizStat();
 	}
 
 	/*
@@ -85,9 +95,11 @@ public class QuizActivity extends ListActivity {
 				.equalsIgnoreCase(selectedListItemPosition.toString())) {
 			toastText = "correct answer";
 			v.setBackgroundColor(Color.GREEN);
+			answer_selected_stat[currentQuestionIndex] = CommonProps.ANSWERED_CORRECT;
 		} else {
 			toastText = "wrong answer";
 			v.setBackgroundColor(Color.RED);
+			answer_selected_stat[currentQuestionIndex] = CommonProps.ANSWERED_INCORRECT;
 		}
 
 		v.setFocusable(false);
@@ -112,6 +124,14 @@ public class QuizActivity extends ListActivity {
 			Toast toast = Toast.makeText(QuizActivity.this, "Quiz Over!",
 					Toast.LENGTH_LONG);
 			toast.show();
+
+			// save the answer selected stat into quiz stat
+			quiz_stat.saveQandAInfo(answer_selected_stat);
+
+			// invoke QuizResultActivity
+			Intent intent = new Intent(this, QuizResultActivity.class);
+			startActivity(intent);
+
 			return;
 		}
 

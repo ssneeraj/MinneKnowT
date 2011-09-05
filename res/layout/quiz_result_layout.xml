@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#6B7552"
+  
+>
+
+<TableLayout
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="#A38552"
+  android:layout_margin="20dp"
+  android:padding="20dp">
+  
+  <TableRow android:paddingTop="5dp"
+  			android:paddingBottom="5dp">
+	<TextView 
+			android:id="@+id/totalQuestionsLabel"
+			android:text="Total Questions :"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#4C3300"
+			android:textSize="15sp" 
+			/>
+	
+	<TextView 
+			android:id="@+id/totalQuestionsValue"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#4C3300"
+			android:textSize="20sp" 
+			android:gravity="center"
+			/>			  
+  </TableRow>
+  
+  <TableRow android:paddingTop="5dp"
+  			android:paddingBottom="5dp">
+	<TextView 
+			android:id="@+id/correctLabel"
+			android:text="Correct :"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#4C3300"
+			android:textSize="15sp" 
+			/>
+	
+	<TextView 
+			android:id="@+id/correctValue"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#4C3300"
+			android:textSize="20sp" 
+			android:gravity="center"
+			/>			  
+  </TableRow>			
+
+  <TableRow android:paddingTop="5dp"
+  			android:paddingBottom="5dp">
+	<TextView 
+			android:id="@+id/percentageLabel"
+			android:text="correct answers % :"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#4C3300"
+			android:textSize="15sp" 
+			/>
+	
+	<TextView 
+			android:id="@+id/percentageValue"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#4C3300"
+			android:textSize="20sp" 
+			android:gravity="center"
+			/>			  
+  </TableRow>
+		
+</TableLayout>
+
+	<TextView 
+			android:id="@+id/quizOutcome"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="25sp" 
+			android:gravity="center"
+			android:layout_margin="20dp"
+			/>	
+
+</LinearLayout>
