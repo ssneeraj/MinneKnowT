@@ -149,9 +149,19 @@
 		<answerText>Reduce your speed quickly so the other vehicle can merge</answerText>
 		<answerText>Continue to drive at constant speed</answerText>						
 	</question>	
-	
+
 	<question>
 		<questionId>16</questionId>	
+		<questionText>You may not legally park your vehicle within 50 feet of a railroad crossing! True or False</questionText>	
+		<correctAnswer>0</correctAnswer>
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+	</question>
+
+	<question>
+		<questionId>17</questionId>	
 		<questionText>If you're driving on an Interstate(freeway) and a car is attempting to merge into your lane, you should</questionText>	
 		<correctAnswer>0</correctAnswer>		
 		<answerText>If possible, safely make room for the merging vehicle</answerText>
@@ -161,7 +171,7 @@
 	</question>		
 	
 	<question>
-		<questionId>17</questionId>	
+		<questionId>18</questionId>	
 		<questionText>At what time are you allowed to pass a school bus?</questionText>	
 		<correctAnswer>2</correctAnswer>		
 		<answerText>If another driver signals you to proceed</answerText>
@@ -171,7 +181,7 @@
 	</question>	
 	
 	<question>
-		<questionId>18</questionId>	
+		<questionId>19</questionId>	
 		<questionText>Which of the following statements is true about blind spots</questionText>	
 		<correctAnswer>3</correctAnswer>		
 		<answerText>You can eliminate your blind spots by using your 2 outside mirrors</answerText>
@@ -181,7 +191,7 @@
 	</question>				
 	
 	<question>
-		<questionId>19</questionId>	
+		<questionId>20</questionId>	
 		<questionText>Children younger than _____ of age should be secured in a child safety restraint system</questionText>	
 		<correctAnswer>1</correctAnswer>		
 		<answerText>8 years</answerText>
@@ -189,4 +199,45 @@
 		<answerText>5 years</answerText>
 		<answerText>6 years</answerText>						
 	</question>		
+	
+	<question>
+		<questionId>21</questionId>	
+		<questionText>On an interstate freeway U-turns are</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>allowed only during day time</answerText>
+		<answerText>allowed</answerText>
+		<answerText>not allowed</answerText>
+		<answerText>none of the above</answerText>						
+	</question>		
+	
+	<question>
+		<questionId>22</questionId>	
+		<questionText>On an interstate freeway U-turns are</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>allowed only during day time</answerText>
+		<answerText>allowed</answerText>
+		<answerText>not allowed</answerText>
+		<answerText>none of the above</answerText>						
+	</question>		
+	
+	<question>
+		<questionId>23</questionId>	
+		<questionText>Which are these is true about seat belts?</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>If you are driving below or as low ar 12 mph you do not need seat belts</answerText>
+		<answerText>only lap belt is sufficient</answerText>
+		<answerText>Seat belt is not required by occupants sitting on the back seat</answerText>
+		<answerText>Your chances of surviving a car crash is more if you use the lap and shoulder belts together</answerText>						
+	</question>		
+	
+	<question>
+		<questionId>24</questionId>	
+		<questionText>Your headlights must be set to low beam when you are within ____ feet of an on-coming vehicle </questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>500</answerText>
+		<answerText>800</answerText>
+		<answerText>750</answerText>
+		<answerText>1000</answerText>						
+	</question>	
+	
 </quiz>	
