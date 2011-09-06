@@ -5,10 +5,10 @@
 <!-- when button is pressed -->    
     <item 
     	android:state_pressed="true" 
-    	android:drawable="@drawable/takequizbuttontype3"/>	
+    	android:drawable="@drawable/takequizbutton"/>	
     	
  <!-- default -->
-<item android:drawable="@drawable/takequizbuttontype3gray" />
+<item android:drawable="@drawable/takequizbutton_gray" />
 
 </selector>
 

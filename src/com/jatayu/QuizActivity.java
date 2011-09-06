@@ -34,7 +34,7 @@ public class QuizActivity extends ListActivity {
 	// If the user selects an incorrect answer or does not attempt to answer,
 	// store a '0' in integer array 'answer_selected_stat' and store a '1' for
 	// correct answer choice
-	private int[] answer_selected_stat = new int[19];
+	private int[] answer_selected_stat = new int[CommonProps.TOTAL_QUIZ_QUESTIONS];
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
