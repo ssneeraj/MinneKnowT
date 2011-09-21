@@ -2,9 +2,13 @@ package com.jatayu;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 public class QuizResultActivity extends Activity {
+
+	private static final String TAG = "QuizResultActivity";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +39,21 @@ public class QuizResultActivity extends Activity {
 			quiz_outcome.setText("PASS");
 		else
 			quiz_outcome.setText("FAIL!");
+
+	}
+
+	/*
+	 * This method is called when 'save Result' button is clicked. The goal is
+	 * to open the Database and write into quiztracker table
+	 */
+	public void saveToDataBase(View view) {
+		new Thread(new Runnable() {
+			public void run() {
+				Log.d(TAG, " >>> Saving current Quiz result to database");
+				QuizDBManager qdbm = new QuizDBManager(QuizResultActivity.this);
+				qdbm.saveQuizResultToDB();
+			}
+		}).start();
 
 	}
 }

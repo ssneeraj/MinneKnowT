@@ -18,5 +18,8 @@
 		</activity>
 		
 		<activity android:name=".QuizResultActivity"></activity>
+		
+		<activity android:name=".QuizHistoryActivity"></activity>
+		
     </application>
 </manifest>

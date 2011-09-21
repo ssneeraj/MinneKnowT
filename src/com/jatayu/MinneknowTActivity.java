@@ -17,7 +17,7 @@ import android.view.View;
 public class MinneknowTActivity extends Activity {
 
 	private boolean enable_log = false;
-	private static final String TAG = "QuizHomeActivity:";
+	private static final String TAG = "MinneknowTactivity:";
 	private QuizCache quizcache;
 
 	// temporary variable to store one single QandA set
@@ -246,6 +246,19 @@ public class MinneknowTActivity extends Activity {
 			eventType = parser.next();
 
 		}
+
+	}
+
+	public void showQuizHistory(View view) {
+
+		new Thread(new Runnable() {
+			public void run() {
+				Log.d(TAG, " >>> In showQuizHistory() method");
+				Intent intent = new Intent(MinneknowTActivity.this,
+						QuizHistoryActivity.class);
+				startActivity(intent);
+			}
+		}).start();
 
 	}
 

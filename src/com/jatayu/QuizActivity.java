@@ -36,6 +36,10 @@ public class QuizActivity extends ListActivity {
 	// correct answer choice
 	private int[] answer_selected_stat = new int[CommonProps.TOTAL_QUIZ_QUESTIONS];
 
+	private OngoingQuizTracker quiz_tracker;
+
+	private boolean questionAttempted = false;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -43,9 +47,12 @@ public class QuizActivity extends ListActivity {
 
 		getListView().setCacheColorHint(0);
 
+		quiz_stat.clearQuizStat();
+
+		quiz_tracker = OngoingQuizTracker.getInstance();
+
 		showSingleQandA();
 
-		quiz_stat.clearQuizStat();
 	}
 
 	/*
@@ -85,6 +92,10 @@ public class QuizActivity extends ListActivity {
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 
+		// If onListItemClick is invoked it means the user has selected an
+		// answer choice
+		questionAttempted = true;
+
 		String toastText = null;
 
 		Integer selectedListItemPosition = position;
@@ -96,10 +107,16 @@ public class QuizActivity extends ListActivity {
 			toastText = "correct answer";
 			v.setBackgroundColor(Color.GREEN);
 			answer_selected_stat[currentQuestionIndex] = CommonProps.ANSWERED_CORRECT;
+
+			// If correct answer, quiz tracker sets correct answer tracker to 1
+			quiz_tracker.setCorrectAnswerTracker(currentQuestionIndex, 1);
 		} else {
 			toastText = "wrong answer";
 			v.setBackgroundColor(Color.RED);
 			answer_selected_stat[currentQuestionIndex] = CommonProps.ANSWERED_INCORRECT;
+
+			// If incorrect answer quiz tracker sets correct answer tracker to 0
+			quiz_tracker.setCorrectAnswerTracker(currentQuestionIndex, 0);
 		}
 
 		v.setFocusable(false);
@@ -114,6 +131,16 @@ public class QuizActivity extends ListActivity {
 	}
 
 	public void showNextQuestion(View view) {
+
+		// When the user selects 'Next' button, first check if the questions was
+		// attempted or not!
+		if (questionAttempted) {
+			questionAttempted = false;
+		} else {
+			// if the question was not attempted we assume that the answer
+			// tracker is 0
+			quiz_tracker.setCorrectAnswerTracker(currentQuestionIndex, 0);
+		}
 
 		// first increment the currentQuestionIndex so that we advance to the
 		// next question
@@ -130,6 +157,7 @@ public class QuizActivity extends ListActivity {
 
 			// invoke QuizResultActivity
 			Intent intent = new Intent(this, QuizResultActivity.class);
+
 			startActivity(intent);
 
 			return;
