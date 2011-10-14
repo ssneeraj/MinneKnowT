@@ -1,11 +1,17 @@
 package com.jatayu;
 
+/**
+ * Template for a single question and it's answer choices
+ * 
+ * @author sharman
+ * 
+ */
 public class QandA {
 
-	private String questionNumber;
-	private String questionText;
-	private String correctAnswer;
-	private String[] answers;
+	private String		questionNumber;
+	private String		questionText;
+	private String		correctAnswer;
+	private String[]	answers;	// answer choices
 
 	public QandA() {
 		answers = new String[4];

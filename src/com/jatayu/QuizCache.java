@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class QuizCache {
 
-	private static ArrayList<QandA> quizArrayList;
-	private static QuizCache instance;
-	private static boolean quizcacheEmpty = true;
+	private static ArrayList<QandA>	quizArrayList;
+	private static QuizCache	instance;
+	private static boolean		quizcacheEmpty	= true;
 
 	private QuizCache() {
 		quizArrayList = new ArrayList<QandA>();

@@ -1,6 +1,8 @@
-#Tue Aug 16 09:35:06 CDT 2011
+#Wed Sep 28 14:44:53 CDT 2011
 eclipse.preferences.version=1
 editor_save_participant_org.eclipse.jdt.ui.postsavelistener.cleanup=true
+formatter_profile=_Komikayz Formatter rules
+formatter_settings_version=12
 org.eclipse.jdt.ui.exception.name=e
 org.eclipse.jdt.ui.gettersetter.use.is=true
 org.eclipse.jdt.ui.keywordthis=false

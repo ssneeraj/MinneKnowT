@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:orientation="vertical" 	
+  	android:background="#FFFFFF"
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent">
+
+<!--  android:background="#6B7552"--> 
+
+<!-- right arrow button -->
+	<ImageButton 
+			android:id="@+id/rightbutton"
+			android:src="@drawable/rightbutton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:background="@null"
+			android:layout_margin="5dp"
+			android:onClick="showNext"
+	/>
+
+<!-- Left arrow button -->
+	<ImageButton 
+			android:id="@+id/leftbutton"
+			android:src="@drawable/leftbutton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:background="@null"
+			android:layout_margin="5dp"
+			android:onClick="showPrevious"
+	/>
+		
+	<!-- Display's Road Sign number for example '1 of 30' -->
+	<TextView 
+			android:id="@+id/roadSignNumber"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#FFFFFF"
+			android:textSize="20sp"
+			android:background="@drawable/roadsign_number_border"
+			android:layout_centerHorizontal="true"
+			android:layout_margin="5dp"
+			android:padding="5dp"
+			android:typeface="serif"
+			/>
+	
+	<!-- Image view to display the road sign -->				
+	<ImageView
+			android:id="@+id/roadsignIV" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_centerHorizontal="true"
+   />
+			
+	<TextView 
+			android:id="@+id/roadsignDescTextView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"							
+			android:gravity="center"
+			android:textSize="15sp" 
+			android:layout_margin="10dp"			
+			android:layout_below="@id/roadsignIV"
+			android:textColor="#000000"
+			android:typeface="serif"
+	/>
+	
+	<!-- the earlier text color was android:textColor="#FFFFFF" -->
+			 			   
+</RelativeLayout>
+

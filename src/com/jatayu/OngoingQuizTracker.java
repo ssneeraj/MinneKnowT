@@ -1,17 +1,21 @@
 package com.jatayu;
 
-/*
- * This class track's each attempted question in the on-going or the current quiz that the user is taking.
- * After the entire quiz is completed the data  in this class is mapped to the corresponding column 
- * in quiztracker table in minneknowt.db
+/**
+ * This class track's each attempted question in the on-going or the current
+ * quiz that the user is taking. After the entire quiz is completed the data in
+ * this class is mapped to the corresponding column in quiztracker table in
+ * minneknowt.db
+ * 
+ * @author sharman
+ * 
  */
 public class OngoingQuizTracker {
 
-	private static OngoingQuizTracker instance;
+	private static OngoingQuizTracker	instance;
 
-	private int[] question_number;
+	private int[]				question_number;
 
-	private int[] correct_answer_tracker;
+	private int[]				correct_answer_tracker;
 
 	private OngoingQuizTracker() {
 		question_number = new int[CommonProps.TOTAL_QUIZ_QUESTIONS];

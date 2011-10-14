@@ -5,15 +5,15 @@
   android:orientation="vertical"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  android:background="#6B7552"
-  
->
+  android:background="#FFFFFF">
+
+<!-- android:background="#6B7552" -->
 
 <TableLayout
   android:orientation="vertical"
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
-  android:background="#A38552"
+  android:background="@drawable/roadsign_number_border"
   android:layout_margin="20dp"
   android:padding="20dp">
   
@@ -21,10 +21,10 @@
   			android:paddingBottom="5dp">
 	<TextView 
 			android:id="@+id/totalQuestionsLabel"
-			android:text="Total Questions :"
+			android:text="Total Questions: "
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textColor="#4C3300"
+			android:textColor="#FFFFFF"
 			android:textSize="15sp" 
 			/>
 	
@@ -32,7 +32,7 @@
 			android:id="@+id/totalQuestionsValue"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textColor="#4C3300"
+			android:textColor="#FFFFFF"
 			android:textSize="20sp" 
 			android:gravity="center"
 			/>			  
@@ -42,10 +42,10 @@
   			android:paddingBottom="5dp">
 	<TextView 
 			android:id="@+id/correctLabel"
-			android:text="Correct :"
+			android:text="Correct: "
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textColor="#4C3300"
+			android:textColor="#FFFFFF"
 			android:textSize="15sp" 
 			/>
 	
@@ -53,7 +53,7 @@
 			android:id="@+id/correctValue"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textColor="#4C3300"
+			android:textColor="#FFFFFF"
 			android:textSize="20sp" 
 			android:gravity="center"
 			/>			  
@@ -63,10 +63,10 @@
   			android:paddingBottom="5dp">
 	<TextView 
 			android:id="@+id/percentageLabel"
-			android:text="correct answers % :"
+			android:text="% Correct answers: "
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textColor="#4C3300"
+			android:textColor="#FFFFFF"
 			android:textSize="15sp" 
 			/>
 	
@@ -74,7 +74,7 @@
 			android:id="@+id/percentageValue"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textColor="#4C3300"
+			android:textColor="#FFFFFF"
 			android:textSize="20sp" 
 			android:gravity="center"
 			/>			  
@@ -88,9 +88,12 @@
 			android:layout_height="wrap_content"
 			android:textSize="25sp" 
 			android:gravity="center"
-			android:layout_margin="20dp"
+			android:layout_margin="5dp"
+			android:textColor="#000000"
+			android:typeface="serif"
 			/>	
 
+<!-- 
 	<Button android:id="@+id/saveQuizResultButton"
 			android:text="Save Result"
 			android:layout_width="wrap_content"
@@ -99,4 +102,19 @@
 			android:layout_margin="10dp"
 			android:onClick="saveToDataBase"
 	/>
+ -->
+ 
+	<!-- button to review the most recent quiz -->
+	<Button android:id="@+id/saveQuizResultButton"
+			android:text="Review Quiz"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="10dp"
+			android:background="@drawable/quiz_question_text_border" 
+			android:typeface="serif"
+			android:gravity="center"
+			android:onClick="showReviewActivity"
+	/>
+	
 </LinearLayout>

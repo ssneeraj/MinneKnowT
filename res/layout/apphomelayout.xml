@@ -1,26 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="#A38552"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical"
     >
-    <ImageButton 
-    	android:background="@null" 
-    	android:layout_gravity="center" 
-    	android:layout_width="wrap_content" 
-    	android:layout_marginTop="100dip" 
-    	android:src="@drawable/buttonselector" 
-    	android:onClick="showQuizActivity" 
-    	android:id="@+id/takequizButton" 
-    	android:layout_height="wrap_content"/>
+ 
+ <!--  android:background="#A38552"-->
     
-    <Button android:text="Statistics" 
-    	android:id="@+id/button1" 
-    	android:layout_height="wrap_content" 
-    	android:layout_width="wrap_content" 
-    	android:layout_gravity="center"
-    	android:onClick="showQuizHistory"/>
-          
-</LinearLayout>
+    <TableRow
+    	android:id="@+id/tableRow1"
+    	android:layout_height="wrap_content"
+    	android:layout_width="match_parent"
+    	android:gravity="center"
+    	>
+	       
+    	 <ImageButton 
+	      	android:id="@+id/takeQuizButton"
+	    	android:background="@null"   
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"	 
+	    	android:src="@drawable/takequiz"  
+	    	android:onClick="showQuizActivity"/>  
+ 
+    	 <ImageButton 
+	      	android:id="@+id/roadSignButton"
+	    	android:background="@null"   	 
+	    	android:src="@drawable/roadsignicon"  
+	    	android:onClick="showRoadSignActivity"/>  
+	    	    	    	 
+    </TableRow>
+
+	<TableRow
+    	android:id="@+id/tableRow2"
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:gravity="center"> 	
+	
+    	 <ImageButton 
+	      	android:id="@+id/quizStatButton"
+	    	android:background="@null"   	 
+	    	android:src="@drawable/quizstaticon"  
+	    	android:onClick="showQuizHistory"/>  	
+
+<!-- 	    	
+    	 <Button 
+	      	android:id="@+id/quizReviewButton"
+	      	android:text="quizReview"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	
+	    	android:background="@drawable/quiz_question_text_border"   	   
+	    	android:onClick="showReviewActivity"/>  
+	  -->   		    	
+	</TableRow>
+	                       
+</TableLayout>
