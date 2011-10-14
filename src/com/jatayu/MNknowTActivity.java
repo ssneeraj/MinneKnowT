@@ -290,7 +290,14 @@ public class MNknowTActivity extends Activity {
 				if (CommonProps.LOG_ENABLED)
 					Log.i(TAG,
 							"question Id: "
-									+ parser.nextText()); // returns quiz number (1, 2, 3 so on)
+									+ parser.nextText()); // returns
+												// quiz
+												// number
+												// (1,
+												// 2,
+												// 3
+												// so
+												// on)
 				else
 					tempQuestionId = parser.nextText();
 			}
