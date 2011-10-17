@@ -8,4 +8,5 @@ public class CommonProps {
 	public static final int		ANSWERED_CORRECT	= 0;
 	public static final int		ANSWERED_INCORRECT	= 1;
 	public static final boolean	LOG_ENABLED		= false;
+	public static final int		TOTAL_ROAD_SIGNS	= 25;
 }

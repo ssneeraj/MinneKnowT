@@ -40,7 +40,13 @@ public class RoadSignActivity extends Activity {
 	private int[]		road_sign_bitmap_ids	= new int[] {
 			R.drawable.w1, R.drawable.w2, R.drawable.w3,
 			R.drawable.w4, R.drawable.w5, R.drawable.w6,
-			R.drawable.w7, R.drawable.w8	};
+			R.drawable.w7, R.drawable.w8, R.drawable.w9,
+			R.drawable.w10, R.drawable.w11, R.drawable.w12,
+			R.drawable.w13, R.drawable.w14, R.drawable.w15,
+			R.drawable.w16, R.drawable.w17, R.drawable.w18,
+			R.drawable.w19, R.drawable.w20, R.drawable.w21,
+			R.drawable.w22, R.drawable.w23, R.drawable.w24,
+			R.drawable.w25			};
 
 	private int		index			= 0;
 	private StringBuffer	road_sign_number_buff;
