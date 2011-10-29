@@ -1,4 +1,4 @@
-package com.jatayu;
+package com.jatayu.mnknowt;
 
 public class QuizCorrectAnswerList {
 

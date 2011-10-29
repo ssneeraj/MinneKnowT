@@ -1,4 +1,4 @@
-package com.jatayu;
+package com.jatayu.mnknowt;
 
 import android.app.ListActivity;
 import android.database.Cursor;

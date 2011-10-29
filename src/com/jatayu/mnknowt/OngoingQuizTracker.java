@@ -1,4 +1,4 @@
-package com.jatayu;
+package com.jatayu.mnknowt;
 
 /**
  * This class track's each attempted question in the on-going or the current

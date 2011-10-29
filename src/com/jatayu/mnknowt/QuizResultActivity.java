@@ -1,4 +1,4 @@
-package com.jatayu;
+package com.jatayu.mnknowt;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -66,5 +66,7 @@ public class QuizResultActivity extends Activity {
 		Intent intent = new Intent(QuizResultActivity.this,
 				QuizReviewActivity.class);
 		startActivity(intent);
+		finish(); // invoke finish() will close this (i.e.
+				// QuizResultActivity)
 	}
 }

@@ -1,4 +1,4 @@
-package com.jatayu;
+package com.jatayu.mnknowt;
 
 import java.io.IOException;
 
@@ -76,7 +76,13 @@ public class MNknowTActivity extends Activity {
 			// message TextView in Custom Dialog
 			TextView text = (TextView) dialog
 					.findViewById(R.id.customDialogMessage);
-			text.setText("\nMN knowT will help you to prepare for Minnesota Driver's License Written Knowledge test.\n\n");
+			text.setText("\nMNknowT will help you to prepare for Minnesota Driver's License Written Knowledge test.\n\n"
+					+ CommonProps.COPYRIGHT_SYMBOL
+					+ CommonProps.COMPANY_NAME
+					+ CommonProps.APP_RELEASE_YEAR
+					+ "\n\n"
+					+ "Contact Us: mnknowt@gmail.com"
+					+ "\n");
 
 			// Close button
 			Button closeButton = (Button) dialog
@@ -105,7 +111,7 @@ public class MNknowTActivity extends Activity {
 			// set up text
 			TextView text = (TextView) dialog
 					.findViewById(R.id.customDialogMessage);
-			String message = "\nMN knowT app features\n\n"
+			String message = "\nMNknowT app features\n\n"
 					+ "\t\tQuiz is un-timed and comprises of 75 questions. You can ONLY review the quiz result once you have answered all the 75 questions.\n\n"
 					+ "\t\tRoad Signs includes flash cards for popular road signs.\n\n"
 					+ "\t\tStats stores history of all the previous quiz attempts. To reset the quiz history go to the app home page, then select the 'menu' button that displays menu options, and select 'Reset History'.\n\n";

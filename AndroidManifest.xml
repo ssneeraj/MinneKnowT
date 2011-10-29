@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.jatayu"
+      package="com.jatayu.mnknowt"
       android:versionCode="1"
       android:versionName="1.0.0">
     
@@ -13,22 +13,33 @@
     	android:theme="@android:style/Theme.NoTitleBar">
     	
         <activity android:name=".MNknowTActivity"
-                  android:label="@string/app_name">
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 		
-		<activity android:name=".QuizActivity"></activity>
+		<activity 
+		    android:name=".QuizActivity" 
+		    android:screenOrientation="portrait" />
 		
-		<activity android:name=".QuizResultActivity"></activity>
+		<activity
+		    android:name=".QuizResultActivity"
+		    android:screenOrientation="portrait" />
 		
-		<activity android:name=".QuizHistoryActivity"></activity>
+		<activity
+		    android:name=".QuizHistoryActivity"
+		    android:screenOrientation="portrait" />
 		
-		<activity android:name=".RoadSignActivity"></activity>
+		<activity
+		    android:name=".RoadSignActivity"
+		    android:screenOrientation="portrait" />
 		
-		<activity android:name=".QuizReviewActivity"></activity>
+		<activity 
+		    android:name=".QuizReviewActivity"
+		    android:screenOrientation="portrait" />
 		
     </application>
     

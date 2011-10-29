@@ -1,4 +1,4 @@
-package com.jatayu;
+package com.jatayu.mnknowt;
 
 import java.util.ArrayList;
 
@@ -183,6 +183,9 @@ public class QuizActivity extends ListActivity {
 					QuizResultActivity.class);
 
 			startActivity(intent);
+
+			// Since Quiz is over we want to finish QuizActivity
+			finish();
 
 			return;
 		}

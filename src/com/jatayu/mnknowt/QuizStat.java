@@ -1,4 +1,4 @@
-package com.jatayu;
+package com.jatayu.mnknowt;
 
 /**
  * Stores an integer array that either contains a 1 for correct answer and 2 for

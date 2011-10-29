@@ -1,4 +1,4 @@
-package com.jatayu;
+package com.jatayu.mnknowt;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -11,10 +11,8 @@ public class QuizDBManager {
 
 	private static final String	TAG	= "QuizDBManager class: ";
 	private MyOpenHelper		db_helper;
-	private Context			context;
 
 	public QuizDBManager(Context context) {
-		this.context = context;
 		db_helper = new MyOpenHelper(context);
 	}
 

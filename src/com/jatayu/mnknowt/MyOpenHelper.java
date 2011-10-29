@@ -1,4 +1,4 @@
-package com.jatayu;
+package com.jatayu.mnknowt;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -46,7 +46,9 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 
 	public MyOpenHelper(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
-		Log.d(TAG, "constructor");
+
+		if (CommonProps.LOG_ENABLED)
+			Log.d(TAG, "constructor");
 	}
 
 	@Override
@@ -73,7 +75,7 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 
 			// default values into quiztracker table
 			ContentValues content_values = new ContentValues();
-			for (int i = 1; i < CommonProps.TOTAL_QUIZ_QUESTIONS; i++) {
+			for (int i = 1; i <= CommonProps.TOTAL_QUIZ_QUESTIONS; i++) {
 				content_values.put(
 						MyOpenHelper.QUESTION_NUMBER_COLUMN,
 						i);
@@ -112,7 +114,7 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 
 			// default values into quiztracker table
 			ContentValues content_values = new ContentValues();
-			for (int i = 1; i < CommonProps.TOTAL_QUIZ_QUESTIONS; i++) {
+			for (int i = 1; i <= CommonProps.TOTAL_QUIZ_QUESTIONS; i++) {
 				content_values.put(
 						MyOpenHelper.QUESTION_NUMBER_COLUMN,
 						i);
