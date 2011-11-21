@@ -44,7 +44,7 @@ public class MNknowTActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		setContentView(R.layout.apphomelayout);
+		setContentView(R.layout.apphome_layout_v2);
 	}
 
 	@Override

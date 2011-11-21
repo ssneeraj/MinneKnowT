@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/mnknowt_bg"
+    >
+
+	<TextView 
+	    android:id="@+id/app_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="MNknowT"
+	    android:textColor="#353535"
+	    android:gravity="center"
+	    android:textSize="22sp"
+	    android:typeface="sans"
+	    android:textStyle="bold"
+	    />    
+
+	<TextView 
+	    android:id="@+id/app_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="v 2.0"
+	    android:textSize="12sp"
+	    android:textColor="#353535"
+	    android:gravity="center"
+	    android:typeface="sans"
+	    android:textStyle="bold"
+	    />
+	
+	<TableLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    >
+
+	    <!-- Displays flash cards icon and the label below it -->	
+	    <TableRow
+	        android:gravity="right"
+	        android:paddingTop="30dp"
+	        android:paddingRight="30dp"
+	        >
+	        <ImageButton
+	            android:src="@drawable/flashcard_icon"
+	            android:background="@drawable/buttonselector"	            
+	            android:layout_width="100dp"	            
+	            android:layout_height="80dp"
+	            android:scaleType="fitXY"
+	            android:focusable="true"
+	            />
+	    </TableRow>
+
+	    <TableRow
+	        android:gravity="right"
+	        android:paddingRight="30dp">
+	        <TextView            
+	            android:layout_width="match_parent"	            
+	            android:layout_height="wrap_content"
+				android:layout_gravity="center"	            
+				android:text="Flash Cards"
+				android:textColor="#FFFFFF"
+				android:textStyle="bold"
+				android:typeface="sans"
+				android:textSize="16sp"
+	            />
+	    </TableRow>
+	        	        
+
+	    <!-- Displays quiz icon and the label below it -->	
+	    <TableRow
+	        android:gravity="left"
+	        android:paddingLeft="30dp"
+	        >
+	        <Button
+	            android:background="@drawable/buttonselector"	            
+	            android:layout_width="100dp"	            
+	            android:layout_height="80dp"
+	            android:text="@string/question_mark"
+				android:textColor="#FFFFFF"
+				android:typeface="sans"
+				android:textStyle="bold"
+				android:textSize="48sp"	  
+				android:gravity="center"          
+	            />
+	    </TableRow>
+
+	    <TableRow
+	        android:gravity="left"
+	        android:paddingLeft="30dp">
+	        <TextView            
+	            android:layout_width="match_parent"	            
+	            android:layout_height="wrap_content"
+				android:text="Quiz"
+				android:layout_gravity="center"
+				android:textColor="#FFFFFF"
+				android:textStyle="bold"
+				android:textSize="16sp"
+				android:typeface="sans"
+	            />
+	    </TableRow>	
+	            
+	    <!-- Displays stats icon and the label below it -->	
+	    <TableRow
+	        android:gravity="right"
+	        android:paddingRight="30dp"	        
+	        >
+	        <TextView
+	            android:background="@drawable/buttonselector"	            
+	            android:layout_width="100dp"	            
+	            android:layout_height="80dp"
+	            android:text="%"
+				android:textColor="#FFFFFF"
+				android:typeface="sans"
+				android:textStyle="bold"
+				android:textSize="42sp"	  
+				android:gravity="center"  
+				android:clickable="true"        
+	            />
+	    </TableRow>
+
+	    <TableRow
+	        android:gravity="right"
+	        android:paddingRight="30dp">
+	        <TextView            
+	            android:layout_width="match_parent"	            
+	            android:layout_height="wrap_content"
+				android:layout_gravity="center"	            
+				android:text="Stats"
+				android:textColor="#FFFFFF"
+				android:textStyle="bold"
+				android:typeface="sans"
+				android:textSize="16sp"
+	            />
+	    </TableRow>       	        	    
+	</TableLayout>
+		
+</LinearLayout>

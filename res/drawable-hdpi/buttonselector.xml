@@ -2,12 +2,11 @@
 <selector
   xmlns:android="http://schemas.android.com/apk/res/android">
 
-<!-- when button is pressed    
-    <item 
+<!-- when button is pressed  -->    
+    <item
     	android:state_pressed="true" 
-    	android:drawable="@drawable/takequizbutton"/>	
+    	android:drawable="@drawable/mnknowt_btn_press"/>	
     	
- default
-<item android:drawable="@drawable/takequizbutton_gray" />
- -->
+<item android:drawable="@drawable/mnknowt_btn" />
+
 </selector>
