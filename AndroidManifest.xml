@@ -22,25 +22,21 @@
         </activity>
 		
 		<activity 
-		    android:name=".QuizActivity" 
+		    android:name=".FlashCardsActivity" 
 		    android:screenOrientation="portrait" />
 		
 		<activity
-		    android:name=".QuizResultActivity"
+		    android:name=".QuizCompletedActivity"
 		    android:screenOrientation="portrait" />
 		
 		<activity
-		    android:name=".QuizHistoryActivity"
+		    android:name=".QuizStatsActivity"
 		    android:screenOrientation="portrait" />
-		
-		<activity
-		    android:name=".RoadSignActivity"
-		    android:screenOrientation="portrait" />
-		
+					
 		<activity 
-		    android:name=".QuizReviewActivity"
+		    android:name=".QuizActivity"
 		    android:screenOrientation="portrait" />
-		
+				
     </application>
     
 </manifest>

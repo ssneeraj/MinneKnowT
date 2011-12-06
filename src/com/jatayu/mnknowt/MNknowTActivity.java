@@ -38,23 +38,24 @@ public class MNknowTActivity extends Activity {
 	private String			tempQuestionText	= "";
 	private String			tempCorrectAnswer	= "";
 	private String[]		tempAnswers		= new String[4];
+	private String			tempImageFileName	= "";
+
+	private static final int	FLASH_CARDS_ACTIVITY	= 0;
+	private static final int	QUIZ_ACTIVITY		= 1;
 
 	/** Called when the activity is first created. */
-	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.apphome_layout_v2);
 	}
 
-	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater menu_inflator = getMenuInflater();
 		menu_inflator.inflate(R.menu.app_home_menu, menu);
 		return true;
 	}
 
-	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		if (item.getItemId() == R.id.resetMenuItem) {
 			Log.d(TAG, "Option Menu item clicked to clear DB");
@@ -135,11 +136,26 @@ public class MNknowTActivity extends Activity {
 		return true;
 	}
 
+	public void showFlashCardsActivity(View view) {
+
+		// Initiate setup quiz task only if QuizCache is empty
+		if (QuizCache.isQuizcacheEmpty()) {
+			new SetupQuizTask(MNknowTActivity.this,
+					FLASH_CARDS_ACTIVITY).execute();
+		} else {
+			// since QuizCache is not empty directly show the Quiz
+			Intent intent = new Intent(MNknowTActivity.this,
+					FlashCardsActivity.class);
+			startActivity(intent);
+		}
+	}
+
 	public void showQuizActivity(View view) {
 
 		// Initiate setup quiz task only if QuizCache is empty
 		if (QuizCache.isQuizcacheEmpty()) {
-			new SetupQuizTask(MNknowTActivity.this).execute();
+			new SetupQuizTask(MNknowTActivity.this, QUIZ_ACTIVITY)
+					.execute();
 		} else {
 			// since QuizCache is not empty directly show the Quiz
 			Intent intent = new Intent(MNknowTActivity.this,
@@ -148,30 +164,19 @@ public class MNknowTActivity extends Activity {
 		}
 	}
 
-	public void showReviewActivity(View view) {
-
-		Intent intent = new Intent(MNknowTActivity.this,
-				QuizReviewActivity.class);
-		startActivity(intent);
-
-	}
-
-	public void showRoadSignActivity(View view) {
-		Intent intent = new Intent(MNknowTActivity.this,
-				RoadSignActivity.class);
-		startActivity(intent);
-	}
-
 	private class SetupQuizTask extends AsyncTask<Void, Void, Boolean> {
 
 		private ProgressDialog	progressDialog;
 		private Context		context;
 		Boolean			parserResult	= false;
 		private MNknowTActivity	activity;
+		private int		activityType;
 
-		public SetupQuizTask(MNknowTActivity minneknowTActivity) {
+		public SetupQuizTask(MNknowTActivity minneknowTActivity,
+				int activityType) {
 			this.activity = minneknowTActivity;
 			this.context = activity;
+			this.activityType = activityType;
 			progressDialog = new ProgressDialog(context);
 
 			quizcache = QuizCache.getInstance();
@@ -211,10 +216,17 @@ public class MNknowTActivity extends Activity {
 				// set that the quiz cache is not empty now
 				QuizCache.setQuizcacheEmpty(false);
 
-				Intent intent = new Intent(
-						MNknowTActivity.this,
-						QuizActivity.class);
-				startActivity(intent);
+				if (this.activityType == FLASH_CARDS_ACTIVITY) {
+					Intent intent = new Intent(
+							MNknowTActivity.this,
+							FlashCardsActivity.class);
+					startActivity(intent);
+				} else if (this.activityType == QUIZ_ACTIVITY) {
+					Intent intent = new Intent(
+							MNknowTActivity.this,
+							QuizActivity.class);
+					startActivity(intent);
+				}
 			}
 		}
 	}
@@ -354,6 +366,13 @@ public class MNknowTActivity extends Activity {
 
 				}
 			}
+			// parser points to <imageFileName>
+			else if (eventType == XmlPullParser.START_TAG
+					&& (parser.getName()
+							.equalsIgnoreCase("imageFileName"))) {
+				tempImageFileName = parser.nextText();
+
+			}
 
 			// parser points to </question>
 			else if (eventType == XmlPullParser.END_TAG
@@ -377,6 +396,8 @@ public class MNknowTActivity extends Activity {
 							+ tempAnswers[2]);
 					Log.i(TAG, "saved A3: "
 							+ tempAnswers[3]);
+					Log.i(TAG, "saved ImageFileName: "
+							+ tempImageFileName);
 
 					// Create an instance of single QandA to
 					// store one QandA set
@@ -385,6 +406,7 @@ public class MNknowTActivity extends Activity {
 					qa.setQuestionText(tempQuestionText);
 					qa.setCorrectAnswer(tempCorrectAnswer);
 					qa.setAnswers(tempAnswers);
+					qa.setImageFileName(tempImageFileName);
 
 					// add single QandA set into the quiz
 					// (which is an
@@ -401,14 +423,14 @@ public class MNknowTActivity extends Activity {
 
 	}
 
-	public void showQuizHistory(View view) {
-
+	public void showQuizStatsActivity(View view) {
+		Log.d(TAG, " >>> In showQuizStatsActivity(View view) method");
 		new Thread(new Runnable() {
 			public void run() {
-				Log.d(TAG, " >>> In showQuizHistory() method");
+
 				Intent intent = new Intent(
 						MNknowTActivity.this,
-						QuizHistoryActivity.class);
+						QuizStatsActivity.class);
 				startActivity(intent);
 			}
 		}).start();

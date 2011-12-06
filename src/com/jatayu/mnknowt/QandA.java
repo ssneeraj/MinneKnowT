@@ -12,6 +12,7 @@ public class QandA {
 	private String		questionText;
 	private String		correctAnswer;
 	private String[]	answers;	// answer choices
+	private String		imageFileName;
 
 	public QandA() {
 		answers = new String[4];
@@ -47,5 +48,13 @@ public class QandA {
 
 	public void setAnswers(String[] answers) {
 		System.arraycopy(answers, 0, this.answers, 0, answers.length);
+	}
+
+	public String getImageFileName() {
+		return imageFileName;
+	}
+
+	public void setImageFileName(String imageFileName) {
+		this.imageFileName = imageFileName;
 	}
 }

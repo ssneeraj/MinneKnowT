@@ -1,6 +1,7 @@
 package com.jatayu.mnknowt;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class QuizCache {
 
@@ -41,5 +42,9 @@ public class QuizCache {
 
 	public static void setQuizcacheEmpty(boolean quizcacheEmpty) {
 		QuizCache.quizcacheEmpty = quizcacheEmpty;
+	}
+
+	public void shuffleQuizCache() {
+		Collections.shuffle(quizArrayList);
 	}
 }

@@ -4,260 +4,232 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteException;
 import android.util.Log;
 
 public class QuizDBManager {
 
 	private static final String	TAG	= "QuizDBManager class: ";
 	private MyOpenHelper		db_helper;
+	private SQLiteDatabase		db;
 
 	public QuizDBManager(Context context) {
 		db_helper = new MyOpenHelper(context);
 	}
 
-	/**
-	 * ------------- Developer Notes ---------
-	 * 
-	 * Step 1: Open 'quiztracker' table and read all the rows under the
-	 * column 'correctanswertracker'
-	 * 
-	 * Step 2: Update 'quiztracker table' using the data in
-	 * OngoingQuizTracker
-	 * 
-	 * Step 3: Open 'attempts' table and read the value
-	 * 
-	 * Step 4: Update attempts table
-	 */
-	public void saveQuizResultToDB() {
-
-		try {
-
-			if (CommonProps.LOG_ENABLED)
-				Log.v(TAG, ">>> In saveQuizResultToDB() method");
-
-			SQLiteDatabase db = db_helper.getWritableDatabase();
-
-			// Step 1: In 'quiztracker' table and read all the rows
-			// under the
-			// correctanswertracker column
-			Cursor c = db.query(
-					MyOpenHelper.QUIZ_TRACKER_TABLE_NAME,
-					null, null, null, null, null, null);
-
-			if (CommonProps.LOG_ENABLED) {
-				Log.d(TAG,
-						">>> Column count: "
-								+ c.getColumnCount());
-
-				Log.d(TAG,
-						">>> Total number of Rows (records) in quiztracker table : "
-								+ c.getCount());
-
-			}
-
-			String[] col_names = new String[c.getColumnCount()];
-			System.arraycopy(c.getColumnNames(), 0, col_names, 0,
-					col_names.length);
-
-			if (CommonProps.LOG_ENABLED) {
-				for (int i = 0; i < col_names.length; i++) {
-					Log.d(TAG,
-							">>> Column names: "
-									+ col_names[i]
-									+ " and its index is: "
-									+ c.getColumnIndex(col_names[i]));
-
-				}
-			}
-
-			int sum = 0;
-
-			if (CommonProps.LOG_ENABLED)
-				Log.d(TAG, ">>> Row reading done");
-
-			OngoingQuizTracker quiztracker = OngoingQuizTracker
-					.getInstance();
-
-			int[] questionnumber_array = new int[CommonProps.TOTAL_QUIZ_QUESTIONS];
-			int[] correct_answer_tracker_array = new int[CommonProps.TOTAL_QUIZ_QUESTIONS];
-
-			System.arraycopy(quiztracker.getQuestion_number(), 0,
-					questionnumber_array, 0,
-					CommonProps.TOTAL_QUIZ_QUESTIONS);
-
-			System.arraycopy(
-					quiztracker.getCorrect_answer_tracker(),
-					0, correct_answer_tracker_array, 0,
-					CommonProps.TOTAL_QUIZ_QUESTIONS);
-
-			if (CommonProps.LOG_ENABLED)
-				Log.d(TAG, ">>> About to reading the rows");
-
-			int index = 0;
-
-			ContentValues new_values_for_correct_answer_tracker = new ContentValues();
-
-			while (c.moveToNext()) {
-
-				if (CommonProps.LOG_ENABLED) {
-					Log.d(TAG,
-							">>> Value at Column 1 (question number): "
-									+ c.getInt(1));
-					Log.d(TAG,
-							">>> Value at Column 2 (correct answer tracker): "
-									+ c.getInt(2));
-
-				}
-
-				// compare the 'questionnumber' from the table
-				// with 'questionnumber_array'
-
-				if (c.getInt(1) == questionnumber_array[index]) {
-
-					// add the correct answer tracker read
-					// from ongoing quiz to that read from
-					// the database
-					sum = correct_answer_tracker_array[index]
-							+ c.getInt(2);
-
-					if (CommonProps.LOG_ENABLED)
-						Log.d(TAG, ">>> sum is: " + sum);
-
-					new_values_for_correct_answer_tracker
-							.put(MyOpenHelper.CORRECT_ANSWER_TRACKER_COLUMN,
-									sum);
-
-					if (CommonProps.LOG_ENABLED)
-						Log.v(TAG,
-								"from content values: "
-										+ new_values_for_correct_answer_tracker
-												.getAsString(MyOpenHelper.CORRECT_ANSWER_TRACKER_COLUMN));
-
-					db.update(MyOpenHelper.QUIZ_TRACKER_TABLE_NAME,
-							new_values_for_correct_answer_tracker,
-							MyOpenHelper.QUESTION_NUMBER_COLUMN
-									+ "="
-									+ questionnumber_array[index],
-							null);
-
-				}
-
-				sum = 0;
-				index++;
-			}
-
-			// Read the first row from attempts column in attempts
-			// table
-			Cursor c2 = db.query(MyOpenHelper.ATTEMPTS_TABLE_NAME,
-					null, null, null, null, null, null);
-			Log.d(TAG, ">>> Attempts table Row reading done");
-
-			Log.d(TAG,
-					">>> Total number of Columns in attempts table : "
-							+ c2.getColumnCount());
-
-			Log.d(TAG,
-					">>> Total number of Rows (records) in attempts table : "
-							+ c2.getCount());
-
-			String[] col_names_attemptsTable = new String[c2
-					.getColumnCount()];
-
-			// copy column names that were read from the attempts
-			// table
-			System.arraycopy(c2.getColumnNames(), 0,
-					col_names_attemptsTable, 0,
-					col_names_attemptsTable.length);
-
-			for (int i = 0; i < col_names_attemptsTable.length; i++) {
-				Log.d(TAG, ">>> Column names: "
-						+ col_names_attemptsTable[i]);
-			}
-
-			c2.moveToFirst();
-
-			// get the value at column 1 which is attempts column in
-			// first row
-			int attemptsFromDb = c2.getInt(1);
-
-			if (CommonProps.LOG_ENABLED)
-				Log.d(TAG,
-						">>> Prior to this attempt Quiz has been attempted: "
-								+ attemptsFromDb);
-
-			attemptsFromDb = attemptsFromDb + 1;
-
-			ContentValues attempt_content_values = new ContentValues();
-			attempt_content_values.put(
-					MyOpenHelper.ATTEMPTS_COLUMN,
-					attemptsFromDb);
-
-			db.update(MyOpenHelper.ATTEMPTS_TABLE_NAME,
-					attempt_content_values, null, null);
-
-			if (CommonProps.LOG_ENABLED)
-				Log.d(TAG,
-						">>> Update Attempts table successfully");
-
-			if (db.isOpen())
-				db.close();
-
-			if (CommonProps.LOG_ENABLED)
-				Log.v(TAG, " Database successfully closed");
-
-		} catch (SQLiteException sqlite_error) {
-			Log.v(TAG,
-					"Error while writting into Quiz Tracker Table: Error message: "
-							+ sqlite_error.toString());
+	public void closeDB() {
+		if (db.isOpen()) {
+			db.close();
 		}
-
 	}
 
-	public Cursor getQuizHistory() {
+	public void saveQuizInformationToDB() {
+		updateScoreTable();
+		updateCorrectIncorrectTable();
+		updateTotalQuestionsAnsweredTable();
 
-		if (CommonProps.LOG_ENABLED)
-			Log.d(TAG, ">>> Reading Quiz Tracker table from DB");
-
-		SQLiteDatabase db = db_helper.getReadableDatabase();
-
-		return db.query(MyOpenHelper.QUIZ_TRACKER_TABLE_NAME, null,
-				null, null, null, null, null);
-
-	}
-
-	public Cursor getQuizAttemptsCursor() {
-
-		if (CommonProps.LOG_ENABLED)
-			Log.d(TAG, ">>> Reading Attempts table from DB");
-
-		SQLiteDatabase db = db_helper.getReadableDatabase();
-
-		return db.query(MyOpenHelper.ATTEMPTS_TABLE_NAME, null, null,
-				null, null, null, null);
+		closeDB();
 	}
 
 	public void resetQuizDatabase() {
-		new Thread(new Runnable() {
+		// new Thread(new Runnable() {
+		//
+		// public void run() {
+		//
+		// if (CommonProps.LOG_ENABLED)
+		// Log.d(TAG,
+		// ">>> About to reset rows in DB");
+		//
+		// SQLiteDatabase db = db_helper
+		// .getWritableDatabase();
+		//
+		// db_helper.resetToDefaultValues(db);
+		//
+		// if (CommonProps.LOG_ENABLED)
+		// Log.d(TAG,
+		// ">>> reset to default values done!");
+		//
+		// }
+		// }).start();
 
-			public void run() {
+	}
 
-				if (CommonProps.LOG_ENABLED)
-					Log.d(TAG,
-							">>> About to reset rows in DB");
+	private void updateTotalQuestionsAnsweredTable() {
+		db = db_helper.getWritableDatabase();
+		ContentValues cv = new ContentValues();
 
-				SQLiteDatabase db = db_helper
-						.getWritableDatabase();
+		// read all the rows from 'totalquestionsanswered' TABLE into
+		// the Cursor
+		Cursor cursor = getTotalQuestionsAnswered();
 
-				db_helper.resetToDefaultValues(db);
+		// move the cursor to the first row
+		cursor.moveToFirst();
 
-				if (CommonProps.LOG_ENABLED)
-					Log.d(TAG,
-							">>> reset to default values done!");
+		int total_questions_answered = cursor.getInt(1);
 
+		cv.put(MyOpenHelper.TOTAL_QUESTIONS_ANSWERED_COLUMN,
+				total_questions_answered + 10);
+
+		// update the DB with ContentValues
+		db.update(MyOpenHelper.TOTAL_QUESTIONS_ANSWERED_TABLE_NAME, cv,
+				null, null);
+
+		cursor.close();
+
+		if (CommonProps.LOG_ENABLED)
+			Log.d(TAG,
+					">>> Updated 'totalquestionsanswered' TABLE successfully");
+
+	}
+
+	private void updateCorrectIncorrectTable() {
+		db = db_helper.getWritableDatabase();
+		OngoingQuizTracker quiz_tracker = OngoingQuizTracker
+				.getInstance();
+
+		// ContentValues that will be written into 'correctincorrect'
+		// TABLE
+		ContentValues cv = new ContentValues();
+
+		// read all the rows from 'correctincorrect TABLE into the
+		// Cursor
+		Cursor correct_incorrect_cursor = getTotalCorrectIncorrectStats();
+
+		// move the cursor to the first row
+		correct_incorrect_cursor.moveToFirst();
+
+		// read value from 'correct' column at column index 1
+		int total_correct = correct_incorrect_cursor.getInt(1);
+
+		// read value from 'incorrect' column at column index 2
+		int total_incorrect = correct_incorrect_cursor.getInt(2);
+
+		// Compare the total correct and incorrect answers from recently
+		// completed quiz and those from the database
+
+		cv.put(MyOpenHelper.CORRECT_COLUMN,
+				quiz_tracker.getTotal_correct_answers()
+						+ total_correct);
+		cv.put(MyOpenHelper.INCORRECT_COLUMN,
+				quiz_tracker.getTotal_incorrect_answers()
+						+ total_incorrect);
+
+		// update the DB with ContentValues
+		db.update(MyOpenHelper.CORRECT_INCORRECT_TABLE_NAME, cv, null,
+				null);
+
+		correct_incorrect_cursor.close();
+
+		if (CommonProps.LOG_ENABLED)
+			Log.d(TAG,
+					">>> Updated 'correctincorrect TABLE successfully");
+
+	}
+
+	private void updateScoreTable() {
+		db = db_helper.getWritableDatabase();
+		OngoingQuizTracker quiz_tracker = OngoingQuizTracker
+				.getInstance();
+
+		// ContentValues that will be written into score table
+		ContentValues content_values_score_table = new ContentValues();
+
+		// read all the rows from 'score' table into the Cursor
+		Cursor score_cursor = getQuizScore();
+
+		// move the cursor to the first row
+		score_cursor.moveToFirst();
+
+		// read value from 'best' score column at column index 1
+		int best_score = score_cursor.getInt(1);
+
+		// read value from 'worst' score column at column index 2
+		int worst_score = score_cursor.getInt(2);
+
+		// Compare the scores from recently completed quiz and those
+		// from the database
+
+		// first check if the best_score = 11 and worst_score = 11
+		// this means the score table has default values and is being
+		// read for the first time
+		// we simple write the ongoing quiz tracker values
+		if (best_score == 11 && worst_score == 11) {
+			content_values_score_table
+					.put(MyOpenHelper.BEST_SCORE_COLUMN,
+							quiz_tracker.getTotal_correct_answers());
+
+			content_values_score_table
+					.put(MyOpenHelper.WORST_SCORE_COLUMN,
+							quiz_tracker.getTotal_incorrect_answers());
+		} else {
+
+			// if the correct answers in recently completed quiz is
+			// greated
+			// than the best_score in the database then replace the
+			// best
+			// score in the DB with the current total correct answer
+			// value
+			// that is in the OngoingQuizTracker
+			if (quiz_tracker.getTotal_correct_answers() > best_score) {
+				content_values_score_table
+						.put(MyOpenHelper.BEST_SCORE_COLUMN,
+								quiz_tracker.getTotal_correct_answers());
+			} else {
+				content_values_score_table.put(
+						MyOpenHelper.BEST_SCORE_COLUMN,
+						best_score);
 			}
-		}).start();
 
+			if (quiz_tracker.getTotal_incorrect_answers() > worst_score) {
+				content_values_score_table
+						.put(MyOpenHelper.WORST_SCORE_COLUMN,
+								quiz_tracker.getTotal_incorrect_answers());
+			} else {
+				content_values_score_table
+						.put(MyOpenHelper.WORST_SCORE_COLUMN,
+								worst_score);
+			}
+		}
+		// update the DB with ContentValues
+		db.update(MyOpenHelper.SCORE_TABLE_NAME,
+				content_values_score_table, null, null);
+
+		score_cursor.close();
+
+		if (CommonProps.LOG_ENABLED)
+			Log.d(TAG, ">>> Updated score table successfully");
+
+	}
+
+	public Cursor getQuizScore() {
+		// if (CommonProps.LOG_ENABLED)
+		Log.d(TAG, ">>> Reading 'score' table from DB");
+
+		// SQLiteDatabase db = db_helper.getReadableDatabase();
+
+		return db.query(MyOpenHelper.SCORE_TABLE_NAME, null, null,
+				null, null, null, null);
+	}
+
+	public Cursor getTotalQuestionsAnswered() {
+		// if (CommonProps.LOG_ENABLED)
+
+		Log.d(TAG, ">>> Reading 'totalquestionsanswered' table from DB");
+
+		db = db_helper.getReadableDatabase();
+
+		return db.query(MyOpenHelper.TOTAL_QUESTIONS_ANSWERED_TABLE_NAME,
+				null, null, null, null, null, null);
+	}
+
+	public Cursor getTotalCorrectIncorrectStats() {
+
+		// if (CommonProps.LOG_ENABLED)
+		Log.d(TAG, ">>> Reading 'correctincorrect' table from DB");
+
+		db = db_helper.getReadableDatabase();
+
+		return db.query(MyOpenHelper.CORRECT_INCORRECT_TABLE_NAME,
+				null, null, null, null, null, null);
 	}
 
 }

@@ -2,13 +2,13 @@
 <quiz>
 	<question>
 		<questionId>1</questionId>	
-		<questionText>An intersection is considered "blind"</questionText>	
-		<correctAnswer></correctAnswer>			
-		<answerText></answerText>		
-		<answerText></answerText>		
-		<answerText></answerText>
-		<answerText></answerText>										
-	</question>
+		<questionText>The distance between the driver and the steering should be at least _________</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>10 inches</answerText>
+		<answerText>30 inches</answerText>
+		<answerText>15 inches</answerText>
+		<answerText>5 inches</answerText>				
+	</question>	
 	<question>
 		<questionId></questionId>	
 		<questionText></questionText>	

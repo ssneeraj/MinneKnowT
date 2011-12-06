@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/mnknowt_bg"
+    >
+                        
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	    
+	    <ImageButton
+	        	android:id="@+id/quizCompleted_homeButton"    
+	            android:background="@drawable/home_button_selector"        
+	            android:layout_width="30dp"	            
+	            android:layout_height="25dp"
+	            android:scaleType="fitXY"
+	            android:paddingLeft="5dp"
+	            android:onClick="showAppHomePage"/>
+
+			<TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+				android:layout_below="@id/quizCompleted_homeButton"	   
+			    android:text="Home"
+			    android:textColor="#000000"
+			    android:textSize="10sp"
+			    android:typeface="sans"
+			    android:textStyle="bold"
+			    android:paddingLeft="5dp"
+		    />
+				    	        
+			<TextView 
+			    android:id="@+id/quizCompleted_title"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_horizontal"	   
+			    android:text="Quiz"
+			    android:textColor="#353535"
+			    android:textSize="22sp"
+			    android:typeface="sans"
+			    android:textStyle="bold"
+			    android:layout_centerHorizontal="true"
+		    />		    	
+
+			<RelativeLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/quizCompleted_homeButton"
+			    android:layout_margin="40dp"
+			    android:background="@drawable/ricepaper"
+			    android:orientation="vertical" >
+			
+			    <TextView
+			        android:id="@+id/quizCompleted_totalQuestionsText" 
+			    	android:layout_width="match_parent"
+			    	android:layout_height="wrap_content"
+					android:layout_below="@id/quizCompleted_homeButton"	   
+			    	android:text="Quiz Completed"
+					android:textColor="#000000"
+				    android:textSize="16sp"
+				    android:typeface="sans"	
+				    android:textStyle="bold"
+				    android:gravity="center_horizontal"
+				    android:layout_margin="5dp"		    	
+			        />
+
+			    <!-- Horizontal separator line -->    						    			    
+			    <View
+			        android:id="@+id/quizCompleted_horizontalSeparator"
+			        android:layout_width="fill_parent"
+			        android:layout_below="@id/quizCompleted_totalQuestionsText"
+					android:layout_height="1px"
+					android:layout_margin="5dp"
+					android:background="#000000" />
+			    
+			    
+			    <TableLayout
+			        android:layout_below="@id/quizCompleted_horizontalSeparator"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content">			    
+
+			        <TableRow
+			            android:layout_width="match_parent"
+			            android:layout_marginTop="5dp"
+			            android:layout_marginBottom="5dp"
+			            >
+	    				<TextView 
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"       
+					        android:text="Correct Answers"
+							android:textColor="#000000"
+						    android:textSize="12sp"
+						    android:typeface="sans"
+						    android:textStyle="bold" 
+						    android:layout_weight="1.0"
+						    android:gravity="left"
+						    android:paddingLeft="10dp" />
+	    								
+			    		<TextView 
+					        android:id="@+id/quizCompleted_correct_answers_count"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"     
+					        android:text="6"
+							android:textColor="@color/green"
+						    android:textSize="20sp"
+						    android:typeface="sans"	
+						    android:textStyle="bold"	
+						    android:layout_weight="1.0"
+						    android:gravity="left" />							    			
+							
+					</TableRow>					  
+
+			        <TableRow
+			            android:layout_width="match_parent" 
+  			            android:layout_marginTop="5dp"
+			            android:layout_marginBottom="5dp"
+			            >
+
+	    				<TextView 
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"       
+					        android:text="Incorrect Answers"
+							android:textColor="#000000"
+						    android:textSize="12sp"
+						    android:typeface="sans"
+						    android:textStyle="bold" 
+						    android:layout_weight="1.0"
+						    android:gravity="left"
+						    android:paddingLeft="10dp" />
+						    
+			    		<TextView 
+					        android:id="@+id/quizCompleted_incorrect_answers_count"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"        
+					        android:text="4"
+							android:textColor="@color/red"
+						    android:textSize="20sp"
+						    android:typeface="sans"	
+						    android:textStyle="bold"	
+						    android:layout_weight="1.0"
+						    android:gravity="left" />							    			
+			    							        			    			
+					</TableRow>					  
+			            			       
+		  </TableLayout>
+		  
+			        <Button 
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"        
+							android:text="Try Again?"
+							android:layout_centerHorizontal="true"
+							android:layout_alignParentBottom="true"			            
+			            />
+			  			    									    		    			           			            			            			     			   
+			</RelativeLayout>
+			    			
+	</RelativeLayout>		    
+	
+</LinearLayout>

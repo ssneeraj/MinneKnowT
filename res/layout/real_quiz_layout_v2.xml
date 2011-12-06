@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/mnknowt_bg"
+    >
+                        
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	    
+	    <ImageButton
+	        	android:id="@+id/realQuiz_homeButton"    
+	            android:background="@drawable/home_button_selector"        
+	            android:layout_width="30dp"	            
+	            android:layout_height="25dp"
+	            android:scaleType="fitXY"
+	            android:paddingLeft="5dp"
+	            android:onClick="showAppHomePage"/>
+
+			<TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+				android:layout_below="@id/realQuiz_homeButton"	   
+			    android:text="Home"
+			    android:textColor="#000000"
+			    android:textSize="10sp"
+			    android:typeface="sans"
+			    android:textStyle="bold"
+			    android:paddingLeft="5dp"
+		    />
+				    	        
+			<TextView 
+			    android:id="@+id/app_title"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_horizontal"	   
+			    android:text="Quiz"
+			    android:textColor="#353535"
+			    android:textSize="22sp"
+			    android:typeface="sans"
+			    android:textStyle="bold"
+			    android:layout_centerHorizontal="true"
+		    />
+    	
+			<RelativeLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/realQuiz_homeButton"
+			    android:layout_margin="40dp"
+			    android:background="@drawable/ricepaper"
+			    android:orientation="vertical" >
+			
+			    <TextView
+			        android:id="@+id/realQuiz_questionText" 
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+					android:layout_below="@id/realQuiz_homeButton"	   
+			    	android:text="Your headligths must be turned on"
+					android:textColor="#000000"
+				    android:textSize="16sp"
+				    android:typeface="sans"	
+				    android:gravity="center_horizontal"
+				    android:layout_margin="5dp"		    	
+			        />
+			    
+				<!-- image view for road sign -->
+				<ImageView
+			        android:id="@+id/realQuiz_roadSignIV" 
+			    	android:layout_width="150dp"
+			    	android:layout_height="150dp"
+					android:layout_below="@id/realQuiz_questionText"	   
+					android:visibility="gone"
+					android:layout_centerHorizontal="true"		    	
+			        />
+			    						  
+			    <View
+			        android:id="@+id/realQuiz_horizontalSeparator"
+			        android:layout_width="fill_parent"
+			        android:layout_below="@id/realQuiz_roadSignIV"
+					android:layout_height="1px"
+					android:layout_margin="5dp"
+					android:background="#000000" />
+			    
+			    <ListView
+			        android:layout_below="@id/realQuiz_horizontalSeparator"
+			        android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:id="@android:id/list"
+					android:dividerHeight="0px"
+					android:focusable="false"
+					android:divider="#000000" />	
+					
+	    		<TextView 
+			        android:id="@+id/realQuiz_answer_result_description"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center"
+			        android:padding="5dp"
+			        android:layout_alignParentBottom="true"
+			        android:visibility="invisible"		        
+			        android:text="Correct ans is D"/>				
+
+	    		<TextView 
+			        android:id="@+id/realQuiz_answer_result_title"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center"
+			        android:padding="5dp"
+			        android:layout_above="@id/realQuiz_answer_result_description"
+			        android:visibility="invisible"		        
+			        android:text="Incorrect"/>	
+			        	    					            		    			           			            			            			     			   
+			</RelativeLayout>
+
+	
+			    			
+	</RelativeLayout>
+
+	    
+	<RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/mnknowt_bottonbar"
+	        android:layout_gravity="bottom"
+	        >
+	    	
+	        <TextView
+	            android:id="@+id/quiz_questionNumberValue"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="1/75"
+	            android:typeface="sans"
+	            android:textStyle="bold"
+	            android:textSize="16sp"
+	            android:layout_centerInParent="true"
+	            android:textColor="@color/white" />
+
+	        <ImageButton 
+	            android:id="@+id/realQuiz_nextButton"
+	            android:layout_width="40dp"	            
+	            android:layout_height="25dp"
+	            android:scaleType="fitXY"	 
+	            android:layout_centerVertical="true"           
+	            android:layout_alignParentRight="true"
+	            android:focusable="true"
+	            android:onClick="showNextQuestion"
+	            android:visibility="invisible"
+	            android:background="@drawable/next_button_selector"
+	            />	        	        
+	</RelativeLayout>			    
+	
+</LinearLayout>
