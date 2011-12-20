@@ -858,8 +858,8 @@
 		<questionId>80</questionId>	
 		<questionText>This road sign means:</questionText>	
 		<correctAnswer>1</correctAnswer>		
-		<answerText>divided highway ends sign</answerText>
-		<answerText>divided highway ahead sign</answerText>
+		<answerText>divided highway ends</answerText>
+		<answerText>divided highway ahead</answerText>
 		<answerText></answerText>
 		<answerText></answerText>
 		<imageFileName>w5</imageFileName>				
@@ -891,7 +891,7 @@
 		<questionId>83</questionId>	
 		<questionText>This road sign means:</questionText>	
 		<correctAnswer>0</correctAnswer>		
-		<answerText>roundabout ahead sign</answerText>
+		<answerText>roundabout ahead</answerText>
 		<answerText>interchange ahead</answerText>
 		<answerText></answerText>
 		<answerText></answerText>
@@ -924,7 +924,7 @@
 		<questionId>86</questionId>	
 		<questionText>This sign means:</questionText>	
 		<correctAnswer>0</correctAnswer>		
-		<answerText>divided highway ahead sign</answerText>
+		<answerText>divided highway ahead</answerText>
 		<answerText></answerText>
 		<answerText></answerText>
 		<answerText></answerText>
@@ -946,8 +946,8 @@
 		<questionId>88</questionId>	
 		<questionText>This sign means:</questionText>	
 		<correctAnswer>0</correctAnswer>		
-		<answerText>school zone sign</answerText>
-		<answerText>pedestrian crossing sign</answerText>
+		<answerText>school zone</answerText>
+		<answerText>pedestrian crossing</answerText>
 		<answerText></answerText>
 		<answerText></answerText>
 		<imageFileName>w13</imageFileName>				
@@ -957,7 +957,7 @@
 		<questionId>89</questionId>	
 		<questionText>This sign means:</questionText>	
 		<correctAnswer>0</correctAnswer>		
-		<answerText>railroad crossing sign </answerText>
+		<answerText>railroad crossing</answerText>
 		<answerText>crossing not allowed</answerText>
 		<answerText></answerText>
 		<answerText></answerText>
@@ -968,8 +968,8 @@
 		<questionId>90</questionId>	
 		<questionText>This sign means:</questionText>	
 		<correctAnswer>1</correctAnswer>		
-		<answerText>only heavy trucks allowed sign</answerText>
-		<answerText>steep grade/hill sign</answerText>
+		<answerText>only heavy trucks allowed</answerText>
+		<answerText>steep grade/hill</answerText>
 		<answerText></answerText>
 		<answerText></answerText>
 		<imageFileName>w15</imageFileName>		
@@ -1122,7 +1122,7 @@
 		<questionId>104</questionId>	
 		<questionText>Which one of these statments is TRUE about seat belts?</questionText>	
 		<correctAnswer>3</correctAnswer>		
-		<answerText>if you are driving below or as low ar 12 mph you do not need seat belts</answerText>
+		<answerText>if you are driving below or at 12 mph you do not need seat belts</answerText>
 		<answerText>only lap belt is sufficient</answerText>
 		<answerText>seat belt is not required by occupants sitting on the back seat</answerText>
 		<answerText>your chances of surviving a car crash is more if you use the lap and shoulder belts together</answerText>
@@ -1417,7 +1417,7 @@
 		<correctAnswer>3</correctAnswer>		
 		<answerText>school bus turning right MUST stop while making a right turn</answerText>
 		<answerText>large commercial vehicles turning right MUST stop while making a right turn</answerText>
-		<answerText>all vehicles must truning right MUST stop while making a right turn</answerText>
+		<answerText>all vehicles turning right MUST stop while making a right turn</answerText>
 		<answerText>all of the above</answerText>
 		<imageFileName>na</imageFileName>		
 	</question>	
@@ -1444,10 +1444,10 @@
 	<question>
 		<questionId>135</questionId>	
 		<questionText>If a traffic signal is not functioning (blacked out)</questionText>	
-		<correctAnswer>2</correctAnswer>		
+		<correctAnswer>1</correctAnswer>		
 		<answerText>slow down and proceed through the intersection with caution</answerText>
-		<answerText>slow down</answerText>
 		<answerText>treat it as a STOP sign</answerText>
+		<answerText></answerText>
 		<answerText></answerText>
 		<imageFileName>na</imageFileName>		
 	</question>	
@@ -1583,7 +1583,7 @@
 	</question>
 	<question>
 		<questionId>149</questionId>	
-		<questionText>It is not mandatory for passengers sitting in the back seat to wear seat belts</questionText>	
+		<questionText>Passengers sitting in the back seat are not required to wear seat belts</questionText>	
 		<correctAnswer>1</correctAnswer>		
 		<answerText>True</answerText>
 		<answerText>False</answerText>
@@ -1596,7 +1596,7 @@
 		<questionText>If you are involved in a crash, and the crash results only in property damage</questionText>	
 		<correctAnswer>2</correctAnswer>		
 		<answerText>it is mandatory to inform law enforcement immediately</answerText>
-		<answerText>you should contact your auto insurance company but it is not necessary to inform the property owner</answerText>
+		<answerText>you should contact your auto insurance company, but it is not necessary to inform the property owner</answerText>
 		<answerText>you should inform the property owner immediately</answerText>
 		<answerText></answerText>
 		<imageFileName>na</imageFileName>		
@@ -1604,11 +1604,11 @@
 	<question>
 		<questionId>151</questionId>	
 		<questionText>In winter, you should keep a distance of at least ____________ while driving behind snowplows</questionText>	
-		<correctAnswer>3</correctAnswer>		
+		<correctAnswer>2</correctAnswer>		
 		<answerText>3 car lengths</answerText>
 		<answerText>1 car lengths</answerText>
-		<answerText>4 car lengths</answerText>
 		<answerText>5 car lengths</answerText>
+		<answerText>4 car lengths</answerText>
 		<imageFileName>na</imageFileName>		
 	</question>		
 	<question>
@@ -1643,7 +1643,7 @@
 	</question>
 	<question>
 		<questionId>155</questionId>	
-		<questionText>A line composed of yellow dashes separating on a two-lane road with traffic moving in both direction indicates</questionText>	
+		<questionText>A line composed of yellow dashes separating a two-lane road with traffic moving in both direction indicates</questionText>	
 		<correctAnswer>0</correctAnswer>		
 		<answerText>passing is allowed</answerText>		
 		<answerText>passing is illegal</answerText>
