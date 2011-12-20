@@ -46,7 +46,7 @@
 	
 	<question>
 		<questionId>5</questionId>	
-		<questionText>You are not legally required to wear a seat belt if you are:</questionText>	
+		<questionText>You are not legally required to wear a seat belt if you are</questionText>	
 		<correctAnswer>0</correctAnswer>		
 		<answerText>driving a pickup truck while engaged in farm work</answerText>
 		<answerText>driving a neighborhood electric vehicle</answerText>
@@ -57,7 +57,7 @@
 	
 	<question>
 		<questionId>6</questionId>	
-		<questionText>A school bus is stopped with its red lights flashing and its stop arm extended, you must stop your vehicle at least _______ from the bus</questionText>	
+		<questionText>A school bus is stopped with its red lights flashing and its stop arm extended, you must stop your vehicle at least _______ from the school bus</questionText>	
 		<correctAnswer>1</correctAnswer>		
 		<answerText>15 feet</answerText>
 		<answerText>20 feet</answerText>
@@ -90,12 +90,12 @@
 	
 	<question>
 		<questionId>9</questionId>	
-		<questionText>When you see a flashing yellow traffic signal at an upcoming intersection, you should</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>slow down and cross the intersection carefully</answerText>
-		<answerText>come to a complete Stop and treat it like a STOP sign</answerText>
-		<answerText>stop. Yield to all cross traffic before crossing the intersection</answerText>
-		<answerText></answerText>
+		<questionText>It is legal to drive in the bicycle lane</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>while entering or exiting the road</answerText>
+		<answerText>while preparing for a turn</answerText>
+		<answerText>Both A and B</answerText>
+		<answerText>when there is no bicyclist using the bicycle lane</answerText>
 		<imageFileName>na</imageFileName>						
 	</question>	
 
@@ -127,7 +127,7 @@
 		<questionText>You may legally block an intersection</questionText>	
 		<correctAnswer>1</correctAnswer>		
 		<answerText>when you entered an intersection on a green light</answerText>
-		<answerText>under no circumstances you can legally block an intersection</answerText>
+		<answerText>under no circumstances</answerText>
 		<answerText>when there is heavy traffic during peak hours</answerText>
 		<answerText>when the traffic signal shows a flashing yellow</answerText>
 		<imageFileName>na</imageFileName>						
@@ -139,7 +139,7 @@
 		<correctAnswer>2</correctAnswer>		
 		<answerText>move to the left lane and stop</answerText>
 		<answerText>move to the right lane and stop</answerText>
-		<answerText>cross the intersection, proceed to the right lane and stop as soon as you can</answerText>
+		<answerText>cross the intersection, proceed to the right lane, and stop as soon as you can</answerText>
 		<answerText></answerText>
 		<imageFileName>na</imageFileName>						
 	</question>	
@@ -158,10 +158,10 @@
 	<question>
 		<questionId>15</questionId>	
 		<questionText>While waiting to turn</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>it is safe to turn your wheels pointing to the right direction if you intend to turn right</answerText>
+		<correctAnswer>0</correctAnswer>		
 		<answerText>keep your wheels straight and your foot on the brake</answerText>
 		<answerText>point your wheels in the direction you intend to turn</answerText>
+		<answerText></answerText>		
 		<answerText></answerText>
 		<imageFileName>na</imageFileName>
 	</question>	
@@ -191,11 +191,11 @@
 	<question>
 		<questionId>18</questionId>	
 		<questionText>At what time are you allowed to pass a school bus?</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>if another driver signals you to proceed</answerText>
+		<correctAnswer>1</correctAnswer>		
 		<answerText>if the school bus is not in motion and the red lights are flashing</answerText>
 		<answerText>if the school bus is in motion</answerText>
-		<answerText>All of the above</answerText>
+		<answerText></answerText>		
+		<answerText></answerText>
 		<imageFileName>na</imageFileName>						
 	</question>	
 	
@@ -204,7 +204,7 @@
 		<questionText>Which one of the following statements is True about blind spots</questionText>	
 		<correctAnswer>1</correctAnswer>		
 		<answerText>blind spots can be eliminated when you use your 2 outside mirrors</answerText>
-		<answerText>tractor trailers and large vehicles have larger blind spots than most passenger vehicles</answerText>		
+		<answerText>tractors, trailers, and large vehicles have larger blind spots than most passenger vehicles</answerText>		
 		<answerText>proper use of all 3 mirrors will eliminate your blind spot</answerText>
 		<answerText>blind spot applies ONLY to trucks and not for smaller vehicles</answerText>
 		<imageFileName>na</imageFileName>						
@@ -357,7 +357,7 @@
 		<questionId>33</questionId>	
 		<questionText>Which one of these statements is True about roundabouts?</questionText>	
 		<correctAnswer>3</correctAnswer>		
-		<answerText>do not stop, pass or change lanes within a roundabout</answerText>
+		<answerText>do not stop, pass, or change lanes within a roundabout</answerText>
 		<answerText>are designed to increase the traffic flow</answerText>
 		<answerText>slow down as you approach the roundabout</answerText>
 		<answerText>all of the above</answerText>
@@ -478,7 +478,7 @@
 		<questionText>When you are merging on to the freeway, you should be driving</questionText>	
 		<correctAnswer>1</correctAnswer>		
 		<answerText>at the posted speed limit</answerText>
-		<answerText>at or the near the same speed as the traffic on the freeway</answerText>		
+		<answerText>at or near the same speed as the traffic on the freeway</answerText>		
 		<answerText>as fast as you can</answerText>		
 		<answerText>5 or 10 miles slower than the traffic on the freeway</answerText>
 		<imageFileName>na</imageFileName>
@@ -563,7 +563,7 @@
 	
 	<question>
 		<questionId>52</questionId>	
-		<questionText>It is legal to stop a vehicle on the interstate freeway if you run out of fuel</questionText>	
+		<questionText>Running out of fuel on a freeway is considered as an emergency</questionText>	
 		<correctAnswer>1</correctAnswer>		
 		<answerText>True</answerText>
 		<answerText>False</answerText>		
@@ -657,7 +657,7 @@
 		<questionId>61</questionId>	
 		<questionText>A flashing yellow light or yellow arrow means</questionText>	
 		<correctAnswer>3</correctAnswer>			
-		<answerText>proceed through the intersection with caution</answerText>		
+		<answerText>slow down and proceed through the intersection with caution</answerText>		
 		<answerText>yield right of way to vehicles and pedestrian already in the intersection</answerText>
 		<answerText>come to a complete stop and treat it like a STOP sign</answerText>
 		<answerText>both A and B</answerText>		
@@ -999,14 +999,14 @@
 
 	<question>
 		<questionId>93</questionId>	
-		<questionText>This sign means:</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>come to a complete stop</answerText>
+		<questionText>If you encounter thunderstorms</questionText>	
+		<correctAnswer>1</correctAnswer>				
+		<answerText>keep your headlight's on high beam to reduce glare</answerText>		
+		<answerText>keep your headlight's on low beam to reduce glare</answerText>		
 		<answerText></answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w18</imageFileName>		
-	</question>
+		<answerText></answerText>		
+		<imageFileName>na</imageFileName>				
+	</question>			
 
 	<question>
 		<questionId>94</questionId>	
@@ -1333,7 +1333,7 @@
 	</question>
 	<question>
 		<questionId>124</questionId>	
-		<questionText>True or False? A person with higher percentage of fat that another person with the same body weight will reach higher alcohol concentration by consuming the same amount of alcohol</questionText>	
+		<questionText>True or False? A person with higher percentage of fat than another person with the same body weight will reach higher alcohol concentration by consuming the same amount of alcohol</questionText>	
 		<correctAnswer>0</correctAnswer>		
 		<answerText>True</answerText>
 		<answerText>False</answerText>
@@ -1403,11 +1403,11 @@
 	</question>	
 	<question>
 		<questionId>131</questionId>	
-		<questionText>Brown road signs indicate</questionText>	
+		<questionText>Brown road signs</questionText>	
 		<correctAnswer>2</correctAnswer>		
 		<answerText>guides and informs</answerText>
 		<answerText>warns and controls in construction zones</answerText>
-		<answerText>indicates historic, cultural or recreation sites</answerText>
+		<answerText>indicates historic, cultural, or recreation sites</answerText>
 		<answerText></answerText>
 		<imageFileName>na</imageFileName>		
 	</question>	
@@ -1637,7 +1637,7 @@
 		<correctAnswer>2</correctAnswer>		
 		<answerText>is used while turning left on solid green light</answerText>		
 		<answerText>is used at an intersection</answerText>
-		<answerText>is used on free way ramp meters</answerText>		
+		<answerText>is used on freeway ramp meters</answerText>		
 		<answerText></answerText>
 		<imageFileName>na</imageFileName>				
 	</question>
@@ -1681,5 +1681,24 @@
 		<answerText></answerText>		
 		<imageFileName>na</imageFileName>				
 	</question>			
-				
+	<question>
+		<questionId>159</questionId>	
+		<questionText>True or False? If there is sufficient room, it is safe to drive a vehicle alongside a motorcycle in the same lane</questionText>	
+		<correctAnswer>1</correctAnswer>				
+		<answerText>True</answerText>		
+		<answerText>False</answerText>		
+		<answerText></answerText>
+		<answerText></answerText>		
+		<imageFileName>na</imageFileName>				
+	</question>
+	<question>
+		<questionId>160</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>come to a complete stop</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w18</imageFileName>		
+	</question>	
 </quiz>	
