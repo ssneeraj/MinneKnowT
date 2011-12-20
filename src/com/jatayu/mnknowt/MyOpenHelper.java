@@ -17,7 +17,7 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 
 	// Database information
 	private static final String	DATABASE_NAME				= "mnknowt.db";
-	private static final int	DATABASE_VERSION			= 1;
+	private static final int	DATABASE_VERSION			= 2;
 
 	public static final String	SCORE_TABLE_NAME			= "score";
 	public static final String	BEST_SCORE_COLUMN			= "bestscore";
@@ -136,9 +136,12 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 	}
 
 	@Override
-	public void onUpgrade(SQLiteDatabase arg0, int arg1, int arg2) {
-		// TODO Auto-generated method stub
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		Log.d(TAG, " Upgrading database version from 1 to 2");
+		db.execSQL("DROP TABLE IF EXISTS quiztracker");
+		db.execSQL("DROP TABLE IF EXISTS attempts");
 
+		onCreate(db);
 	}
 
 }

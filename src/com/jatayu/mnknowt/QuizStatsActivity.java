@@ -64,8 +64,9 @@ public class QuizStatsActivity extends Activity {
 		}
 
 		private void readFromDataBase() {
-			Log.d("QuizStatsActivity QuizReaderTask",
-					" >>> Reading Quiz Stats information from database");
+			if (CommonProps.LOG_ENABLED)
+				Log.d("QuizStatsActivity QuizReaderTask",
+						" >>> Reading Quiz Stats information from database");
 
 			qdbm = new QuizDBManager(context);
 
@@ -83,9 +84,9 @@ public class QuizStatsActivity extends Activity {
 		}
 
 		protected void onPostExecute(Boolean result) {
-
-			Log.d("QuizStatsActivity",
-					" >> QuizReaderTask onPostExecute");
+			if (CommonProps.LOG_ENABLED)
+				Log.d("QuizStatsActivity",
+						" >> QuizReaderTask onPostExecute");
 
 			if (progressDialog.isShowing())
 				progressDialog.dismiss();

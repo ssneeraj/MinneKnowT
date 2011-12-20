@@ -388,7 +388,9 @@ public class MNknowTActivity extends Activity {
 	}
 
 	public void showQuizStatsActivity(View view) {
-		Log.d(TAG, " >>> In showQuizStatsActivity(View view) method");
+		if (CommonProps.LOG_ENABLED)
+			Log.d(TAG,
+					" >>> In showQuizStatsActivity(View view) method");
 		new Thread(new Runnable() {
 			public void run() {
 

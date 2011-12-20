@@ -26,25 +26,31 @@ public class OngoingQuizTracker {
 	}
 
 	public int getTotal_correct_answers() {
-		Log.d(TAG, "Getting total corect answers: "
-				+ total_correct_answers);
+		if (CommonProps.LOG_ENABLED)
+			Log.d(TAG, "Getting total corect answers: "
+					+ total_correct_answers);
 		return this.total_correct_answers;
 	}
 
 	public int getTotal_incorrect_answers() {
-		Log.d(TAG, "Getting total incorect answers: "
-				+ total_incorrect_answers);
+		if (CommonProps.LOG_ENABLED)
+			Log.d(TAG, "Getting total incorect answers: "
+					+ total_incorrect_answers);
 		return this.total_incorrect_answers;
 	}
 
 	public void setCorrectAnswer() {
 		this.total_correct_answers++;
-		Log.d(TAG, "total corect answers: " + total_correct_answers);
+		if (CommonProps.LOG_ENABLED)
+			Log.d(TAG, "total corect answers: "
+					+ total_correct_answers);
 	}
 
 	public void setIncorrectAnswer() {
 		this.total_incorrect_answers++;
-		Log.d(TAG, "total incorect answers: " + total_incorrect_answers);
+		if (CommonProps.LOG_ENABLED)
+			Log.d(TAG, "total incorect answers: "
+					+ total_incorrect_answers);
 	}
 
 	public void resetOngoingQuizTracker() {

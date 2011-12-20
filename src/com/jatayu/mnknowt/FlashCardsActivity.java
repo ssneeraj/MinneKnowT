@@ -238,7 +238,7 @@ public class FlashCardsActivity extends ListActivity {
 		TextView tv = (TextView) child
 				.findViewById(R.id.answerListItemTV1);
 		tv.setBackgroundDrawable(getResources().getDrawable(
-				R.drawable.quiz_answer_border));
+				R.drawable.flashcard_peek_stroke));
 
 		TextView tv2 = (TextView) child
 				.findViewById(R.id.answerListItemTV2);
