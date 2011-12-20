@@ -102,9 +102,8 @@
 					        android:id="@+id/quizCompleted_correct_answers_count"
 					        android:layout_width="wrap_content"
 					        android:layout_height="wrap_content"     
-					        android:text="6"
 							android:textColor="@color/green"
-						    android:textSize="20sp"
+						    android:textSize="22sp"
 						    android:typeface="sans"	
 						    android:textStyle="bold"	
 						    android:layout_weight="1.0"
@@ -130,13 +129,13 @@
 						    android:gravity="left"
 						    android:paddingLeft="10dp" />
 						    
+	    				<!-- Number of Incorrect answers -->
 			    		<TextView 
 					        android:id="@+id/quizCompleted_incorrect_answers_count"
 					        android:layout_width="wrap_content"
 					        android:layout_height="wrap_content"        
-					        android:text="4"
 							android:textColor="@color/red"
-						    android:textSize="20sp"
+						    android:textSize="22sp"
 						    android:typeface="sans"	
 						    android:textStyle="bold"	
 						    android:layout_weight="1.0"
@@ -150,8 +149,12 @@
 					        android:layout_width="wrap_content"
 					        android:layout_height="wrap_content"        
 							android:text="Try Again?"
+						    android:typeface="sans"	
+						    android:textStyle="bold"	
 							android:layout_centerHorizontal="true"
-							android:layout_alignParentBottom="true"			            
+							android:layout_alignParentBottom="true"
+							android:paddingBottom="10dp"
+							android:onClick="takeQuizAgain"			            
 			            />
 			  			    									    		    			           			            			            			     			   
 			</RelativeLayout>

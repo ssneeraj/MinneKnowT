@@ -10,11 +10,12 @@
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content" >
 	    
+	    <!-- Home button -->
 	    <ImageButton
 	        	android:id="@+id/flashcards_homeButton"    
 	            android:background="@drawable/home_button_selector"        
-	            android:layout_width="30dp"	            
-	            android:layout_height="25dp"
+	            android:layout_width="35dp"	            
+	            android:layout_height="30dp"
 	            android:scaleType="fitXY"
 	            android:paddingLeft="5dp"
 	            android:onClick="showAppHomePage"/>
@@ -43,12 +44,13 @@
 			    android:textStyle="bold"
 			    android:layout_centerHorizontal="true"
 		    />
-
+			
+	    <!-- Shuffle button -->
 			<ImageButton
 			    android:id="@+id/flashcards_refreshButton"
 	            android:background="@drawable/refresh_button_selector"        			    
-			    android:layout_width="30dp"
-			    android:layout_height="25dp"
+			    android:layout_width="35dp"
+			    android:layout_height="30dp"
 			    android:focusable="true"
 			    android:scaleType="fitXY"
 			    android:layout_alignParentRight="true"
@@ -68,12 +70,15 @@
 			    android:paddingRight="5dp"
 			    android:layout_alignParentRight="true"
 		    />	
-		    	
+
 			<RelativeLayout
 			    android:layout_width="match_parent"
 			    android:layout_height="wrap_content"
 			    android:layout_below="@id/flashcards_homeButton"
-			    android:layout_margin="40dp"
+			    android:layout_marginLeft="35dp"
+			    android:layout_marginRight="35dp"
+			    android:layout_marginBottom="40dp"
+			    android:layout_marginTop="30dp"
 			    android:background="@drawable/ricepaper"
 			    android:orientation="vertical" >
 			
@@ -86,12 +91,13 @@
 			    	android:text="Your headligths must be turned on"
 					android:textColor="#000000"
 				    android:textSize="16sp"
-				    android:typeface="sans"	
+				    android:typeface="sans"
+				    android:textStyle="bold"	
 				    android:gravity="center_horizontal"
 				    android:layout_margin="5dp"		    	
 			        />
 
-				<!-- image view for road sign -->
+				<!-- image view if the question is about a road sign -->
 				<ImageView
 			        android:id="@+id/flashcards_roadSignIV" 
 			    	android:layout_width="150dp"
@@ -128,7 +134,8 @@
 			        android:padding="5dp"
 			        android:layout_alignParentBottom="true"	
 			        android:onClick="peekCorrectAnswer"
-			        android:textColor="@color/white"	        
+			        android:textColor="@color/white"
+			        android:textSize="20dp"	        
 			        android:text="Peek"/>				    		    			           			            			            			     			   
 			</RelativeLayout>
 
@@ -151,14 +158,14 @@
 	            android:text="1/75"
 	            android:typeface="sans"
 	            android:textStyle="bold"
-	            android:textSize="16sp"
+	            android:textSize="20sp"
 	            android:layout_centerInParent="true"
 	            android:textColor="@color/white" />
 	        
 	        <ImageButton 
 	            android:id="@+id/flashcards_nextButton"
-	            android:layout_width="40dp"	            
-	            android:layout_height="25dp"
+	            android:layout_width="45dp"	            
+	            android:layout_height="30dp"
 	            android:scaleType="fitXY"	 
 	            android:layout_centerVertical="true"           
 	            android:layout_alignParentRight="true"

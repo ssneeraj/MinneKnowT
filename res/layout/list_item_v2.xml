@@ -5,31 +5,29 @@
   android:orientation="horizontal"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  >
+  android:paddingTop="2dp"
+  android:paddingBottom="2dp" >
 
 		<TextView
 		    android:id="@+id/answerListItemTV1"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"   
-		    android:textSize="15sp"
+		    android:textSize="14sp"
 		    android:layout_margin="5dp"
 		    android:textColor="@color/black"
 		    android:textStyle="bold"
 		    android:typeface="sans"
-		    android:focusable="false"
-		/>
+		    android:focusable="false" />
 		
 		<TextView
 		    android:id="@+id/answerListItemTV2"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"   
-		    android:textSize="15sp"
+		    android:textSize="14sp"
 		    android:typeface="sans"
 		    android:textColor="@color/black"
 		    android:layout_margin="5dp"
 		    android:layout_toRightOf="@id/answerListItemTV1"
-		    android:focusable="false"
-		/>
-
+		    android:focusable="false" />
 
 </RelativeLayout>

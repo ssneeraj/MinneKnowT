@@ -7,15 +7,17 @@ import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+/**
+ * A Helper class that manages all the database related stuff in the application
+ * 
+ * @author Neeraj Sharma
+ * 
+ */
 public class MyOpenHelper extends SQLiteOpenHelper {
 
 	// Database information
 	private static final String	DATABASE_NAME				= "mnknowt.db";
 	private static final int	DATABASE_VERSION			= 1;
-
-	// Table information
-	// public static final String QUIZ_TRACKER_TABLE_NAME = "quiztracker";
-	// public static final String ATTEMPTS_TABLE_NAME = "attempts";
 
 	public static final String	SCORE_TABLE_NAME			= "score";
 	public static final String	BEST_SCORE_COLUMN			= "bestscore";
@@ -59,34 +61,33 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 	public MyOpenHelper(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
 
-		// if (CommonProps.LOG_ENABLED)
-		Log.d(TAG, "constructor");
+		if (CommonProps.LOG_ENABLED)
+			Log.d(TAG, "constructor");
 	}
 
-	@Override
 	public void onCreate(SQLiteDatabase db) {
-
-		// if (CommonProps.LOG_ENABLED)
-		Log.d(TAG, "onCreate method: Creating two tables in mnknowt.db");
 
 		try {
 
 			// ------------------ CREATE 'score' TABLE
 			db.execSQL(CREATE_SCORE_TABLE);
-			// if (CommonProps.LOG_ENABLED)
-			Log.d(TAG, " score table Successfully Created!");
+
+			if (CommonProps.LOG_ENABLED)
+				Log.d(TAG, " score table Successfully Created!");
 
 			// ----------- CREATE 'totalquestionsanswered' TABLE
 			db.execSQL(CREATE_TOTAL_QUESTIONS_ANSWERED_TABLE);
-			// if (CommonProps.LOG_ENABLED)
-			Log.d(TAG,
-					" total questions answered table Successfully Created!");
+
+			if (CommonProps.LOG_ENABLED)
+				Log.d(TAG,
+						" total questions answered table Successfully Created!");
 
 			// ------------------ CREATE 'correctincorrect TABLE
 			db.execSQL(CREATE_CORRECT_INCORRECT_TABLE);
-			// if (CommonProps.LOG_ENABLED)
-			Log.d(TAG,
-					" correct incorrect table Successfully Created!");
+
+			if (CommonProps.LOG_ENABLED)
+				Log.d(TAG,
+						" correct incorrect table Successfully Created!");
 
 			// --------------- PUT DEFAULT VALUES IN 'score' TABLE
 			ContentValues content_values_scoreTable = new ContentValues();
@@ -97,9 +98,9 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 			db.insert(MyOpenHelper.SCORE_TABLE_NAME, null,
 					content_values_scoreTable);
 
-			// if (CommonProps.LOG_ENABLED)
-			Log.d(TAG,
-					" score table Initialized with default values!");
+			if (CommonProps.LOG_ENABLED)
+				Log.d(TAG,
+						" score table Initialized with default values!");
 
 			// PUT DEFAULT VALUES IN 'totalquestionsanswered' TABLE
 			ContentValues content_values_totalquestions = new ContentValues();
@@ -109,9 +110,9 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 			db.insert(MyOpenHelper.TOTAL_QUESTIONS_ANSWERED_TABLE_NAME,
 					null, content_values_totalquestions);
 
-			// if (CommonProps.LOG_ENABLED)
-			Log.d(TAG,
-					" totalquestionsanswered table Initialized with default value!");
+			if (CommonProps.LOG_ENABLED)
+				Log.d(TAG,
+						" totalquestionsanswered table Initialized with default value!");
 
 			// ------- PUT DEFAULT VALUES IN 'correctincorrect'
 			// TABLE
@@ -123,9 +124,9 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 
 			db.insert(MyOpenHelper.CORRECT_INCORRECT_TABLE_NAME,
 					null, content_values_correctincorrect);
-			// if (CommonProps.LOG_ENABLED)
-			Log.d(TAG,
-					" correctincorrect table Initialized with default value!");
+			if (CommonProps.LOG_ENABLED)
+				Log.d(TAG,
+						" correctincorrect table Initialized with default value!");
 
 		} catch (SQLiteException sqllite_error) {
 			Log.v(TAG,
@@ -135,49 +136,9 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 	}
 
 	@Override
-	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+	public void onUpgrade(SQLiteDatabase arg0, int arg1, int arg2) {
 		// TODO Auto-generated method stub
 
 	}
-
-	// public boolean resetToDefaultValues(SQLiteDatabase db) {
-	//
-	// try {
-	//
-	// // delete all the rows in quiz tracker table
-	// db.delete(QUIZ_TRACKER_TABLE_NAME, null, null);
-	// db.delete(ATTEMPTS_TABLE_NAME, null, null);
-	//
-	// // default values into quiztracker table
-	// ContentValues content_values = new ContentValues();
-	// for (int i = 1; i <= CommonProps.TOTAL_QUIZ_QUESTIONS; i++) {
-	// content_values.put(
-	// MyOpenHelper.QUESTION_NUMBER_COLUMN,
-	// i);
-	// content_values.put(
-	// MyOpenHelper.CORRECT_ANSWER_TRACKER_COLUMN,
-	// 0);
-	// db.insert(MyOpenHelper.QUIZ_TRACKER_TABLE_NAME,
-	// null, content_values);
-	// }
-	//
-	// if (CommonProps.LOG_ENABLED)
-	// Log.d(TAG,
-	// " quiztracker Table Initialized with default rows!");
-	//
-	// // default values into attempts table
-	// ContentValues content_values_attemptsTable = new ContentValues();
-	// content_values_attemptsTable.put(
-	// MyOpenHelper.ATTEMPTS_COLUMN, 0);
-	// db.insert(ATTEMPTS_TABLE_NAME, null,
-	// content_values_attemptsTable);
-	//
-	// return true;
-	//
-	// } catch (SQLiteException message) {
-	// Log.v(TAG, "Error resetting DB to default values");
-	// return false;
-	// }
-	// }
 
 }

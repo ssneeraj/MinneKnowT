@@ -101,6 +101,7 @@
 			      
 			        <!-- Graph Bar-->
 			        <TableRow
+			            android:id="@+id/quizStats_graphBar_TableRow"
 			            android:layout_width="match_parent"
 			            android:layout_height="wrap_content"
 			            android:background="@color/black"
@@ -158,7 +159,8 @@
 			 		<!-- Graph Bar Label -->
 	    			<TableRow
 						>
-				        <TextView            
+				        <TextView
+				            android:id="@+id/quizStats_total_correct_answers_label"            
 				            android:layout_width="wrap_content"	            
 				            android:layout_height="wrap_content"	            
 							android:text="Correct"
@@ -170,7 +172,8 @@
 						    android:gravity="center"
 						/>
 				        
-				        <TextView            
+				        <TextView
+							android:id="@+id/quizStats_total_incorrect_answers_label"				                        
 				            android:layout_width="wrap_content"	            
 				            android:layout_height="wrap_content"	            
 							android:text="Incorrect"
@@ -191,14 +194,13 @@
 			        android:layout_width="match_parent"
 			        android:layout_height="wrap_content">			    
 
-				<!--  -->
 			        <TableRow
 			            android:layout_width="match_parent"
 			            android:layout_marginTop="5dp"
 			            android:layout_marginBottom="5dp"
 			            >
 				        
-				<!--  -->
+						<!--  Best score label TextView-->
 	    				<TextView 
 					        android:layout_width="wrap_content"
 					        android:layout_height="wrap_content"       
@@ -211,7 +213,7 @@
 						    android:gravity="left"
 						    android:paddingLeft="10dp" />
 	    								
-	    				<!--  -->
+	    				<!-- Best score value TextView -->
 			    		<TextView 
 					        android:id="@+id/quizStats_best_score_value"
 					        android:layout_width="wrap_content"
@@ -226,50 +228,12 @@
 							
 					</TableRow>					  
 
-
-			       				<!-- 
-			        <TableRow
-			            android:layout_width="match_parent" 
-  			            android:layout_marginTop="5dp"
-			            android:layout_marginBottom="5dp"
-			            >
-
-			    				  
-	    				<TextView 
-					        android:layout_width="wrap_content"
-					        android:layout_height="wrap_content"       
-					        android:text="Average Score"
-							android:textColor="#000000"
-						    android:textSize="12sp"
-						    android:typeface="sans"
-						    android:textStyle="bold" 
-						    android:layout_weight="1.0"
-						    android:gravity="left"
-						    android:paddingLeft="10dp" />
-						    
-	    							
-			    		<TextView 
-					        android:id="@+id/quizStats_average_score_value"
-					        android:layout_width="wrap_content"
-					        android:layout_height="wrap_content"        
-					        android:text="6/10"
-							android:textColor="#000000"
-						    android:textSize="16sp"
-						    android:typeface="sans"	
-						    android:textStyle="bold"	
-						    android:layout_weight="1.0"
-						    android:gravity="left" />							    			
-			    							        			    			
-					</TableRow>					  
-			            			  -->       
-				<!--  -->
 			        <TableRow
 			            android:layout_width="match_parent" 
 			            android:layout_marginTop="5dp"
-			            android:layout_marginBottom="5dp"
-			            >
+			            android:layout_marginBottom="5dp" >
 			            
-			            <!-- label for 'worst' score -->
+			            <!-- 'Worst Score' label TextView-->
 	    				<TextView 
 					        android:layout_width="wrap_content"
 					        android:layout_height="wrap_content"       
@@ -282,7 +246,7 @@
 						    android:gravity="left"
 						    android:paddingLeft="10dp" />
 
-	    							<!--  -->
+			            <!-- 'Worst Score' value TextView -->
 			    		<TextView 
 					        android:id="@+id/quizStats_worst_score_value"
 					        android:layout_width="wrap_content"
@@ -293,109 +257,10 @@
 						    android:typeface="sans"	
 						    android:textStyle="bold"	
 						    android:layout_weight="1.0"
-						    android:gravity="left" />							    			
-					        			    			
+						    android:gravity="left" />							    								        			    			
 					</TableRow>					  
-
-			 				<!--  
-			        <TableRow
-			            android:layout_width="match_parent"
-			            android:layout_marginTop="5dp"
-			            android:layout_marginBottom="5dp"
-			            >
-			            
-	    				<TextView 
-					        android:layout_width="wrap_content"
-					        android:layout_height="wrap_content"       
-					        android:text="Longest Quiz Time"
-							android:textColor="#000000"
-						    android:textSize="12sp"
-						    android:typeface="sans"
-						    android:textStyle="bold" 
-						    android:layout_weight="1.0"
-						    android:gravity="left"
-						    android:paddingLeft="10dp" />
-
-			    		<TextView 
-					        android:id="@+id/realQuiz_answer_result_title"
-					        android:layout_width="wrap_content"
-					        android:layout_height="wrap_content"        
-					        android:text="10:00 min"
-							android:textColor="#000000"
-						    android:textSize="16sp"
-						    android:typeface="sans"	
-						    android:textStyle="bold"	
-						    android:layout_weight="1.0"
-						    android:gravity="left" />							    			
-					        			    			
-					</TableRow>					  
-
-						
-			        <TableRow
-			            android:layout_width="match_parent"
-			            android:layout_marginTop="5dp"
-			            android:layout_marginBottom="5dp"
-			            >
-			            
-	    				<TextView 
-					        android:layout_width="wrap_content"
-					        android:layout_height="wrap_content"       
-					        android:text="Shortest Quiz Time"
-							android:textColor="#000000"
-						    android:textSize="12sp"
-						    android:typeface="sans"
-						    android:textStyle="bold" 
-						    android:layout_weight="1.0"
-						    android:gravity="left"
-						    android:paddingLeft="10dp" />
-
-			    		<TextView 
-					        android:id="@+id/realQuiz_answer_result_title"
-					        android:layout_width="wrap_content"
-					        android:layout_height="wrap_content"        
-					        android:text="1:00 min"
-							android:textColor="#000000"
-						    android:textSize="16sp"
-						    android:typeface="sans"	
-						    android:textStyle="bold"	
-						    android:layout_weight="1.0"
-						    android:gravity="left" />							    			
-					</TableRow>					  
-			            			       
-					
-			        <TableRow
-			            android:layout_width="match_parent"
-			            android:layout_marginTop="5dp"
-			            android:layout_marginBottom="5dp"
-			            >
-			            
-	    				<TextView 
-					        android:layout_width="wrap_content"
-					        android:layout_height="wrap_content"       
-					        android:text="Average Quiz Time"
-							android:textColor="#000000"
-						    android:textSize="12sp"
-						    android:typeface="sans"
-						    android:textStyle="bold" 
-						    android:layout_weight="1.0"
-						    android:gravity="left"
-						    android:paddingLeft="10dp" />
-				
-			    		<TextView 
-					        android:id="@+id/realQuiz_answer_result_title"
-					        android:layout_width="wrap_content"
-					        android:layout_height="wrap_content"        
-					        android:text="3:05 min"
-							android:textColor="#000000"
-						    android:textSize="16sp"
-						    android:typeface="sans"	
-						    android:textStyle="bold"	
-						    android:layout_weight="1.0"
-						    android:gravity="left" />							    			
-					</TableRow>	
-					-->			            			            			            					
 			  </TableLayout>
-			  			    									    		    			           			            			            			     			   
+			  	
 			</RelativeLayout>
 			    			
 	</RelativeLayout>		    

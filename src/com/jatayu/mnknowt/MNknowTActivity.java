@@ -23,9 +23,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
- * Main activity for the application. This is called when the app is launched
+ * Main activity for the application. This is called when the application is
+ * launched
  * 
- * @author sharman
+ * @author Neeraj Sharma
  * 
  */
 public class MNknowTActivity extends Activity {
@@ -33,7 +34,7 @@ public class MNknowTActivity extends Activity {
 	private static final String	TAG			= "MinneknowTactivity:";
 	private QuizCache		quizcache;
 
-	// temporary variable to store one single QandA set
+	// temporary variables to store one single QandA set
 	private String			tempQuestionId		= "";
 	private String			tempQuestionText	= "";
 	private String			tempCorrectAnswer	= "";
@@ -57,12 +58,8 @@ public class MNknowTActivity extends Activity {
 	}
 
 	public boolean onOptionsItemSelected(MenuItem item) {
-		if (item.getItemId() == R.id.resetMenuItem) {
-			Log.d(TAG, "Option Menu item clicked to clear DB");
-			QuizDBManager qdm = new QuizDBManager(
-					MNknowTActivity.this);
-			qdm.resetQuizDatabase();
-		} else if (item.getItemId() == R.id.aboutMenuItem) {
+
+		if (item.getItemId() == R.id.aboutMenuItem) {
 			// set up dialog
 			final Dialog dialog = new Dialog(MNknowTActivity.this);
 			dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -98,39 +95,6 @@ public class MNknowTActivity extends Activity {
 			// now that the dialog is set up, it's time to show it
 			dialog.show();
 
-		} else if (item.getItemId() == R.id.helpMenuItem) {
-			final Dialog dialog = new Dialog(MNknowTActivity.this);
-			dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-
-			dialog.setContentView(R.layout.custom_dialog_layout);
-
-			// set up image view
-			ImageView img = (ImageView) dialog
-					.findViewById(R.id.customDialogIcon);
-			img.setImageResource(R.drawable.icon);
-
-			// set up text
-			TextView text = (TextView) dialog
-					.findViewById(R.id.customDialogMessage);
-			String message = "\nMNknowT app features\n\n"
-					+ "\t\tQuiz is un-timed and comprises of 75 questions. You can ONLY review the quiz result once you have answered all the 75 questions.\n\n"
-					+ "\t\tRoad Signs includes flash cards for popular road signs.\n\n"
-					+ "\t\tStats stores history of all the previous quiz attempts. To reset the quiz history go to the app home page, then select the 'menu' button that displays menu options, and select 'Reset History'.\n\n";
-			text.setText(message);
-
-			// set up button
-			Button closeButton = (Button) dialog
-					.findViewById(R.id.customDialogButton);
-			closeButton.setOnClickListener(new View.OnClickListener() {
-
-				public void onClick(View v) {
-					dialog.dismiss();
-
-				}
-			});
-
-			// now that the dialog is set up, it's time to show it
-			dialog.show();
 		}
 
 		return true;

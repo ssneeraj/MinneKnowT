@@ -4,54 +4,56 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
  	android:layout_width="fill_parent"
  	android:layout_height="fill_parent"
- 	android:background="@drawable/quiz_question_text_border">
- 		 
-	<ImageView android:id="@+id/customDialogIcon"
-		 android:layout_width="wrap_content"
-		 android:layout_height="wrap_content"
-		 android:layout_margin="5dp"/>
- 
+ 	android:background="@drawable/ricepaper">
+ 	
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        	 
+		<ImageView
+		    android:id="@+id/customDialogIcon"
+		  	android:src="@drawable/icon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"/>
+	 
  	 	<TextView
-	 	 android:id="@+id/customDialogTitle"
-	 	 android:text="MN knowT version 1.0"
-	 	 android:layout_toRightOf="@id/customDialogIcon"	
-	 	 android:padding="5dp" 
-	 	 android:textColor="#000000"	 
-		 android:layout_width="match_parent"
-		 android:layout_height="wrap_content"
-		 android:typeface="serif"
-		 android:gravity="center"
-		 android:textSize="15sp"/>
-
-		<ScrollView
-		    android:layout_width="fill_parent"
-		    android:layout_below="@id/customDialogIcon"
-		    android:layout_height="wrap_content">
-
-			<LinearLayout
-		    	android:orientation="vertical"
-		    	android:layout_width="fill_parent"
-		    	android:layout_height="wrap_content">
-		    		  
-			 	<TextView
-			 	 android:id="@+id/customDialogMessage"
-			 	 android:layout_below="@id/customDialogIcon"
-				 android:layout_width="wrap_content"
-				 android:layout_height="wrap_content" 
-				 android:textColor="#000000"/>
-  
- 				<Button
-			 		android:id="@+id/customDialogButton"
-			 		android:layout_below="@id/customDialogMessage"
-			 		android:layout_width="wrap_content"
-			 		android:layout_height="wrap_content"
-			 		android:layout_gravity="center"
-			 		android:padding="10dp"
-			 		android:background="@drawable/roadsign_number_border"
-			 		android:text=" Close "/>
-
-			</LinearLayout>
-			
-		</ScrollView>
-  	 
+			android:id="@+id/customDialogTitle"
+			android:text="MNknowT version 2.0"
+			android:layout_toRightOf="@id/customDialogIcon"	
+			android:padding="5dp" 
+			android:textColor="#000000"	 
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:typeface="sans"
+			android:textStyle="bold"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:textSize="20sp"/>
+	</LinearLayout>
+ 	 	
+	<TextView
+		android:id="@+id/customDialogMessage"
+		android:layout_below="@id/top"
+		android:layout_width="wrap_content"
+		android:padding="5dp"
+		android:textSize="15sp"
+		android:typeface="sans"		
+		android:layout_height="wrap_content" 
+		android:textColor="#000000"/>  
+			 						
+	<Button
+ 		android:id="@+id/customDialogButton"
+ 		android:layout_gravity="center"
+ 		android:layout_alignParentBottom="true"
+ 		android:layout_centerHorizontal="true"
+ 		android:padding="10dp"
+		android:layout_width="100dp"	            
+        android:layout_height="40dp"			 		
+ 		android:background="@drawable/mnknowt_btn_press"
+ 		android:textColor="@color/white"
+ 		android:textStyle="bold"
+ 		android:text="Close"/>
+		    	 
 </RelativeLayout>

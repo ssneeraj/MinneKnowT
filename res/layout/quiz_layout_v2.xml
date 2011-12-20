@@ -9,12 +9,13 @@
 	<RelativeLayout
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content" >
-	    
+
+		<!-- Home button -->	    
 	    <ImageButton
 	        	android:id="@+id/realQuiz_homeButton"    
 	            android:background="@drawable/home_button_selector"        
-	            android:layout_width="30dp"	            
-	            android:layout_height="25dp"
+	            android:layout_width="35dp"	            
+	            android:layout_height="30dp"
 	            android:scaleType="fitXY"
 	            android:paddingLeft="5dp"
 	            android:onClick="showAppHomePage"/>
@@ -52,6 +53,7 @@
 			    android:background="@drawable/ricepaper"
 			    android:orientation="vertical" >
 			
+			    <!-- question -->			    
 			    <TextView
 			        android:id="@+id/realQuiz_questionText" 
 			    	android:layout_width="wrap_content"
@@ -61,11 +63,12 @@
 					android:textColor="#000000"
 				    android:textSize="16sp"
 				    android:typeface="sans"	
+				    android:textStyle="bold"				    
 				    android:gravity="center_horizontal"
 				    android:layout_margin="5dp"		    	
 			        />
 			    
-				<!-- image view for road sign -->
+				<!-- image view if the question is about a road sign -->
 				<ImageView
 			        android:id="@+id/realQuiz_roadSignIV" 
 			    	android:layout_width="150dp"
@@ -99,7 +102,10 @@
 			        android:gravity="center"
 			        android:padding="5dp"
 			        android:layout_alignParentBottom="true"
-			        android:visibility="invisible"		        
+			        android:visibility="invisible"	
+				    android:textSize="14sp"
+				    android:typeface="sans"
+				    android:textStyle="normal"			        			        	        
 			        android:text="Correct ans is D"/>				
 
 	    		<TextView 
@@ -109,15 +115,15 @@
 			        android:gravity="center"
 			        android:padding="5dp"
 			        android:layout_above="@id/realQuiz_answer_result_description"
-			        android:visibility="invisible"		        
+			        android:visibility="invisible"
+				    android:textSize="20sp"
+				    android:typeface="sans"
+				    android:textStyle="bold"			        
 			        android:text="Incorrect"/>	
 			        	    					            		    			           			            			            			     			   
-			</RelativeLayout>
-
-	
+			</RelativeLayout>	
 			    			
 	</RelativeLayout>
-
 	    
 	<RelativeLayout
 	        android:layout_width="match_parent"
@@ -133,14 +139,15 @@
 	            android:text="1/75"
 	            android:typeface="sans"
 	            android:textStyle="bold"
-	            android:textSize="16sp"
+	            android:textSize="20sp"
 	            android:layout_centerInParent="true"
 	            android:textColor="@color/white" />
 
+		    <!-- Next button -->
 	        <ImageButton 
 	            android:id="@+id/realQuiz_nextButton"
-	            android:layout_width="40dp"	            
-	            android:layout_height="25dp"
+	            android:layout_width="45dp"	            
+	            android:layout_height="30dp"
 	            android:scaleType="fitXY"	 
 	            android:layout_centerVertical="true"           
 	            android:layout_alignParentRight="true"

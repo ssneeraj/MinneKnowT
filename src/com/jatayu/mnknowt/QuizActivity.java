@@ -19,13 +19,12 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 /**
- * This class displays a question and 4 answer choices in ListView. It gets an
- * individual question and answer set at a time and displays it.
+ * This class displays a question and the corresponding answer choices in
+ * ListView.
  * 
- * @author sharman
+ * @author Neeraj Sharma
  * 
  */
-
 public class QuizActivity extends ListActivity {
 
 	// this points to the question number that the user is currently
@@ -36,17 +35,6 @@ public class QuizActivity extends ListActivity {
 	private ArrayList<QandA>		quizArrayList		= QuizCache.getInstance()
 											.getQuiz();
 	private String				correct_answer;
-	// private QuizStat quiz_stat = QuizStat.getInstance();
-
-	// If the user selects an incorrect answer or does not attempt to
-	// answer,
-	// store a '0' in integer array 'answer_selected_stat' and store a '1'
-	// for
-	// correct answer choice
-	// private int[] answer_selected_stat = new
-	// int[CommonProps.TOTAL_QUIZ_QUESTIONS];
-	private OngoingQuizTracker		quiz_tracker;
-	// private boolean questionAttempted = false;
 	private StringBuffer			quizQuestionNumberText;
 	private AnswerCustomAdapter		custom_adapter;
 
@@ -54,10 +42,11 @@ public class QuizActivity extends ListActivity {
 
 	private HashMap<String, Integer>	roadSignMap;
 
-	@Override
+	private OngoingQuizTracker		quiz_tracker;
+
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.real_quiz_layout_v2);
+		setContentView(R.layout.quiz_layout_v2);
 
 		initializeRoadSignHashMap();
 
@@ -68,13 +57,7 @@ public class QuizActivity extends ListActivity {
 
 		getListView().setCacheColorHint(0);
 
-		// quiz_stat.clearQuizStat();
-
-		quiz_tracker = OngoingQuizTracker.getInstance();
-		quiz_tracker.resetValues();
-
 		showSingleQandA();
-
 	}
 
 	private void initializeRoadSignHashMap() {
@@ -108,13 +91,18 @@ public class QuizActivity extends ListActivity {
 		roadSignMap.put("w27", R.drawable.w27);
 		roadSignMap.put("w28", R.drawable.w28);
 		roadSignMap.put("w29", R.drawable.w29);
+		roadSignMap.put("w30", R.drawable.w30);
+		roadSignMap.put("w31", R.drawable.w31);
 	}
 
 	/**
-	 * This method populates the Quiz UI (that is displays a single question
-	 * and (4 answer choices) with Quiz data which is stored in a
+	 * Displays a single question text and corresponding answer choices in a
+	 * Custom ListView
 	 */
 	private void showSingleQandA() {
+
+		quiz_tracker = OngoingQuizTracker.getInstance();
+		quiz_tracker.resetOngoingQuizTracker();
 
 		currentQuestionIndex = 0;
 
@@ -142,13 +130,6 @@ public class QuizActivity extends ListActivity {
 
 		System.arraycopy(singleQandA.getAnswers(), 0, answerData, 0, 4);
 
-		// We are using ArrayAdapter to bind underlying date (an array
-		// of strings) to ListView defined in quizlayout.xml
-		// if (array_adapter == null) {
-		// array_adapter = new ArrayAdapter<String>(this,
-		// R.layout.list_item, answerData);
-		// }
-
 		custom_adapter = new AnswerCustomAdapter(this, answerData);
 
 		TextView realQuiz_questionText = (TextView) this
@@ -162,10 +143,9 @@ public class QuizActivity extends ListActivity {
 		// This binds the array adapter to our QuizActvity
 		// setListAdapter(array_adapter);
 		setListAdapter(custom_adapter);
-		// array_adapter.setNotifyOnChange(true);
+
 	}
 
-	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 
 		if (!hasAnswered) {
@@ -179,18 +159,9 @@ public class QuizActivity extends ListActivity {
 			TextView realQuiz_answer_result_description = (TextView) this
 					.findViewById(R.id.realQuiz_answer_result_description);
 
-			// If onListItemClick is invoked it means the user has
-			// selected
-			// an answer choice
-			// questionAttempted = true;
-
-			// String toastText = null;
-
 			Integer selectedListItemPosition = position;
 
-			// compare if the user select answer choice matches the
-			// actual
-			// correct answer
+			// If selected answer is Correct
 			if (correct_answer
 					.equalsIgnoreCase(selectedListItemPosition
 							.toString())) {
@@ -198,22 +169,11 @@ public class QuizActivity extends ListActivity {
 						.setTextColor(getResources()
 								.getColor(R.color.green));
 				realQuiz_answer_result_title.setText("Correct");
-				// toastText = "correct answer";
-				// v.setBackgroundColor(Color.GREEN);
-
-				// answer_selected_stat[currentQuestionIndex] =
-				// CommonProps.ANSWERED_CORRECT;
-
-				// If correct answer, quiz tracker sets correct
-				// answer
-				// tracker to 1
-				// quiz_tracker.setCorrectAnswerTracker(
-				// currentQuestionIndex, 1);
 
 				// If the user selects the correct answer
 				quiz_tracker.setCorrectAnswer();
-
 			} else {
+				// If selected answer is Incorrect
 
 				realQuiz_answer_result_title
 						.setTextColor(Color.RED);
@@ -230,44 +190,25 @@ public class QuizActivity extends ListActivity {
 
 				TextView tv = (TextView) child
 						.findViewById(R.id.answerListItemTV1);
-				tv.setTextColor(getResources().getColor(
-						R.color.green));
+				tv.setBackgroundDrawable(getResources()
+						.getDrawable(R.drawable.incorrect_answer_stroke));
 
 				TextView tv2 = (TextView) child
 						.findViewById(R.id.answerListItemTV2);
 				tv2.setTextColor(getResources().getColor(
 						R.color.green));
 
-				// toastText = "wrong answer";
-				// v.setBackgroundColor(Color.RED);
-
-				// answer_selected_stat[currentQuestionIndex] =
-				// CommonProps.ANSWERED_INCORRECT;
-
-				// If incorrect answer quiz tracker sets correct
-				// answer
-				// tracker to 0
-				// quiz_tracker.setCorrectAnswerTracker(
-				// currentQuestionIndex, 0);
-
 				// If the user selects the incorrect answer
 				quiz_tracker.setIncorrectAnswer();
-
 			}
 
 			v.setFocusable(false);
 			v.setClickable(false);
 
-			// Toast toast = Toast.makeText(QuizActivity.this,
-			// toastText,
-			// Toast.LENGTH_SHORT);
-			// toast.show();
-
 			l.setFocusable(false);
 
 			ImageButton realQuiz_nextButton = (ImageButton) findViewById(R.id.realQuiz_nextButton);
 			realQuiz_nextButton.setVisibility(ImageButton.VISIBLE);
-			// showNextQuestion();
 
 			hasAnswered = true;
 		}
@@ -275,7 +216,6 @@ public class QuizActivity extends ListActivity {
 	}
 
 	public void showNextQuestion(View view) {
-
 		hasAnswered = false;
 
 		ImageButton realQuiz_nextButton = (ImageButton) findViewById(R.id.realQuiz_nextButton);
@@ -290,54 +230,16 @@ public class QuizActivity extends ListActivity {
 		realQuiz_answer_result_description
 				.setVisibility(TextView.INVISIBLE);
 
-		// When the user selects 'Next' button, first check if the
-		// questions was attempted or not!
-		// if (questionAttempted) {
-		// questionAttempted = false;
-		// } else {
-		// // if the question was not attempted we assume that the
-		// // answer tracker is 0
-		// quiz_tracker.setCorrectAnswerTracker(
-		// currentQuestionIndex, 0);
-		// }
-
 		// first increment the currentQuestionIndex so that we advance
 		// to the next question
 		currentQuestionIndex++;
 
 		// check if the quiz index is more than 10. If it is more than
-		// 10 it indicates that the quis has completed
+		// 10 it indicates that the quiz has completed
 		if (currentQuestionIndex > (CommonProps.TOTAL_QUIZ_QUESTIONS - 1)) {
-			// Intent intent = new Intent(this,
-			// QuizCompletedActivity.class);
-
 			new QuizDBSaverTask(QuizActivity.this).execute();
-			// startActivity(intent);
-
-			// Since Quiz is over we want to finish QuizActivity
-			// finish();
-
 			return;
 		}
-
-		// If Quiz is over and 'Next' is pressed, then show a Toast
-		// if (currentQuestionIndex > QuizCache
-		// .getQuizTotalNumberofQuestion() - 1) {
-		//
-		// // save the answer selected stat into quiz stat
-		// quiz_stat.saveQandAInfo(answer_selected_stat);
-		//
-		// // invoke QuizResultActivity
-		// Intent intent = new Intent(this,
-		// QuizResultActivity.class);
-		//
-		// startActivity(intent);
-		//
-		// // Since Quiz is over we want to finish QuizActivity
-		// finish();
-		//
-		// return;
-		// }
 
 		QandA singleQandA = quizArrayList.get(currentQuestionIndex);
 
@@ -345,8 +247,7 @@ public class QuizActivity extends ListActivity {
 
 		// Check if it is a road sign questions if so, then show the
 		// ImageView which will display the road sign
-
-		if (singleQandA.getImageFileName().length() > 2) {
+		if (!singleQandA.getImageFileName().equalsIgnoreCase("na")) {
 			quiz_roadSign_IV.setVisibility(View.VISIBLE);
 			quiz_roadSign_IV.setImageResource(roadSignMap.get(
 					singleQandA.getImageFileName())
@@ -354,12 +255,6 @@ public class QuizActivity extends ListActivity {
 		} else {
 			quiz_roadSign_IV.setVisibility(View.GONE);
 		}
-
-		// TextView questionNumber = (TextView) this
-		// .findViewById(R.id.questionNumber);
-		// questionNumber.setText("Question: "
-		// + singleQandA.getQuestionNumber() + " of "
-		// + QuizCache.getQuizTotalNumberofQuestion());
 
 		// Setup quiz question number text
 		quizQuestionNumberText.setLength(0);
@@ -369,22 +264,12 @@ public class QuizActivity extends ListActivity {
 
 		TextView question = (TextView) this
 				.findViewById(R.id.realQuiz_questionText);
-		// question.setText(singleQandA.getQuestionText());
 		question.setText(singleQandA.getQuestionText());
 
 		correct_answer = singleQandA.getCorrectAnswer();
 
 		System.arraycopy(singleQandA.getAnswers(), 0, answerData, 0, 4);
 
-		// We are using ArrayAdapter to bind underlying date (an array
-		// of strings) to ListView in quizlayout
-		// if (array_adapter == null) {
-		// array_adapter = new ArrayAdapter<String>(this,
-		// R.layout.list_item, answerData);
-		// }
-
-		// This binds the array adapter to our QuizActvity
-		// setListAdapter(array_adapter);
 		if (custom_adapter == null) {
 			custom_adapter = new AnswerCustomAdapter(this,
 					answerData);
@@ -402,17 +287,10 @@ public class QuizActivity extends ListActivity {
 	}
 
 	public void showAppHomePage(View view) {
-		finish(); // invoke finish() will close this (i.e.
-		// QuizActivity)
+		finish();
 	}
 
-	public void shuffleQuiz(View view) {
-		currentQuestionIndex = 0;
-		QuizCache.getInstance().shuffleQuizCache();
-	}
-
-	public String getCorrectAnswerText() {
-
+	private String getCorrectAnswerText() {
 		QandA singleQandA = quizArrayList.get(currentQuestionIndex);
 
 		String ans = singleQandA.getCorrectAnswer();
@@ -431,8 +309,7 @@ public class QuizActivity extends ListActivity {
 		return ansLetter;
 	}
 
-	public int getCorrectAnswerPosition() {
-
+	private int getCorrectAnswerPosition() {
 		QandA singleQandA = quizArrayList.get(currentQuestionIndex);
 
 		String ans = singleQandA.getCorrectAnswer();
@@ -466,16 +343,15 @@ public class QuizActivity extends ListActivity {
 		}
 
 		protected Boolean doInBackground(Void... arg0) {
-
 			isQuizSavedToDB = true;
 			saveToDataBase();
 			return isQuizSavedToDB;
 		}
 
 		private void saveToDataBase() {
-			// if (CommonProps.LOG_ENABLED)
-			Log.d("QuizActivity",
-					" >>> Saving current Quiz information to database");
+			if (CommonProps.LOG_ENABLED)
+				Log.d("QuizActivity",
+						" >>> Saving current Quiz information to database");
 
 			QuizDBManager qdbm = new QuizDBManager(context);
 			qdbm.saveQuizInformationToDB();

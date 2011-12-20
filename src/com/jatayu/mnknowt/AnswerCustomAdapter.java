@@ -7,9 +7,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-/*
- * Custom adapter used by QuizReviewActvity
- */
 public class AnswerCustomAdapter extends BaseAdapter {
 
 	private Activity	context;
@@ -45,8 +42,8 @@ public class AnswerCustomAdapter extends BaseAdapter {
 		LayoutInflater inflator = context.getLayoutInflater();
 
 		if (convertView == null) {
-			convertView = inflator
-					.inflate(R.layout.list_item, null);
+			convertView = inflator.inflate(R.layout.list_item_v2,
+					null);
 
 			holder = new ViewHolder();
 
@@ -96,11 +93,9 @@ public class AnswerCustomAdapter extends BaseAdapter {
 	}
 
 	private class ViewHolder {
-		TextView	answerChoiceLabel;	// displaysthe question
-							// text
+		TextView	answerChoiceLabel;
 
-		TextView	answerChoiceText;	// displays correct
-							// answer text
+		TextView	answerChoiceText;
 	}
 
 }

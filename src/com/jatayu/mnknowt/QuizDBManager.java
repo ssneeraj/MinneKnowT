@@ -11,6 +11,7 @@ public class QuizDBManager {
 	private static final String	TAG	= "QuizDBManager class: ";
 	private MyOpenHelper		db_helper;
 	private SQLiteDatabase		db;
+	private OngoingQuizTracker	quiz_tracker;
 
 	public QuizDBManager(Context context) {
 		db_helper = new MyOpenHelper(context);
@@ -22,35 +23,17 @@ public class QuizDBManager {
 		}
 	}
 
+	/*
+	 * Invoked after the quiz is completed
+	 */
 	public void saveQuizInformationToDB() {
+		quiz_tracker = OngoingQuizTracker.getInstance();
+
 		updateScoreTable();
 		updateCorrectIncorrectTable();
 		updateTotalQuestionsAnsweredTable();
 
 		closeDB();
-	}
-
-	public void resetQuizDatabase() {
-		// new Thread(new Runnable() {
-		//
-		// public void run() {
-		//
-		// if (CommonProps.LOG_ENABLED)
-		// Log.d(TAG,
-		// ">>> About to reset rows in DB");
-		//
-		// SQLiteDatabase db = db_helper
-		// .getWritableDatabase();
-		//
-		// db_helper.resetToDefaultValues(db);
-		//
-		// if (CommonProps.LOG_ENABLED)
-		// Log.d(TAG,
-		// ">>> reset to default values done!");
-		//
-		// }
-		// }).start();
-
 	}
 
 	private void updateTotalQuestionsAnsweredTable() {
@@ -83,8 +66,6 @@ public class QuizDBManager {
 
 	private void updateCorrectIncorrectTable() {
 		db = db_helper.getWritableDatabase();
-		OngoingQuizTracker quiz_tracker = OngoingQuizTracker
-				.getInstance();
 
 		// ContentValues that will be written into 'correctincorrect'
 		// TABLE
@@ -127,8 +108,6 @@ public class QuizDBManager {
 
 	private void updateScoreTable() {
 		db = db_helper.getWritableDatabase();
-		OngoingQuizTracker quiz_tracker = OngoingQuizTracker
-				.getInstance();
 
 		// ContentValues that will be written into score table
 		ContentValues content_values_score_table = new ContentValues();
@@ -150,8 +129,8 @@ public class QuizDBManager {
 
 		// first check if the best_score = 11 and worst_score = 11
 		// this means the score table has default values and is being
-		// read for the first time
-		// we simple write the ongoing quiz tracker values
+		// read for the first time we simple write the ongoing quiz
+		// tracker values
 		if (best_score == 11 && worst_score == 11) {
 			content_values_score_table
 					.put(MyOpenHelper.BEST_SCORE_COLUMN,
@@ -163,12 +142,10 @@ public class QuizDBManager {
 		} else {
 
 			// if the correct answers in recently completed quiz is
-			// greated
-			// than the best_score in the database then replace the
-			// best
-			// score in the DB with the current total correct answer
-			// value
-			// that is in the OngoingQuizTracker
+			// greater than the best_score in the database then
+			// replace the best score in the DB with the current
+			// total correct answer value that is in the
+			// OngoingQuizTracker
 			if (quiz_tracker.getTotal_correct_answers() > best_score) {
 				content_values_score_table
 						.put(MyOpenHelper.BEST_SCORE_COLUMN,
@@ -189,6 +166,7 @@ public class QuizDBManager {
 								worst_score);
 			}
 		}
+
 		// update the DB with ContentValues
 		db.update(MyOpenHelper.SCORE_TABLE_NAME,
 				content_values_score_table, null, null);
@@ -201,19 +179,17 @@ public class QuizDBManager {
 	}
 
 	public Cursor getQuizScore() {
-		// if (CommonProps.LOG_ENABLED)
-		Log.d(TAG, ">>> Reading 'score' table from DB");
-
-		// SQLiteDatabase db = db_helper.getReadableDatabase();
+		if (CommonProps.LOG_ENABLED)
+			Log.d(TAG, ">>> Reading 'score' table from DB");
 
 		return db.query(MyOpenHelper.SCORE_TABLE_NAME, null, null,
 				null, null, null, null);
 	}
 
 	public Cursor getTotalQuestionsAnswered() {
-		// if (CommonProps.LOG_ENABLED)
-
-		Log.d(TAG, ">>> Reading 'totalquestionsanswered' table from DB");
+		if (CommonProps.LOG_ENABLED)
+			Log.d(TAG,
+					">>> Reading 'totalquestionsanswered' table from DB");
 
 		db = db_helper.getReadableDatabase();
 
@@ -222,9 +198,9 @@ public class QuizDBManager {
 	}
 
 	public Cursor getTotalCorrectIncorrectStats() {
-
-		// if (CommonProps.LOG_ENABLED)
-		Log.d(TAG, ">>> Reading 'correctincorrect' table from DB");
+		if (CommonProps.LOG_ENABLED)
+			Log.d(TAG,
+					">>> Reading 'correctincorrect' table from DB");
 
 		db = db_helper.getReadableDatabase();
 

@@ -1,9 +1,9 @@
 package com.jatayu.mnknowt;
 
 /**
- * Template for a single question and it's answer choices
+ * Template for a single question and it's corresponding answer choices
  * 
- * @author sharman
+ * @author Neeraj Sharma
  * 
  */
 public class QandA {

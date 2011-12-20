@@ -3,6 +3,13 @@ package com.jatayu.mnknowt;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ * The entire quiz is parsed from the xml and parser and then saved in the
+ * Singleton QuizCache
+ * 
+ * @author Neeraj Sharma
+ * 
+ */
 public class QuizCache {
 
 	private static ArrayList<QandA>	quizArrayList;
