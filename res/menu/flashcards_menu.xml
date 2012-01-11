@@ -2,7 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
     
     <item
-        android:id="@+id/flashcards_bookmark_menu_item"
-        android:title="Bookmark" />
+        android:id="@+id/add_bookmark_menu_item"
+        android:title="Add Bookmark" />
 
+    <item 
+        android:id="@+id/remove_bookmark_menu_item"
+        android:title="Remove Bookmark" />
 </menu>

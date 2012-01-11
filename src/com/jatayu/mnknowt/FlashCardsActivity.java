@@ -41,6 +41,15 @@ public class FlashCardsActivity extends ListActivity {
 
 	private float				touchX;
 
+	private int				actualCurrentQuestionId;
+
+	private final int			ADD_BOOKMARK		= 1;
+	private final int			REMOVE_BOOKMARK		= 2;
+
+	public void setActualCurrentQuestionId(int actualCurrentQuestionId) {
+		this.actualCurrentQuestionId = actualCurrentQuestionId;
+	}
+
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.flashcards_layout_v2);
@@ -69,12 +78,29 @@ public class FlashCardsActivity extends ListActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 
-		if (item.getItemId() == R.id.flashcards_bookmark_menu_item) {
-			CheckBox checkbox = (CheckBox) findViewById(R.id.flashcards_checkbox);
-			checkbox.setChecked(true);
-			checkbox.setVisibility(View.VISIBLE);
-
+		if (item.getItemId() == R.id.add_bookmark_menu_item) {
+			manageBookmarkfromOptionsMenu(ADD_BOOKMARK);
+		} else if (item.getItemId() == R.id.remove_bookmark_menu_item) {
+			manageBookmarkfromOptionsMenu(REMOVE_BOOKMARK);
 		}
+		return true;
+	}
+
+	@Override
+	public boolean onPrepareOptionsMenu(Menu menu) {
+
+		// Read from QBookmark singleton
+		int bookmarkStatus = QBookmark.getInstance()
+				.getIndividualBookMark(
+						this.actualCurrentQuestionId);
+		if (bookmarkStatus == 0) { // show add bookmark menu item
+			menu.getItem(0).setVisible(true);
+			menu.getItem(1).setVisible(false);
+		} else if (bookmarkStatus == 1) {// show remove bookmark menu
+			menu.getItem(0).setVisible(false);
+			menu.getItem(1).setVisible(true);
+		}
+
 		return true;
 	}
 
@@ -150,9 +176,61 @@ public class FlashCardsActivity extends ListActivity {
 		flashcards_questionNumberTextView
 				.setText(quizQuestionNumberText);
 
+		manageBookmark(singleQandA);
+
 		// This binds the array adapter to our QuizActvity
 		// setListAdapter(array_adapter);
 		setListAdapter(custom_adapter);
+	}
+
+	private void manageBookmarkfromOptionsMenu(int value) {
+		// CheckBox checkbox = (CheckBox)
+		// findViewById(R.id.flashcards_checkbox);
+		ImageView checkbox = (ImageView) findViewById(R.id.flashcards_checkbox);
+		if (value == ADD_BOOKMARK) {
+			QBookmark.getInstance().setBookmarks(
+					(actualCurrentQuestionId), 1);
+			// checkbox.setChecked(true);
+			checkbox.setVisibility(View.VISIBLE);
+		} else if (value == REMOVE_BOOKMARK) {
+			QBookmark.getInstance().setBookmarks(
+					(actualCurrentQuestionId), 0);
+			// checkbox.setChecked(false);
+			checkbox.setVisibility(View.GONE);
+		}
+
+	}
+
+	private void manageBookmark(QandA currentQandA) {
+		// Get the current question number
+		this.actualCurrentQuestionId = Integer.parseInt(currentQandA
+				.getQuestionNumber());
+
+		if (this.actualCurrentQuestionId > 0)
+			this.actualCurrentQuestionId = this.actualCurrentQuestionId - 1;
+		// save the current actual question Id so that this can be used
+		// by options menu
+		// setActualCurrentQuestionId(actualQuestionId);
+
+		// look up the bookmark value for the current question number in
+		// Singleton
+		int currentQandABookmark = QBookmark.getInstance()
+				.getIndividualBookMark(
+						this.actualCurrentQuestionId);
+
+		// Set the checkbox depending on the value of bookmark
+		// CheckBox checkbox = (CheckBox)
+		// findViewById(R.id.flashcards_checkbox);
+		ImageView checkbox = (ImageView) findViewById(R.id.flashcards_checkbox);
+
+		if (currentQandABookmark == 0) {
+			// checkbox.setChecked(false);
+			checkbox.setVisibility(View.GONE);
+		} else if (currentQandABookmark == 1) {
+			// checkbox.setChecked(true);
+			checkbox.setVisibility(View.VISIBLE);
+		}
+
 	}
 
 	private void manageCheckBox(boolean checkedStatus,
@@ -163,8 +241,6 @@ public class FlashCardsActivity extends ListActivity {
 	}
 
 	public void showNextQuestion(View view) {
-
-		manageCheckBox(false, View.GONE);
 
 		// first increment the currentQuestionIndex so that we advance
 		// to the next question
@@ -229,6 +305,8 @@ public class FlashCardsActivity extends ListActivity {
 		peekBar.setText("Peek");
 		peekBar.setTextColor(getResources().getColor(R.color.white));
 		peekBar.setGravity(Gravity.RIGHT);
+
+		manageBookmark(singleQandA);
 
 		setListAdapter(custom_adapter);
 	}

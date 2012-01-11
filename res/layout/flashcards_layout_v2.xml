@@ -5,7 +5,7 @@
     android:orientation="vertical" 
     android:background="@drawable/mnknowt_bg"
     >
-                        
+         
 	<RelativeLayout
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content" >
@@ -82,14 +82,22 @@
 			    android:background="@drawable/ricepaper"
 			    android:orientation="vertical" >
 			
-			    <!-- flag button -->
+			    <!-- flag button 
 			    <CheckBox
 			        android:id="@+id/flashcards_checkbox" 
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:visibility="gone"		        
 			        />
-			    
+			        -->
+    			<ImageView 
+			        android:id="@+id/flashcards_checkbox"
+			        android:src="@drawable/bookmark"
+			        android:layout_width="30dp"
+			        android:layout_height="30dp"
+					android:visibility="gone"	 
+				 />
+    						    
 			    <!-- question -->
 			    <TextView
 			        android:id="@+id/flashcards_questionText" 
