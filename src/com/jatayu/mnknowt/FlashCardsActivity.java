@@ -8,8 +8,12 @@ import android.app.ListActivity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -41,6 +45,8 @@ public class FlashCardsActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.flashcards_layout_v2);
 
+		QuestionBookmark.getInstance();
+
 		initializeRoadSignHashMap();
 
 		// Shuffle the questions
@@ -51,6 +57,25 @@ public class FlashCardsActivity extends ListActivity {
 		getListView().setCacheColorHint(0);
 
 		showIndividualFlashCard();
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuInflater inflator = getMenuInflater();
+		inflator.inflate(R.menu.flashcards_menu, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+
+		if (item.getItemId() == R.id.flashcards_bookmark_menu_item) {
+			CheckBox checkbox = (CheckBox) findViewById(R.id.flashcards_checkbox);
+			checkbox.setChecked(true);
+			checkbox.setVisibility(View.VISIBLE);
+
+		}
+		return true;
 	}
 
 	private void initializeRoadSignHashMap() {
@@ -130,7 +155,16 @@ public class FlashCardsActivity extends ListActivity {
 		setListAdapter(custom_adapter);
 	}
 
+	private void manageCheckBox(boolean checkedStatus,
+			int checkBoxVivibility) {
+		CheckBox checkbox = (CheckBox) findViewById(R.id.flashcards_checkbox);
+		checkbox.setChecked(checkedStatus);
+		checkbox.setVisibility(checkBoxVivibility);
+	}
+
 	public void showNextQuestion(View view) {
+
+		manageCheckBox(false, View.GONE);
 
 		// first increment the currentQuestionIndex so that we advance
 		// to the next question
