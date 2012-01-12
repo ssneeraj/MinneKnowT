@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/mnknowt_bg">
+
+	<TextView 
+	    android:id="@+id/app_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="MNknowT"
+	    android:textColor="#353535"
+	    android:gravity="center"
+	    android:textSize="22sp"
+	    android:typeface="sans"
+	    android:textStyle="bold"/>    
+
+	<TextView 
+	    android:id="@+id/app_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="v 2.0"
+	    android:textSize="12sp"
+	    android:textColor="#353535"
+	    android:gravity="center"
+	    android:typeface="sans"
+	    android:textStyle="bold"/>
+		
+	<TableLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	
+	    <TableRow
+	        android:gravity="center_horizontal">	       
+	        <ImageButton
+	            android:src="@drawable/flashcard_icon"
+	            android:background="@drawable/buttonselector"	            
+	            android:layout_width="100dp"	            
+	            android:layout_height="80dp"
+	            android:scaleType="fitXY"
+	            android:focusable="true"
+	            android:onClick="showFlashCardsActivity"
+	            android:layout_marginTop="20dp"				
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"/>
+	        
+	        <Button
+	            android:background="@drawable/buttonselector"	            
+	            android:layout_width="100dp"	            
+	            android:layout_height="80dp"
+	            android:text="@string/question_mark"
+				android:textColor="#FFFFFF"
+				android:typeface="sans"
+				android:textStyle="bold"
+				android:textSize="42sp"	  
+				android:gravity="center"   
+				android:onClick="showQuizActivity"        
+	            android:layout_marginTop="20dp"				
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp" />
+	    </TableRow>
+
+	    <TableRow
+	         android:gravity="center_horizontal">
+	        <TextView            
+	            android:layout_width="match_parent"	            
+	            android:layout_height="wrap_content"
+				android:layout_gravity="center"	            
+				android:text="Flash Cards"
+				android:textColor="#FFFFFF"
+				android:textStyle="bold"
+				android:typeface="sans"
+				android:textSize="16sp" />
+	        <TextView            
+	            android:layout_width="match_parent"	            
+	            android:layout_height="wrap_content"
+				android:layout_gravity="center"	            
+				android:text="Quiz"
+				android:textColor="#FFFFFF"
+				android:textStyle="bold"
+				android:typeface="sans"
+				android:textSize="16sp" />     
+	    </TableRow>
+	        	        
+	    <TableRow
+	         android:gravity="center_horizontal">	        
+	        <Button
+	            android:background="@drawable/buttonselector"	            
+	            android:layout_width="100dp"	            
+	            android:layout_height="80dp"
+	            android:text="+"
+				android:textColor="#FFFFFF"
+				android:typeface="sans"
+				android:textStyle="bold"
+				android:textSize="42sp"	  
+				android:gravity="center"   
+				android:onClick="showQuizBookmarkActivity"        
+	            android:layout_marginTop="20dp"				
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"/>
+	        <Button
+	            android:background="@drawable/buttonselector"	            
+	            android:layout_width="100dp"	            
+	            android:layout_height="80dp"
+	            android:text="%"
+				android:textColor="#FFFFFF"
+				android:typeface="sans"
+				android:textStyle="bold"
+				android:textSize="42sp"	  
+				android:gravity="center"   
+				android:onClick="showQuizStatsActivity"         
+	            android:layout_marginTop="20dp"				
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"/>	        	        
+	    </TableRow>
+
+	    <TableRow
+	         android:gravity="center_horizontal">
+	        <TextView            
+	            android:layout_width="match_parent"	            
+	            android:layout_height="wrap_content"
+				android:layout_gravity="center"	            
+				android:text="Bookmarks"
+				android:textColor="#FFFFFF"
+				android:textStyle="bold"
+				android:typeface="sans"
+				android:textSize="16sp"
+				android:gravity="center_horizontal"/>
+	        <TextView            
+	            android:layout_width="match_parent"	            
+	            android:layout_height="wrap_content"
+				android:layout_gravity="center"	            
+				android:text="Stats"
+				android:textColor="#FFFFFF"
+				android:textStyle="bold"
+				android:typeface="sans"
+				android:textSize="16sp"/>	        
+	    </TableRow>	        	         	        	    
+	</TableLayout>		
+</LinearLayout>
