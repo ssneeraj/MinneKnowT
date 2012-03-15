@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>72</questionId>	
+		<questionText>A school bus is stopped with its red lights flashing and its stop arm extended, you must stop your vehicle at least _______ from the school bus</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>15 feet</answerText>
+		<answerText>20 feet</answerText>
+		<answerText>25 feet</answerText>
+		<answerText>10 feet</answerText>
+		<imageFileName>na</imageFileName>				
+	</question>
+	<question>
+		<questionId>73</questionId>	
+		<questionText>At what time are you allowed to pass a school bus?</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>if the school bus is not in motion and the red lights are flashing</answerText>
+		<answerText>if the school bus is in motion</answerText>
+		<answerText></answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>						
+	</question>	
+</quiz>

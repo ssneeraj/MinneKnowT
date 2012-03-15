@@ -17,7 +17,7 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 
 	// Database information
 	private static final String	DATABASE_NAME				= "mnknowt.db";
-	private static final int	DATABASE_VERSION			= 2;
+	private static final int	DATABASE_VERSION			= 3;
 
 	public static final String	SCORE_TABLE_NAME			= "score";
 	public static final String	BEST_SCORE_COLUMN			= "bestscore";

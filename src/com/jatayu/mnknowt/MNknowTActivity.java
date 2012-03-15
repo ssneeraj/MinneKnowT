@@ -6,20 +6,29 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 /**
@@ -43,12 +52,24 @@ public class MNknowTActivity extends Activity {
 
 	private static final int	FLASH_CARDS_ACTIVITY	= 0;
 	private static final int	QUIZ_ACTIVITY		= 1;
+	private static final String	PREFS_NAME		= "mnknowtPrefs";
+	private static int		appUsageCount;
+	private boolean			appReviewDone;
 
 	/** Called when the activity is first created. */
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		setContentView(R.layout.apphome_layout_v2_0_1);
+		// code for getting shared preferences
+		SharedPreferences prefs = getSharedPreferences(PREFS_NAME,
+				Activity.MODE_PRIVATE);
+		appUsageCount = prefs.getInt("appUsageCount", 0);
+		appReviewDone = prefs.getBoolean("appReviewStatus", false);
+		if (appUsageCount % 5 == 0 && !appReviewDone) {
+			showAppFeedbackDialog();
+		}
+
+		setContentView(R.layout.apphome_layout_v2);
 	}
 
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -107,10 +128,7 @@ public class MNknowTActivity extends Activity {
 			new SetupQuizTask(MNknowTActivity.this,
 					FLASH_CARDS_ACTIVITY).execute();
 		} else {
-			// since QuizCache is not empty directly show the Quiz
-			Intent intent = new Intent(MNknowTActivity.this,
-					FlashCardsActivity.class);
-			startActivity(intent);
+			showFlashCardsChoicesDialog();
 		}
 	}
 
@@ -141,6 +159,7 @@ public class MNknowTActivity extends Activity {
 			this.activity = minneknowTActivity;
 			this.context = activity;
 			this.activityType = activityType;
+
 			progressDialog = new ProgressDialog(context);
 
 			quizcache = QuizCache.getInstance();
@@ -148,7 +167,7 @@ public class MNknowTActivity extends Activity {
 
 		@Override
 		protected void onPreExecute() {
-			this.progressDialog.setMessage("Loading Quiz");
+			this.progressDialog.setMessage("Loading...");
 			this.progressDialog.show();
 		}
 
@@ -181,10 +200,8 @@ public class MNknowTActivity extends Activity {
 				QuizCache.setQuizcacheEmpty(false);
 
 				if (this.activityType == FLASH_CARDS_ACTIVITY) {
-					Intent intent = new Intent(
-							MNknowTActivity.this,
-							FlashCardsActivity.class);
-					startActivity(intent);
+					showFlashCardsChoicesDialog();
+
 				} else if (this.activityType == QUIZ_ACTIVITY) {
 					Intent intent = new Intent(
 							MNknowTActivity.this,
@@ -346,22 +363,22 @@ public class MNknowTActivity extends Activity {
 				if (CommonProps.LOG_ENABLED)
 					Log.i(TAG, " Yay! One question parsed");
 				else {
-					Log.i(TAG, "saved QId: "
-							+ tempQuestionId);
-					Log.i(TAG, "saved QText"
-							+ tempQuestionText);
-					Log.i(TAG, "saved correctA: "
-							+ tempCorrectAnswer);
-					Log.i(TAG, "saved A0: "
-							+ tempAnswers[0]);
-					Log.i(TAG, "saved A1: "
-							+ tempAnswers[1]);
-					Log.i(TAG, "saved A2: "
-							+ tempAnswers[2]);
-					Log.i(TAG, "saved A3: "
-							+ tempAnswers[3]);
-					Log.i(TAG, "saved ImageFileName: "
-							+ tempImageFileName);
+					// Log.i(TAG, "saved QId: "
+					// + tempQuestionId);
+					// Log.i(TAG, "saved QText"
+					// + tempQuestionText);
+					// Log.i(TAG, "saved correctA: "
+					// + tempCorrectAnswer);
+					// Log.i(TAG, "saved A0: "
+					// + tempAnswers[0]);
+					// Log.i(TAG, "saved A1: "
+					// + tempAnswers[1]);
+					// Log.i(TAG, "saved A2: "
+					// + tempAnswers[2]);
+					// Log.i(TAG, "saved A3: "
+					// + tempAnswers[3]);
+					// Log.i(TAG, "saved ImageFileName: "
+					// + tempImageFileName);
 
 					// Create an instance of single QandA to
 					// store one QandA set
@@ -403,4 +420,304 @@ public class MNknowTActivity extends Activity {
 
 	}
 
+	public void showQBookmarkTest() {
+
+	}
+
+	private ListView	lv;
+	private Dialog		dialog;
+
+	public void showFlashCardsChoicesDialog() {
+
+		// Set up dialog
+		dialog = new Dialog(this);
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setTitle("Select category");
+
+		Context mContext = getApplicationContext();
+		LayoutInflater inflater = (LayoutInflater) mContext
+				.getSystemService(LAYOUT_INFLATER_SERVICE);
+		View layout = inflater.inflate(
+				R.layout.flashcards_choice_dialog_layout,
+				(ViewGroup) findViewById(R.id.layout_root));
+
+		lv = (ListView) layout.findViewById(R.id.listview);
+
+		String[] stringArray = new String[] { "All", "Accident",
+				"Children", "Commercial vehicle",
+				"Construction & Workzone", "Crosswalk",
+				"Driving under influence", "Emergency vehicle",
+				"Headlights", "Intersection", "Lane markings",
+				"Merge & Exit", "Parking", "Passing",
+				"Pedestrian & Byclist", "Rail road crossing",
+				"school bus", "Seat belt and Air bags",
+				"Severe weather", "Signaling & Lane change",
+				"Speed", "Traffic Signal", "Turns", "Other",
+				"Road Signs" };
+
+		ArrayAdapter<String> modeAdapter = new ArrayAdapter<String>(
+				this, android.R.layout.simple_list_item_1,
+				android.R.id.text1, stringArray);
+
+		lv.setAdapter(modeAdapter);
+		lv.setCacheColorHint(0);
+		builder.setView(layout);
+		dialog = builder.create();
+
+		dialog.show();
+
+		lv.setOnItemClickListener(new OnItemClickListener() {
+
+			public void onItemClick(AdapterView<?> parent,
+					View view, int position, long id) {
+
+				Log.i("MNKnowT setOnItemClickListener get item at position",
+						new Integer(position)
+								.toString());
+
+				Intent intent = new Intent(
+						MNknowTActivity.this,
+						FlashCardsActivity.class);
+
+				Bundle bundle = new Bundle();
+
+				bundle.putIntArray("questionRange",
+						getQuestionRange(position));
+				intent.putExtras(bundle);
+				startActivity(intent);
+
+				dismissDialog();
+
+			}
+		});
+	}
+
+	public void dismissDialog() {
+		dialog.dismiss();
+	}
+
+	public int[] getQuestionRange(int position) {
+
+		int[] questionRange = new int[2];
+
+		switch (position) {
+
+		// All
+			case 0:
+				questionRange[0] = 0;
+				questionRange[1] = 162;
+				break;
+
+			// Accidents
+			case 1:
+				questionRange[0] = 0;
+				questionRange[1] = 1;
+				break;
+
+			// Children
+			case 2:
+				questionRange[0] = 2;
+				questionRange[1] = 5;
+				break;
+
+			// Commercial vehicle
+			case 3:
+				questionRange[0] = 6;
+				questionRange[1] = 9;
+				break;
+
+			// Construction & Work zone
+			case 4:
+				questionRange[0] = 10;
+				questionRange[1] = 13;
+				break;
+
+			// Crosswalk
+			case 5:
+				questionRange[0] = 14;
+				questionRange[1] = 15;
+				break;
+
+			// Driving under influence
+			case 6:
+				questionRange[0] = 16;
+				questionRange[1] = 21;
+				break;
+
+			// Emergency vehicle
+			case 7:
+				questionRange[0] = 22;
+				questionRange[1] = 23;
+				break;
+
+			// Headlights
+			case 8:
+				questionRange[0] = 24;
+				questionRange[1] = 29;
+				break;
+
+			// Intersection
+			case 9:
+				questionRange[0] = 30;
+				questionRange[1] = 38;
+				break;
+
+			// Lane markings
+			case 10:
+				questionRange[0] = 39;
+				questionRange[1] = 43;
+				break;
+
+			// Merge and Exit
+			case 11:
+				questionRange[0] = 44;
+				questionRange[1] = 47;
+				break;
+
+			// Parking
+			case 12:
+				questionRange[0] = 48;
+				questionRange[1] = 57;
+				break;
+
+			// Passing
+			case 13:
+				questionRange[0] = 58;
+				questionRange[1] = 63;
+				break;
+
+			// Pedestrian & Bicylist
+			case 14:
+				questionRange[0] = 64;
+				questionRange[1] = 66;
+				break;
+
+			// Rail road crossing
+			case 15:
+				questionRange[0] = 67;
+				questionRange[1] = 70;
+				break;
+
+			// School bus
+			case 16:
+				questionRange[0] = 71;
+				questionRange[1] = 72;
+				break;
+
+			// Seat belts & Airbags
+			case 17:
+				questionRange[0] = 73;
+				questionRange[1] = 79;
+				break;
+
+			// Severe Weather
+			case 18:
+				questionRange[0] = 80;
+				questionRange[1] = 84;
+				break;
+
+			// Signaling & Lane change
+			case 19:
+				questionRange[0] = 85;
+				questionRange[1] = 88;
+				break;
+
+			// Speed
+			case 20:
+				questionRange[0] = 89;
+				questionRange[1] = 94;
+				break;
+
+			// Traffic light
+			case 21:
+				questionRange[0] = 95;
+				questionRange[1] = 102;
+				break;
+
+			// Turns
+			case 22:
+				questionRange[0] = 103;
+				questionRange[1] = 107;
+				break;
+
+			// Other
+			case 23:
+				questionRange[0] = 108;
+				questionRange[1] = 140;
+				break;
+
+			// Road Signs
+			case 24:
+				questionRange[0] = 141;
+				questionRange[1] = 162;
+				break;
+
+		}
+
+		return questionRange;
+	}
+
+	public void showAppFeedbackDialog() {
+		// set up dialog
+		final Dialog dialog2 = new Dialog(MNknowTActivity.this);
+		dialog2.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+		dialog2.setContentView(R.layout.app_feedback);
+
+		Button later = (Button) dialog2.findViewById(R.id.laterButton);
+		later.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View v) {
+				dialog2.dismiss();
+			}
+		});
+
+		Button feedback = (Button) dialog2
+				.findViewById(R.id.feedbackButton);
+		feedback.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View v) {
+				appReviewDone = true;
+
+				setSharedPrefs();
+
+				Intent feedbackIntent = new Intent(
+						Intent.ACTION_VIEW,
+						Uri.parse("market://details?id="
+								+ "com.jatayu.mnknowt"));
+				startActivity(feedbackIntent);
+				dialog2.dismiss();
+			}
+		});
+
+		Button doNotShowButton = (Button) dialog2
+				.findViewById(R.id.doNotShowButton);
+		doNotShowButton.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View v) {
+				appReviewDone = true;
+
+				setSharedPrefs();
+			}
+		});
+
+		dialog2.show();
+
+	}
+
+	@Override
+	protected void onStop() {
+		super.onStop();
+
+		setSharedPrefs();
+	}
+
+	private void setSharedPrefs() {
+		// code for setting shared preferences
+		SharedPreferences prefs = getSharedPreferences(PREFS_NAME, 0);
+		SharedPreferences.Editor editor = prefs.edit();
+		editor.putInt("appUsageCount", appUsageCount + 1);
+		editor.putBoolean("appReviewStatus", appReviewDone);
+		editor.commit();
+	}
 }

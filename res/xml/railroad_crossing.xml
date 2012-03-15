@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>68</questionId>	
+		<questionText>It is illegal to pass any vehicle within ________ of a rail road crossing</questionText>	
+		<correctAnswer>2</correctAnswer>			
+		<answerText>150 feet</answerText>		
+		<answerText>200 feet</answerText>		
+		<answerText>100 feet</answerText>
+		<answerText>50 feet</answerText>		
+		<imageFileName>na</imageFileName>
+	</question>		
+	<question>
+		<questionId>69</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>railroad crossing</answerText>
+		<answerText>crossing not allowed</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w14</imageFileName>				
+	</question>	
+	<question>
+		<questionId>70</questionId>	
+		<questionText>At railroad crossing when the lights or gates are activated, you must stop _______ from the nearest rail or gate</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>50 feet</answerText>
+		<answerText>20 feet</answerText>
+		<answerText>15 feet</answerText>
+		<answerText>10 feet</answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+	<question>
+		<questionId>71</questionId>	
+		<questionText>At railroad crossing, if your vehicle has manual transmission</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>do not shift gears while your vehicle is within a crossing</answerText>
+		<answerText>shift down the gear after entering the railroad crossing</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+</quiz>

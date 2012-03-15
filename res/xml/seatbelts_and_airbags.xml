@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>74</questionId>	
+		<questionText>Passengers sitting in the back seat are not required to wear seat belts</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+	<question>
+		<questionId>75</questionId>	
+		<questionText>The lap seat belt should be positioned</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>across your abdomen or soft part of your stomach</answerText>		
+		<answerText>across you hipbones or upper thighs</answerText>
+		<answerText></answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>				
+	</question>	
+	<question>
+		<questionId>76</questionId>	
+		<questionText>You are not legally required to wear a seat belt if you are</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>driving a pickup truck while engaged in farm work</answerText>
+		<answerText>driving a neighborhood electric vehicle</answerText>
+		<answerText>riding in the back seat of the vehicle</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>				
+	</question>		
+	<question>
+		<questionId>77</questionId>	
+		<questionText>Which one of these statment's is TRUE about seat belts?</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>if you are driving below or at 12 mph you do not need seat belts</answerText>
+		<answerText>only lap belt is sufficient</answerText>
+		<answerText>seat belt is not required by occupants sitting on the back seat</answerText>
+		<answerText>your chances of surviving a car crash is more if you use the lap and shoulder belts together</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>		
+	<question>
+		<questionId>78</questionId>	
+		<questionText>True or False? Airbags are designed to keep the occupants from being ejected</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>79</questionId>	
+		<questionText>Keep your hands on the _____________  positions on the steering wheel</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>8 and 4 o’clock</answerText>
+		<answerText>10 and 2 o’clock</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+	<question>
+		<questionId>80</questionId>	
+		<questionText>The distance between the driver and the steering should be at least _________</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>10 inches</answerText>
+		<answerText>30 inches</answerText>
+		<answerText>15 inches</answerText>
+		<answerText>5 inches</answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+</quiz>

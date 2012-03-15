@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>142</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>come to a complete stop</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w18</imageFileName>		
+	</question>
+	<question>
+		<questionId>143</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>change lane</answerText>		
+		<answerText>merge right</answerText>
+		<answerText>keep to the right of traffic island or median</answerText>		
+		<answerText></answerText>
+		<imageFileName>w31</imageFileName>				
+	</question>	
+	<question>
+		<questionId>144</questionId>	
+		<questionText>Brown road signs</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>guides and informs</answerText>
+		<answerText>warns and controls in construction zones</answerText>
+		<answerText>indicates historic, cultural, or recreation sites</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+	<question>
+		<questionId>145</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>interstate Freeway</answerText>
+		<answerText>county road</answerText>
+		<answerText>U.S. Highway</answerText>
+		<answerText></answerText>
+		<imageFileName>w22</imageFileName>		
+	</question>
+	<question>
+		<questionId>146</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>1</correctAnswer>
+		<answerText>interstate Freeway</answerText>		
+		<answerText>U.S. Highway</answerText>
+		<answerText>county road</answerText>
+		<answerText></answerText>
+		<imageFileName>w23</imageFileName>		
+	</question>
+	<question>
+		<questionId>147</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>you are leaving a one way traffic road and entering a two way traffic road</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w26</imageFileName>		
+	</question>
+	<question>
+		<questionId>148</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>fire station sign</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w27</imageFileName>		
+	</question>
+	<question>
+		<questionId>149</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>sharp turn ahead sign</answerText>
+		<answerText>sharp curve ahead sign</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w6</imageFileName>				
+	</question>	
+	<question>
+		<questionId>150</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>traffic signal ahead</answerText>
+		<answerText>traffic signal not working</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w7</imageFileName>				
+	</question>
+	
+	<question>
+		<questionId>151</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>roundabout ahead</answerText>
+		<answerText>interchange ahead</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w8</imageFileName>				
+	</question>
+		
+	<question>
+		<questionId>152</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>divided highway ahead</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w11</imageFileName>				
+	</question>
+	<question>
+		<questionId>153</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>school zone</answerText>
+		<answerText>pedestrian crossing</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w13</imageFileName>				
+	</question>
+	<question>
+		<questionId>154</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>only heavy trucks allowed</answerText>
+		<answerText>steep grade/hill</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w15</imageFileName>		
+	</question>
+	<question>
+		<questionId>155</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>Minnesota Highway</answerText>
+		<answerText>Country road</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w17</imageFileName>		
+	</question>
+
+	<question>
+		<questionId>156</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>winding road</answerText>
+		<answerText>road curves sharply ahead</answerText>
+		<answerText>slippery road</answerText>
+		<answerText></answerText>
+		<imageFileName>w1</imageFileName>				
+	</question>
+	
+	<question>
+		<questionId>157</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>zoo ahead</answerText>		
+		<answerText>deer crossing warning sign</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w2</imageFileName>				
+	</question>	
+	<question>
+		<questionId>158</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>right lane ends</answerText>
+		<answerText>additional right lane of traffic begins</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w10</imageFileName>				
+	</question>		
+	<question>
+		<questionId>159</questionId>	
+		<questionText>Blue road signs are</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>informational signs</answerText>
+		<answerText>regulatory signs</answerText>
+		<answerText>warning signs</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>160</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>divided highway ends</answerText>
+		<answerText>divided highway ahead</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w5</imageFileName>				
+	</question>
+	<question>
+		<questionId>161</questionId>	
+		<questionText>You should obey the instructions from the guards in the school zone</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>only during school hours</answerText>
+		<answerText>only when children are present</answerText>
+		<answerText>at all times</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>				
+	</question>	
+	<question>
+		<questionId>162</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>slippery road</answerText>
+		<answerText>winding road</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w29</imageFileName>		
+	</question>		
+	<question>
+		<questionId>163</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>do not enter that lane or road if the sign is facing you</answerText>
+		<answerText>no outlet ahead</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w20</imageFileName>		
+	</question>	
+</quiz>	

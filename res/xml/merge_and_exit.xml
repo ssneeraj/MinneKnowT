@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>45</questionId>	
+		<questionText>If you're driving on an Interstate (freeway) and a car is attempting to merge into your lane, you should</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>accelerate quickly</answerText>
+		<answerText>reduce your speed quickly</answerText>
+		<answerText>if possible, safely make room for the merging vehicle</answerText>		
+		<answerText>continue to drive at constant speed as you have right-of-way</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>		
+	<question>
+		<questionId>46</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>additional lane traffic added</answerText>
+		<answerText>traffic merging from right</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w16</imageFileName>		
+	</question>
+	<question>
+		<questionId>47</questionId>	
+		<questionText>If you miss your exit on a freeway</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>back up if it safe to do so</answerText>
+		<answerText>you may make a U-turn if it safe to do so</answerText>
+		<answerText>proceed to the next exit</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>			
+	<question>
+		<questionId>48</questionId>	
+		<questionText>_____ ______ are short, one-way roads that provide access to freeways.</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>exit ramps</answerText>		
+		<answerText>entry ramps</answerText>		
+		<answerText>acceleration lanes</answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>				
+	</question>		
+</quiz>

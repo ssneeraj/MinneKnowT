@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>90</questionId>	
+		<questionText>Under ideal driving conditions, unless traffic signs indicate otherwise, the speed limit in alleys should be</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>5 mph</answerText>
+		<answerText>between 5 to 15 mph</answerText>
+		<answerText>10 mph</answerText>
+		<answerText>20 mph</answerText>	
+		<imageFileName>na</imageFileName>			
+	</question>
+	<question>
+		<questionId>91</questionId>	
+		<questionText>In urban or town roads under ideal driving conditions the speed limit is ______</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>30 mph</answerText>
+		<answerText>40 mph</answerText>
+		<answerText>20 mph</answerText>
+		<answerText>25 mph</answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>92</questionId>	
+		<questionText>A Neighborhood Electric Vehicle (NEV) can be driven</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>only on streets with speed limit 25 mph of less</answerText>
+		<answerText>only on streets with speed limit 35 mph or less</answerText>		
+		<answerText>only on streets with speed limit 45 mph of less</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>						
+	</question>		
+	<question>
+		<questionId>93</questionId>	
+		<questionText>Under ideal driving conditions, driving faster than the posted speed limit is</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>legal if your speed is within +10 mph over the posted speed limit</answerText>
+		<answerText>legal if the other traffic is driving faster than the posted speed limit</answerText>
+		<answerText>legal if there is no other vehicle in your lane ahead of your vehicle</answerText>
+		<answerText>illegal</answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>94</questionId>	
+		<questionText>This road sign means under ideal driving conditions:</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>minimum speed limit is 50 mph</answerText>
+		<answerText>maximum speed limit is 50 mph</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w30</imageFileName>		
+	</question>	
+	<question>
+		<questionId>95</questionId>	
+		<questionText>When you are merging on to the freeway, you should be driving</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>at the posted speed limit</answerText>
+		<answerText>at or near the same speed as the traffic on the freeway</answerText>		
+		<answerText>as fast as you can</answerText>		
+		<answerText>5 or 10 miles slower than the traffic on the freeway</answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+</quiz>

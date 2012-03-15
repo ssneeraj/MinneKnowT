@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/mnknowt_bg"
+    >
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	    
+	    <!-- Home button -->
+	    <ImageButton
+	        	android:id="@+id/flashcards_homeButton"    
+	            android:background="@drawable/home_button_selector"        
+	            android:layout_width="35dp"	            
+	            android:layout_height="30dp"
+	            android:scaleType="fitXY"
+	            android:paddingLeft="5dp"
+	            android:onClick="showAppHomePage"/>
+
+			<TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+				android:layout_below="@id/flashcards_homeButton"	   
+			    android:text="Home"
+			    android:textColor="#000000"
+			    android:textSize="10sp"
+			    android:typeface="sans"
+			    android:textStyle="bold"
+			    android:paddingLeft="5dp"
+		    />
+				    	        
+			<TextView 
+			    android:id="@+id/app_title"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_horizontal"	   
+			    android:text=""
+			    android:textColor="#353535"
+			    android:textSize="22sp"
+			    android:typeface="sans"
+			    android:textStyle="bold"
+			    android:layout_centerHorizontal="true"
+		    />
+			
+	    <!-- Shuffle button -->
+			<ImageButton
+			    android:id="@+id/flashcards_refreshButton"
+	            android:background="@drawable/refresh_button_selector"        			    
+			    android:layout_width="35dp"
+			    android:layout_height="30dp"
+			    android:focusable="true"
+			    android:scaleType="fitXY"
+			    android:layout_alignParentRight="true"
+			    android:paddingRight="5dp"
+			    android:onClick="shuffleQuiz"
+			    />
+
+			<TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+				android:layout_below="@id/flashcards_refreshButton"	   
+			    android:text="Shuffle"
+			    android:textColor="#000000"
+			    android:textSize="10sp"
+			    android:typeface="sans"
+			    android:textStyle="bold"
+			    android:paddingRight="5dp"
+			    android:layout_alignParentRight="true"
+		    />	
+		    
+	</RelativeLayout>	
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>31</questionId>	
+		<questionText>When two vehicles approach an uncontrolled 'T' intersection the driver of the vehicle turning _________ must yield to cross traffic</questionText>	
+		<correctAnswer>1</correctAnswer>			
+		<answerText>left</answerText>
+		<answerText>left or right</answerText>				
+		<answerText>right</answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>32</questionId>	
+		<questionText>When two vehicles reach an intersection at the same time, and there is no traffic light or signal, then the driver of</questionText>	
+		<correctAnswer>2</correctAnswer>			
+		<answerText>the vehicle on the right must yield to the vehicle on the left</answerText>			
+		<answerText>the vehicle who signals first has the right-of-way</answerText>
+		<answerText>the vehicle on the left must yield to the vehicle on the right</answerText>		
+		<answerText></answerText>		
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>33</questionId>	
+		<questionText>In an uncontrolled 'T' intersection which one of these has the right-of-way over over all other</questionText>	
+		<correctAnswer>1</correctAnswer>				
+		<answerText>vehicle turning left</answerText>		
+		<answerText>cross traffic</answerText>		
+		<answerText>vehicle turning right</answerText>
+		<answerText></answerText>		
+		<imageFileName>na</imageFileName>				
+	</question>
+	<question>
+		<questionId>34</questionId>	
+		<questionText>If there is an emergency vehicle with flashing lights behind you while you are in an intersection</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>move to the left lane and stop</answerText>
+		<answerText>move to the right lane and stop</answerText>
+		<answerText>cross the intersection, proceed to the right lane, and stop as soon as you can</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>						
+	</question>					
+	<question>
+		<questionId>35</questionId>	
+		<questionText>You may legally block an intersection</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>when you entered an intersection on a green light</answerText>
+		<answerText>under no circumstances</answerText>
+		<answerText>when there is heavy traffic during peak hours</answerText>
+		<answerText>when the traffic signal shows a flashing yellow</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>		
+	<question>
+		<questionId>36</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>T intersection</answerText>
+		<answerText>Y intersection</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w9</imageFileName>				
+	</question>
+	<question>
+		<questionId>37</questionId>	
+		<questionText>"No turn on Red" is posted at an intersection. Which one of these statement is True?</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>school bus turning right MUST stop while making a right turn</answerText>
+		<answerText>large commercial vehicles turning right MUST stop while making a right turn</answerText>
+		<answerText>all vehicles turning right MUST stop while making a right turn</answerText>
+		<answerText>all of the above</answerText>
+		<imageFileName>na</imageFileName>		
+	</question>		
+	<question>
+		<questionId>38</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>crossroad - a four way intersection ahead</answerText>
+		<answerText>rail road crossing ahead</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w24</imageFileName>		
+	</question>
+	<question>
+		<questionId>39</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>T-intersection</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w28</imageFileName>		
+	</question>	
+</quiz>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>17</questionId>	
+		<questionText>The only way to reduce the concentration of alcohol in your body is by</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>drinking coffee</answerText>
+		<answerText>taking cold showers</answerText>
+		<answerText>waiting</answerText>		
+		<answerText>exercising</answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+	<question>
+		<questionId>18</questionId>	
+		<questionText>True or False? A person with higher percentage of fat than another person with the same body weight will reach higher alcohol concentration by consuming the same amount of alcohol</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+	<question>
+		<questionId>19</questionId>	
+		<questionText>Consuming alcohol acts a</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>stimulant</answerText>
+		<answerText>pain reliever</answerText>
+		<answerText>depressant</answerText>
+		<answerText>None of the above</answerText>
+		<imageFileName>na</imageFileName>				
+	</question>
+	<question>
+		<questionId>20</questionId>	
+		<questionText>Drivers who consume alcohol</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>may driver too fast</answerText>
+		<answerText>may over-steer</answerText>
+		<answerText>may fail to wear seat-belt</answerText>
+		<answerText>all of the above</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>	
+	<question>
+		<questionId>21</questionId>	
+		<questionText>A person with blood alcohol concentration of ____ or higher in control of a moving or parked vehicle can be arrested for DWI</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>0.88 %</answerText>
+		<answerText>0.08 %</answerText>
+		<answerText>0.80 %</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+	<question>
+		<questionId>22</questionId>	
+		<questionText>It is lawful to allow a passenger sitting in the back seat of the vehicle to have an open container of an alcoholic beverage</questionText>	
+		<correctAnswer>1</correctAnswer>			
+		<answerText>True</answerText>		
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>			
+</quiz>

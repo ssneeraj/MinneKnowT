@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>49</questionId>	
+		<questionText>Parking your vehicle is not allowed</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>in front of mailboxes</answerText>
+		<answerText>within 10 feet of fire hydrant</answerText>
+		<answerText>on a crosswalk or sidewalk</answerText>
+		<answerText>all of above</answerText>
+		<imageFileName>na</imageFileName>				
+	</question>		
+
+	<question>
+		<questionId>50</questionId>	
+		<questionText>Parking your vehicle is not allowed</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>in front of mailboxes</answerText>
+		<answerText>within 10 feet of fire hydrant</answerText>
+		<answerText>on a crosswalk or sidewalk</answerText>
+		<answerText>all of above</answerText>
+		<imageFileName>na</imageFileName>				
+	</question>	
+		
+	<question>
+		<questionId>51</questionId>	
+		<questionText>You may not legally park your vehicle within 50 feet of a railroad crossing</questionText>	
+		<correctAnswer>0</correctAnswer>
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	
+	<question>
+		<questionId>52</questionId>	
+		<questionText>When a vehicle is properly parallel parked, its wheels on the curb side should be positioned no more than _________ from the curb</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>18 inches</answerText>
+		<answerText>12 inches</answerText>
+		<answerText>15 inches</answerText>
+		<answerText>5 inches</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>		
+	
+	<question>
+		<questionId>53</questionId>	
+		<questionText>True or False? Parking is allowed at the street end of a driveway</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>		
+	
+	<question>
+		<questionId>54</questionId>	
+		<questionText>When the front of a parked vehicle points uphill and there is no curb, the wheels should</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>be straight</answerText>
+		<answerText>point towards the shoulder of the road away from the traffic</answerText>		
+		<answerText>point away from the shoulder of the road towards the traffic</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	
+	<question>
+		<questionId>55</questionId>	
+		<questionText>Parking is illegal along the yellow curb</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>		
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>		
+	
+	<question>
+		<questionId>56</questionId>	
+		<questionText>Parking is not allowed within _______ of STOP sign</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>25 feet</answerText>
+		<answerText>35 feet</answerText>
+		<answerText>30 feet</answerText>
+		<answerText>10 feet</answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+	
+	<question>
+		<questionId>57</questionId>	
+		<questionText>Parking is not allowed within _______ of a fire hydrant</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>15 feet</answerText>		
+		<answerText>18 feet</answerText>		
+		<answerText>10 feet</answerText>		
+		<answerText>20 feet</answerText>
+		<imageFileName>na</imageFileName>				
+	</question>			
+	
+	<question>
+		<questionId>58</questionId>	
+		<questionText>If you leave your vehicle unoccupied on a public road</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>turn the front wheels away from the curb or the shoulder of the road</answerText>
+		<answerText>turn the front wheels towards from the curb or the shoulder of the road and engage the parking brake</answerText>
+		<answerText>wheels should be parallel to the curb or the shoulder</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+
+</quiz>	

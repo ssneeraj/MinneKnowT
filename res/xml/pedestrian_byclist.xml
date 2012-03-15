@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>65</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>blind pedestrian crossing sign</answerText>
+		<answerText>pedestrian crossing sign</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w12</imageFileName>				
+	</question>	
+	<question>
+		<questionId>66</questionId>	
+		<questionText>It is legal to drive in the bicycle lane</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>while entering or exiting the road</answerText>
+		<answerText>while preparing for a turn</answerText>
+		<answerText>Both A and B</answerText>
+		<answerText>when there is no bicyclist using the bicycle lane</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>	
+	<question>
+		<questionId>67</questionId>	
+		<questionText>True or False? Bicyclist riding on urban roads that do not have dedicated bicycle lanes share the same rights and responsibilties as other vehicles</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+</quiz>

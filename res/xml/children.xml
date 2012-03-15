@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>3</questionId>	
+		<questionText>Children younger than _______ of age should be secured in a child safety restraint system</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>8 years</answerText>
+		<answerText>5 years</answerText>
+		<answerText>4 years</answerText>
+		<answerText>6 years</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>		
+	<question>
+		<questionId>4</questionId>	
+		<questionText>Children under 8 years of age and under 4 feet 9 inches tall</questionText>	
+		<correctAnswer>1</correctAnswer>					
+		<answerText>must sit in a rear facing child restraint system</answerText>
+		<answerText>must sit in a forward facing booster seat used with both adult lap and shoulder belt</answerText>		
+		<answerText>can sit in the front seat if the vehicle has air bags</answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>5</questionId>	
+		<questionText>In what situation can children be left unattended in a vehicle</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>only if the children are above 8 years of age</answerText>
+		<answerText>only if the children are safely fastened in a child safety restraint system</answerText>
+		<answerText>never</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>						
+	</question>			
+	<question>
+		<questionId>6</questionId>	
+		<questionText>It is safe for children to ride in the cargo area of a truck or station wagon</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+</quiz>

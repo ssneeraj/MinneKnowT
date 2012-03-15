@@ -15,9 +15,11 @@ public class QuizCache {
 	private static ArrayList<QandA>	quizArrayList;
 	private static QuizCache	instance;
 	private static boolean		quizcacheEmpty	= true;
+	private static ArrayList<QandA>	quizArrayListCopy;
 
 	private QuizCache() {
 		quizArrayList = new ArrayList<QandA>();
+		quizArrayListCopy = new ArrayList<QandA>();
 	}
 
 	public ArrayList<QandA> getQuiz() {
@@ -26,6 +28,7 @@ public class QuizCache {
 
 	public void addQandA(QandA qa) {
 		QuizCache.quizArrayList.add(qa);
+		QuizCache.quizArrayListCopy.add(qa);
 	}
 
 	public static synchronized QuizCache getInstance() {

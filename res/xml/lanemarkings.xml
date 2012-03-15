@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>40</questionId>	
+		<questionText>A solid yellow line next to a broken yellow line means that</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>vehicles in both direction may pass</answerText>
+		<answerText>only the vehicle next to solid line may pass</answerText>
+		<answerText>only the vehicle next to broken yellow line may pass</answerText>
+		<answerText></answerText>		
+		<imageFileName>na</imageFileName>						
+	</question>		
+	<question>
+		<questionId>41</questionId>	
+		<questionText>Double solid white lines</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>indicate that lane change is prohibited in areas where this type of marking is present</answerText>
+		<answerText>indicate that lane change is allowed</answerText>
+		<answerText>separates lanes of traffic in opposite direction</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>42</questionId>	
+		<questionText>A line composed of yellow dashes separating a two-lane road with traffic moving in both direction indicates</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>passing is allowed</answerText>		
+		<answerText>passing is illegal</answerText>
+		<answerText></answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>				
+	</question>
+	<question>
+		<questionId>43</questionId>	
+		<questionText>A center lane between lanes of traffic in opposite direction</questionText>	
+		<correctAnswer>2</correctAnswer>			
+		<answerText>serves as a median separating flow of traffic in opposite direction</answerText>		
+		<answerText>serves as a passing lane if it is safe to do so</answerText>
+		<answerText>may be designated for left turns only</answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>44</questionId>	
+		<questionText>Pavement markings consisting of shorter and thicker white lines indidate</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>that lane changes are not allowed</answerText>
+		<answerText>that lanes changes are allowed</answerText>
+		<answerText>that the lane will end</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+</quiz>

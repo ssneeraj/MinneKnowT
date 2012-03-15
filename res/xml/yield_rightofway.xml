@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>109</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>2</correctAnswer>
+		<answerText>yield ONLY to pedestrians</answerText>
+		<answerText>yield ONLY to all other vehicles</answerText>
+		<answerText>yield to all other pedestrians and vehicles</answerText>
+		<answerText></answerText>		
+		<imageFileName>w19</imageFileName>		
+	</question>	
+</quiz>

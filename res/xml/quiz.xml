@@ -1,670 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <quiz>
 	<question>
 		<questionId>1</questionId>	
-		<questionText>The distance between the driver and the steering should be at least _________</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>10 inches</answerText>
-		<answerText>30 inches</answerText>
-		<answerText>15 inches</answerText>
-		<answerText>5 inches</answerText>
-		<imageFileName>na</imageFileName>
-	</question>	
-		
-	<question>
-		<questionId>2</questionId>	
-		<questionText>Your headlight's must be turned on and used</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>30 minutes before sunset</answerText>
-		<answerText>at sunset and used until sun rise</answerText>
-		<answerText>only when there are no street lights</answerText>
-		<answerText>15 minutes before sunset and 15 minutes after sunrise</answerText>
-		<imageFileName>na</imageFileName>				
-	</question>		
-	
-	<question>
-		<questionId>3</questionId>	
-		<questionText>Under ideal driving conditions, unless traffic signs indicate otherwise, the speed limit in alleys should be</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>5 mph</answerText>
-		<answerText>between 5 to 15 mph</answerText>
-		<answerText>10 mph</answerText>
-		<answerText>20 mph</answerText>	
-		<imageFileName>na</imageFileName>			
-	</question>		
-	
-	<question>
-		<questionId>4</questionId>	
-		<questionText>Parking your vehicle is not allowed</questionText>	
-		<correctAnswer>3</correctAnswer>		
-		<answerText>in front of mailboxes</answerText>
-		<answerText>within 10 feet of fire hydrant</answerText>
-		<answerText>on a crosswalk or sidewalk</answerText>
-		<answerText>all of above</answerText>
-		<imageFileName>na</imageFileName>				
-	</question>		
-	
-	<question>
-		<questionId>5</questionId>	
-		<questionText>You are not legally required to wear a seat belt if you are</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>driving a pickup truck while engaged in farm work</answerText>
-		<answerText>driving a neighborhood electric vehicle</answerText>
-		<answerText>riding in the back seat of the vehicle</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>				
-	</question>		
-	
-	<question>
-		<questionId>6</questionId>	
-		<questionText>A school bus is stopped with its red lights flashing and its stop arm extended, you must stop your vehicle at least _______ from the school bus</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>15 feet</answerText>
-		<answerText>20 feet</answerText>
-		<answerText>25 feet</answerText>
-		<answerText>10 feet</answerText>
-		<imageFileName>na</imageFileName>				
-	</question>
-	
-	<question>
-		<questionId>7</questionId>	
-		<questionText>Consuming alcohol acts a</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>stimulant</answerText>
-		<answerText>pain reliever</answerText>
-		<answerText>depressant</answerText>
-		<answerText>None of the above</answerText>
-		<imageFileName>na</imageFileName>				
-	</question>		
-			
-	<question>
-		<questionId>8</questionId>	
-		<questionText>A solid yellow line next to a broken yellow line means that</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>vehicles in both direction may pass</answerText>
-		<answerText>only the vehicle next to solid line may pass</answerText>
-		<answerText>only the vehicle next to broken yellow line may pass</answerText>
-		<answerText></answerText>		
-		<imageFileName>na</imageFileName>						
-	</question>		
-	
-	<question>
-		<questionId>9</questionId>	
-		<questionText>It is legal to drive in the bicycle lane</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>while entering or exiting the road</answerText>
-		<answerText>while preparing for a turn</answerText>
-		<answerText>Both A and B</answerText>
-		<answerText>when there is no bicyclist using the bicycle lane</answerText>
-		<imageFileName>na</imageFileName>						
-	</question>	
-
-	<question>
-		<questionId>10</questionId>	
-		<questionText>Before you make a left turn, you must signal continuously during the last ______ before the turn</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>25 feet</answerText>
-		<answerText>50 feet</answerText>
-		<answerText>100 feet</answerText>
-		<answerText>80 feet</answerText>
-		<imageFileName>na</imageFileName>						
-	</question>				
-	
-	<question>
-		<questionId>11</questionId>	
-		<questionText>Drivers who consume alcohol</questionText>	
-		<correctAnswer>3</correctAnswer>		
-		<answerText>may driver too fast</answerText>
-		<answerText>may over-steer</answerText>
-		<answerText>may fail to wear seat-belt</answerText>
-		<answerText>all of the above</answerText>
-		<imageFileName>na</imageFileName>						
-	</question>	
-				
-	
-	<question>
-		<questionId>12</questionId>	
-		<questionText>You may legally block an intersection</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>when you entered an intersection on a green light</answerText>
-		<answerText>under no circumstances</answerText>
-		<answerText>when there is heavy traffic during peak hours</answerText>
-		<answerText>when the traffic signal shows a flashing yellow</answerText>
-		<imageFileName>na</imageFileName>						
-	</question>	
-	
-	<question>
-		<questionId>13</questionId>	
-		<questionText>If there is an emergency vehicle with flashing lights behind you while you are in an intersection</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>move to the left lane and stop</answerText>
-		<answerText>move to the right lane and stop</answerText>
-		<answerText>cross the intersection, proceed to the right lane, and stop as soon as you can</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>						
-	</question>	
-
-	<question>
-		<questionId>14</questionId>	
-		<questionText>You can avoid dangerous last minute maneuvers by looking __________ ahead of your vehicle at all times</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>10 to 15 seconds</answerText>
-		<answerText>20 to 25 seconds</answerText>
-		<answerText>15 to 30 seconds</answerText>
-		<answerText>0 to 10 seconds</answerText>
-		<imageFileName>na</imageFileName>						
-	</question>				
-	
-	<question>
-		<questionId>15</questionId>	
-		<questionText>While waiting to turn</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>keep your wheels straight and your foot on the brake</answerText>
-		<answerText>point your wheels in the direction you intend to turn</answerText>
-		<answerText></answerText>		
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>	
-
-	<question>
-		<questionId>16</questionId>	
-		<questionText>You may not legally park your vehicle within 50 feet of a railroad crossing</questionText>	
-		<correctAnswer>0</correctAnswer>
-		<answerText>True</answerText>
-		<answerText>False</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>
-
-	<question>
-		<questionId>17</questionId>	
-		<questionText>If you're driving on an Interstate (freeway) and a car is attempting to merge into your lane, you should</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>accelerate quickly</answerText>
-		<answerText>reduce your speed quickly</answerText>
-		<answerText>if possible, safely make room for the merging vehicle</answerText>		
-		<answerText>continue to drive at constant speed as you have right-of-way</answerText>
-		<imageFileName>na</imageFileName>						
-	</question>		
-	
-	<question>
-		<questionId>18</questionId>	
-		<questionText>At what time are you allowed to pass a school bus?</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>if the school bus is not in motion and the red lights are flashing</answerText>
-		<answerText>if the school bus is in motion</answerText>
-		<answerText></answerText>		
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>						
-	</question>	
-	
-	<question>
-		<questionId>19</questionId>	
-		<questionText>Which one of the following statements is True about blind spots</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>blind spots can be eliminated when you use your 2 outside mirrors</answerText>
-		<answerText>tractors, trailers, and large vehicles have larger blind spots than most passenger vehicles</answerText>		
-		<answerText>proper use of all 3 mirrors will eliminate your blind spot</answerText>
-		<answerText>blind spot applies ONLY to trucks and not for smaller vehicles</answerText>
-		<imageFileName>na</imageFileName>						
-	</question>				
-	
-	<question>
-		<questionId>20</questionId>	
-		<questionText>Children younger than _______ of age should be secured in a child safety restraint system</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>8 years</answerText>
-		<answerText>5 years</answerText>
-		<answerText>4 years</answerText>
-		<answerText>6 years</answerText>
-		<imageFileName>na</imageFileName>						
-	</question>		
-	
-	<question>
-		<questionId>21</questionId>	
-		<questionText>You headlight's must be turned on any time you cannot clearly see the road ahead for a distance of at least ________</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>600 feet</answerText>
-		<answerText>500 feet</answerText>		
-		<answerText>300 feet</answerText>
-		<answerText>450 feet</answerText>
-		<imageFileName>na</imageFileName>
-	</question>		
-	
-	<question>
-		<questionId>22</questionId>	
-		<questionText>On an interstate freeway U-turns are</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>allowed only during day time</answerText>
-		<answerText>allowed</answerText>
-		<answerText>not allowed</answerText>
-		<answerText>none of the above</answerText>
-		<imageFileName>na</imageFileName>						
-	</question>		
-
-	<question>
-		<questionId>23</questionId>	
-		<questionText>This road sign means:</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>slippery road</answerText>
-		<answerText>winding road</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w29</imageFileName>		
-	</question>
-		
-	<question>
-		<questionId>24</questionId>	
-		<questionText>Your headlight's must be set to low beam when you are within _________ of an on-coming vehicle</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>500 feet</answerText>
-		<answerText>800 feet</answerText>
-		<answerText>1000 feet</answerText>
-		<answerText>950 feet</answerText>
-		<imageFileName>na</imageFileName>						
-	</question>	
-
-	<question>
-		<questionId>25</questionId>	
-		<questionText>When a vehicle is properly parallel parked, its wheels on the curb side should be positioned no more than _________ from the curb</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>18 inches</answerText>
-		<answerText>12 inches</answerText>
-		<answerText>15 inches</answerText>
-		<answerText>5 inches</answerText>
-		<imageFileName>na</imageFileName>						
-	</question>		
-	
-	<question>
-		<questionId>26</questionId>	
-		<questionText>True or False? Airbags are designed to keep the occupants from being ejected</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>True</answerText>
-		<answerText>False</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>	
-	
-	<question>
-		<questionId>27</questionId>	
-		<questionText>Road signs in Red color indicate</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>informational signs</answerText>
-		<answerText>warning signs</answerText>
-		<answerText>regulatory signs</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>
-
-	<question>
-		<questionId>28</questionId>	
-		<questionText>Driving in Minnesota is</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>the right of every US citizen</answerText>
-		<answerText>a privilege</answerText>
-		<answerText>the right of every Minnesota resident</answerText>		
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>		
-	
-	<question>
-		<questionId>29</questionId>	
-		<questionText>Double solid white lines</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>indicate that lane change is prohibited in areas where this type of marking is present</answerText>
-		<answerText>indicate that lane change is allowed</answerText>
-		<answerText>separates lanes of traffic in opposite direction</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>	
-
-	<question>
-		<questionId>30</questionId>	
-		<questionText>This road sign means:</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>right lane ends</answerText>
-		<answerText>additional right lane of traffic begins</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w10</imageFileName>				
-	</question>	
-		
-	<question>
-		<questionId>31</questionId>	
-		<questionText>True or False? Parking is allowed at the street end of a driveway</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>True</answerText>
-		<answerText>False</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>		
-	
-	<question>
-		<questionId>32</questionId>	
-		<questionText>In urban or town roads under ideal driving conditions the speed limit is ______</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>30 mph</answerText>
-		<answerText>40 mph</answerText>
-		<answerText>20 mph</answerText>
-		<answerText>25 mph</answerText>
-		<imageFileName>na</imageFileName>
-	</question>
-			
-	<question>
-		<questionId>33</questionId>	
-		<questionText>Which one of these statements is True about roundabouts?</questionText>	
-		<correctAnswer>3</correctAnswer>		
-		<answerText>do not stop, pass, or change lanes within a roundabout</answerText>
-		<answerText>are designed to increase the traffic flow</answerText>
-		<answerText>slow down as you approach the roundabout</answerText>
-		<answerText>all of the above</answerText>
-		<imageFileName>na</imageFileName>
-	</question>		
-	<question>
-		<questionId>34</questionId>	
-		<questionText>If transit or Metro mobility bus is attempting to merge from a bus stop or from a shoulder, drivers in the right lane of traffic</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>must yield</answerText>
-		<answerText>have the right of way</answerText>
-		<answerText>must accelerate quickly</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>	
-		
-	<question>
-		<questionId>35</questionId>	
-		<questionText>It is legal to block a crosswalk if it is unmarked</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>True</answerText>
-		<answerText>False</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>
-		
-	<question>
-		<questionId>36</questionId>	
-		<questionText>It is illegal to pass another vehicle that has stopped for a pedestrian</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>True</answerText>
-		<answerText>False</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>
-			
-	<question>
-		<questionId>37</questionId>	
-		<questionText>If an emergency vehicle approaching you is separated from your lane of traffic by a physical barrier such as a fence, wall, or a median then</questionText>	
-		<correctAnswer>3</correctAnswer>		
-		<answerText>you must slow down your vehicle</answerText>
-		<answerText>you must pull to the right and stop</answerText>
-		<answerText>you must pull to whichever side is the nearest and stop</answerText>
-		<answerText>you do not have to stop</answerText>
-		<imageFileName>na</imageFileName>
-	</question>		
-	
-	<question>
-		<questionId>38</questionId>	
-		<questionText>While passing a bicyclist, there should be at least _______ between the side of your car and the bicylist</questionText>	
-		<correctAnswer>2</correctAnswer>
-		<answerText>4 feet</answerText>
-		<answerText>5 feet</answerText>
-		<answerText>3 feet</answerText>
-		<answerText>2 feet</answerText>
-		<imageFileName>na</imageFileName>
-	</question>		
-	
-	<question>
-		<questionId>39</questionId>	
-		<questionText>Blue road signs are</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>informational signs</answerText>
-		<answerText>regulatory signs</answerText>
-		<answerText>warning signs</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>		
-	
-	<question>
-		<questionId>40</questionId>	
-		<questionText>When you are following another vehicle at a distance of 200 feet or less, then your headlight's must be set on ________ </questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>high beam</answerText>
-		<answerText>low beam</answerText>
-		<answerText>parking lights</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>		
-	
-	<question>
-		<questionId>41</questionId>	
-		<questionText>At railroad crossing, if your vehicle has manual transmission</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>do not shift gears while your vehicle is within a crossing</answerText>
-		<answerText>shift down the gear after entering the railroad crossing</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>	
-	
-	<question>
-		<questionId>42</questionId>	
-		<questionText>It is illegal to overtake and pass on the right of another vehicle</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>if there is sufficient width for two or more lanes of traffic moving in the same direction and the roadway is free from obstructions such as parked vehicles</answerText>
-		<answerText>by driving on the shoulder if the shoulder is unpaved</answerText>
-		<answerText>when the vehicle overtaken is making or about to make a left turn</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>
-	
-	<question>
-		<questionId>43</questionId>	
-		<questionText>When the front of a parked vehicle points uphill and there is no curb, the wheels should</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>be straight</answerText>
-		<answerText>point towards the shoulder of the road away from the traffic</answerText>		
-		<answerText>point away from the shoulder of the road towards the traffic</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>	
-			
-	<question>
-		<questionId>44</questionId>	
-		<questionText>When you are merging on to the freeway, you should be driving</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>at the posted speed limit</answerText>
-		<answerText>at or near the same speed as the traffic on the freeway</answerText>		
-		<answerText>as fast as you can</answerText>		
-		<answerText>5 or 10 miles slower than the traffic on the freeway</answerText>
-		<imageFileName>na</imageFileName>
-	</question>
-	
-	<question>
-		<questionId>45</questionId>	
-		<questionText>Parking is illegal along the yellow curb</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>True</answerText>
-		<answerText>False</answerText>		
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>		
-					
-	<question>
-		<questionId>46</questionId>	
-		<questionText>U-turns are illegal on curves where other drivers cannot see you from _________ away</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>500 feet</answerText>
-		<answerText>1200 feet</answerText>		
-		<answerText>1000 feet</answerText>
-		<answerText>900 feet</answerText>
-		<imageFileName>na</imageFileName>
-	</question>	
-	
-	<question>
-		<questionId>47</questionId>	
-		<questionText>A person with blood alcohol concentration of ____ or higher in control of a moving or parked vehicle can be arrested for DWI</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>0.88 %</answerText>
-		<answerText>0.08 %</answerText>
-		<answerText>0.80 %</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>		
-	</question>
-	
-	<question>
-		<questionId>48</questionId>	
-		<questionText>Before entering a road from a private driveway and there is no STOP sign</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>come to a complete stop</answerText>
-		<answerText>stop only if there is a STOP sign</answerText>		
-		<answerText>slow down and look in right and then left direction</answerText>
-		<answerText>you have the right of way</answerText>
-		<imageFileName>na</imageFileName>
-	</question>
-	
-	<question>
-		<questionId>49</questionId>	
-		<questionText>When you are following a commercial vehicle at night</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>you should follow closely so that the commercial vehicle can see your vehicle</answerText>
-		<answerText>always change your headlight's to high beam so that the commercial vehicle can see it in its large side mirrors</answerText>		
-		<answerText>always change your headlight's to low beam</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>	
-	
-	<question>
-		<questionId>50</questionId>	
-		<questionText>Which one of these statements should you obey over all other?</questionText>	
-		<correctAnswer>3</correctAnswer>		
-		<answerText>obey pavement markings</answerText>
-		<answerText>obey road signs</answerText>		
-		<answerText>obey traffic signals</answerText>
-		<answerText>obey the hand signals you are given by the law enforcement officer</answerText>
-		<imageFileName>na</imageFileName>
-	</question>		
-	
-	<question>
-		<questionId>51</questionId>	
-		<questionText>If your vehicle begins to hydroplane</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>take the foot of the gas pedal</answerText>
-		<answerText>gently pump your your brake pedal</answerText>		
-		<answerText>slowly apply emergency/parking brake</answerText>
-		<answerText>apply more pressure to the gas pedal so as to increase the speed</answerText>
-		<imageFileName>na</imageFileName>
-	</question>
-	
-	<question>
-		<questionId>52</questionId>	
-		<questionText>Running out of fuel on a freeway is considered as an emergency</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>True</answerText>
-		<answerText>False</answerText>		
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>		
-			
-	<question>
-		<questionId>53</questionId>	
-		<questionText>A center lane between lanes of traffic in opposite direction</questionText>	
-		<correctAnswer>2</correctAnswer>			
-		<answerText>serves as a median separating flow of traffic in opposite direction</answerText>		
-		<answerText>serves as a passing lane if it is safe to do so</answerText>
-		<answerText>may be designated for left turns only</answerText>		
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>	
-	
-	<question>
-		<questionId>54</questionId>	
-		<questionText>It is illegal to pass any vehicle within ________ of a rail road crossing</questionText>	
-		<correctAnswer>2</correctAnswer>			
-		<answerText>150 feet</answerText>		
-		<answerText>200 feet</answerText>		
-		<answerText>100 feet</answerText>
-		<answerText>50 feet</answerText>		
-		<imageFileName>na</imageFileName>
-	</question>		
-	<question>
-		<questionId>55</questionId>	
-		<questionText>Children under 8 years of age and under 4 feet 9 inches tall</questionText>	
-		<correctAnswer>1</correctAnswer>					
-		<answerText>must sit in a rear facing child restraint system</answerText>
-		<answerText>must sit in a forward facing booster seat used with both adult lap and shoulder belt</answerText>		
-		<answerText>can sit in the front seat if the vehicle has air bags</answerText>		
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>	
-	<question>
-		<questionId>56</questionId>	
-		<questionText>A flashing red light traffic signal means</questionText>	
-		<correctAnswer>2</correctAnswer>			
-		<answerText>slow down and drive with caution</answerText>		
-		<answerText>continue with constant speed</answerText>
-		<answerText>come to a complete stop and treat it like a STOP sign</answerText>		
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>		
-	<question>
-		<questionId>57</questionId>	
-		<questionText>When you see an emergency vehicle with lights flashing and siren activated behind you</questionText>	
-		<correctAnswer>2</correctAnswer>			
-		<answerText>slam on the brake pedal and stop</answerText>		
-		<answerText>swerve into the other lane if possible to let the vehicle pass</answerText>
-		<answerText>use your turn signal and move to the nearest side of the road and then stop</answerText>		
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>	
-	<question>
-		<questionId>58</questionId>	
-		<questionText>If your headlight's suddenly go out (stop working) what will you do that will give you enough light to guide you to drive off the road?</questionText>	
-		<correctAnswer>3</correctAnswer>			
-		<answerText>turn on parking lights</answerText>		
-		<answerText>turn on hazard lights</answerText>
-		<answerText>turn on turn lights</answerText>		
-		<answerText>any one of the above</answerText>
-		<imageFileName>na</imageFileName>
-	</question>	
-	<question>
-		<questionId>59</questionId>	
-		<questionText>It is lawful to allow a passenger sitting in the back seat of the vehicle to have an open container of an alcoholic beverage</questionText>	
-		<correctAnswer>1</correctAnswer>			
-		<answerText>True</answerText>		
-		<answerText>False</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>
-	</question>		
-	<question>
-		<questionId>60</questionId>	
-		<questionText>Which one of these can use high occupancy vehicle lanes</questionText>	
-		<correctAnswer>3</correctAnswer>			
-		<answerText>buses</answerText>		
-		<answerText>vehicles carrying two or more people</answerText>
-		<answerText>motorcycles</answerText>
-		<answerText>all of the above</answerText>
-		<imageFileName>na</imageFileName>
-	</question>				
-	<question>
-		<questionId>61</questionId>	
-		<questionText>A flashing yellow light or yellow arrow means</questionText>	
-		<correctAnswer>3</correctAnswer>			
-		<answerText>slow down and proceed through the intersection with caution</answerText>		
-		<answerText>yield right of way to vehicles and pedestrian already in the intersection</answerText>
-		<answerText>come to a complete stop and treat it like a STOP sign</answerText>
-		<answerText>both A and B</answerText>		
-		<imageFileName>na</imageFileName>
-	</question>		
-	<question>
-		<questionId>62</questionId>	
 		<questionText>If you are involved in a crash</questionText>	
 		<correctAnswer>3</correctAnswer>			
 		<answerText>pull off the driving lane if possible and turn of the ignition to prevent risk of fire</answerText>		
@@ -674,17 +10,67 @@
 		<imageFileName>na</imageFileName>
 	</question>		
 	<question>
-		<questionId>63</questionId>	
-		<questionText>When two vehicles approach an uncontrolled 'T' intersection the driver of the vehicle turning _________ must yield to cross traffic</questionText>	
-		<correctAnswer>1</correctAnswer>			
-		<answerText>left</answerText>
-		<answerText>left or right</answerText>				
-		<answerText>right</answerText>		
+		<questionId>2</questionId>	
+		<questionText>If you are involved in a crash, and the crash results only in property damage</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>it is mandatory to inform law enforcement immediately</answerText>
+		<answerText>you should contact your auto insurance company, but it is not necessary to inform the property owner</answerText>
+		<answerText>you should inform the property owner immediately</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+	<question>
+		<questionId>3</questionId>	
+		<questionText>Children younger than _______ of age should be secured in a child safety restraint system</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>8 years</answerText>
+		<answerText>5 years</answerText>
+		<answerText>4 years</answerText>
+		<answerText>6 years</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>		
+	<question>
+		<questionId>4</questionId>	
+		<questionText>Children under 8 years of age and under 4 feet 9 inches tall</questionText>	
+		<correctAnswer>1</correctAnswer>					
+		<answerText>must sit in a rear facing child restraint system</answerText>
+		<answerText>must sit in a forward facing booster seat used with both adult lap and shoulder belt</answerText>		
+		<answerText>can sit in the front seat if the vehicle has air bags</answerText>		
 		<answerText></answerText>
 		<imageFileName>na</imageFileName>
 	</question>	
 	<question>
-		<questionId>64</questionId>	
+		<questionId>5</questionId>	
+		<questionText>In what situation can children be left unattended in a vehicle</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>only if the children are above 8 years of age</answerText>
+		<answerText>only if the children are safely fastened in a child safety restraint system</answerText>
+		<answerText>never</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>						
+	</question>			
+	<question>
+		<questionId>6</questionId>	
+		<questionText>It is safe for children to ride in the cargo area of a truck or station wagon</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+	<question>
+		<questionId>7</questionId>	
+		<questionText>When you are following a commercial vehicle at night</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>you should follow closely so that the commercial vehicle can see your vehicle</answerText>
+		<answerText>always change your headlight's to high beam so that the commercial vehicle can see it in its large side mirrors</answerText>		
+		<answerText>always change your headlight's to low beam</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>8</questionId>	
 		<questionText>Commercial vehicle 'no zone' area includes ____________ of the commercial vehicle</questionText>	
 		<correctAnswer>1</correctAnswer>			
 		<answerText>front</answerText>		
@@ -694,7 +80,237 @@
 		<imageFileName>na</imageFileName>
 	</question>		
 	<question>
-		<questionId>65</questionId>	
+		<questionId>9</questionId>	
+		<questionText>Passing a commercial vehicle takes _________ compared to a passenger vehicle on a level highway</questionText>	
+		<correctAnswer>0</correctAnswer>			
+		<answerText>3 to 5 seconds longer</answerText>		
+		<answerText>5 to 8 seconds longer</answerText>		
+		<answerText>3 seconds longer</answerText>
+		<answerText>2 seconds longer</answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>10</questionId>	
+		<questionText>When a commercial vehicle passes your vehicle, which one of these statements is False</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>speed up</answerText>
+		<answerText>slow down slightly</answerText>
+		<answerText>keep to the far side of your lane</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+	<question>
+		<questionId>11</questionId>	
+		<questionText>If you see orange construction signs and orange cones on an expressway, you must</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>slow down because the lane ahead ends</answerText>
+		<answerText>change the lane and maintain your speed</answerText>
+		<answerText>be prepared for workers and equipment ahead</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+	<question>
+		<questionId>12</questionId>	
+		<questionText>Orange road sign</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>warns and controls in construction zones</answerText>
+		<answerText>regulates</answerText>
+		<answerText>warns in school zones</answerText>
+		<answerText>warns and controls in pedestrian crossings</answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+	<question>
+		<questionId>13</questionId>	
+		<questionText>In highway work-zone areas</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>reduce your speed</answerText>
+		<answerText>watch out for workers and equipment</answerText>
+		<answerText>if flag person is present, then follow flag person's directions</answerText>
+		<answerText>all of the above</answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+	<question>
+		<questionId>14</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>flagger ahead</answerText>
+		<answerText>workers are performing maintenance on the roadway</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w4</imageFileName>				
+	</question>	
+	<question>
+		<questionId>15</questionId>	
+		<questionText>It is legal to block a crosswalk if it is unmarked</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>16</questionId>	
+		<questionText>If a blind pedestrian is waiting at a crosswalk with a white cane or a guide dog, you must</questionText>	
+		<correctAnswer>2</correctAnswer>			
+		<answerText>use your horn to alert them of your presence</answerText>		
+		<answerText>reduce your speed and proceed slowly</answerText>
+		<answerText>not use your horn or rev your engine</answerText>
+		<answerText>increase your speed and move quickly</answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>17</questionId>	
+		<questionText>The only way to reduce the concentration of alcohol in your body is by</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>drinking coffee</answerText>
+		<answerText>taking cold showers</answerText>
+		<answerText>waiting</answerText>		
+		<answerText>exercising</answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+	<question>
+		<questionId>18</questionId>	
+		<questionText>True or False? A person with higher percentage of fat than another person with the same body weight will reach higher alcohol concentration by consuming the same amount of alcohol</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+	<question>
+		<questionId>19</questionId>	
+		<questionText>Consuming alcohol acts a</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>stimulant</answerText>
+		<answerText>pain reliever</answerText>
+		<answerText>depressant</answerText>
+		<answerText>None of the above</answerText>
+		<imageFileName>na</imageFileName>				
+	</question>
+	<question>
+		<questionId>20</questionId>	
+		<questionText>Drivers who consume alcohol</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>may driver too fast</answerText>
+		<answerText>may over-steer</answerText>
+		<answerText>may fail to wear seat-belt</answerText>
+		<answerText>all of the above</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>	
+	<question>
+		<questionId>21</questionId>	
+		<questionText>A person with blood alcohol concentration of ____ or higher in control of a moving or parked vehicle can be arrested for DWI</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>0.88 %</answerText>
+		<answerText>0.08 %</answerText>
+		<answerText>0.80 %</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+	<question>
+		<questionId>22</questionId>	
+		<questionText>It is lawful to allow a passenger sitting in the back seat of the vehicle to have an open container of an alcoholic beverage</questionText>	
+		<correctAnswer>1</correctAnswer>			
+		<answerText>True</answerText>		
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>23</questionId>	
+		<questionText>If an emergency vehicle approaching you is separated from your lane of traffic by a physical barrier such as a fence, wall, or a median then</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>you must slow down your vehicle</answerText>
+		<answerText>you must pull to the right and stop</answerText>
+		<answerText>you must pull to whichever side is the nearest and stop</answerText>
+		<answerText>you do not have to stop</answerText>
+		<imageFileName>na</imageFileName>
+	</question>				
+	<question>
+		<questionId>24</questionId>	
+		<questionText>When you see an emergency vehicle with lights flashing and siren activated behind you</questionText>	
+		<correctAnswer>2</correctAnswer>			
+		<answerText>slam on the brake pedal and stop</answerText>		
+		<answerText>swerve into the other lane if possible to let the vehicle pass</answerText>
+		<answerText>use your turn signal and move to the nearest side of the road and then stop</answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>25</questionId>	
+		<questionText>Your headlight's must be turned on and used</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>30 minutes before sunset</answerText>
+		<answerText>at sunset and used until sun rise</answerText>
+		<answerText>only when there are no street lights</answerText>
+		<answerText>15 minutes before sunset and 15 minutes after sunrise</answerText>
+		<imageFileName>na</imageFileName>				
+	</question>
+	<question>
+		<questionId>26</questionId>	
+		<questionText>Headlight's must be turned on any time you cannot clearly see the road ahead for a distance of at least ________</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>600 feet</answerText>
+		<answerText>500 feet</answerText>		
+		<answerText>300 feet</answerText>
+		<answerText>450 feet</answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>27</questionId>	
+		<questionText>Your headlight's must be set to low beam when you are within _________ of an on-coming vehicle</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>500 feet</answerText>
+		<answerText>800 feet</answerText>
+		<answerText>1000 feet</answerText>
+		<answerText>950 feet</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>
+	<question>
+		<questionId>28</questionId>	
+		<questionText>When you are following another vehicle at a distance of 200 feet or less, then your headlight's must be set on ________ </questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>high beam</answerText>
+		<answerText>low beam</answerText>
+		<answerText>parking lights</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>29</questionId>	
+		<questionText>If your headlight's suddenly go out (stop working) what will you do that will give you enough light to guide you to drive off the road?</questionText>	
+		<correctAnswer>3</correctAnswer>			
+		<answerText>turn on parking lights</answerText>		
+		<answerText>turn on hazard lights</answerText>
+		<answerText>turn on turn lights</answerText>		
+		<answerText>any one of the above</answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>30</questionId>	
+		<questionText>When set on high beam the headlight's must make objects visible on the road ahead from at least ________ away</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>300 feet</answerText>
+		<answerText>250 feet</answerText>
+		<answerText>400 feet</answerText>
+		<answerText>350 feet</answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+	<question>
+		<questionId>31</questionId>	
+		<questionText>When two vehicles approach an uncontrolled 'T' intersection the driver of the vehicle turning _________ must yield to cross traffic</questionText>	
+		<correctAnswer>1</correctAnswer>			
+		<answerText>left</answerText>
+		<answerText>left or right</answerText>				
+		<answerText>right</answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>32</questionId>	
 		<questionText>When two vehicles reach an intersection at the same time, and there is no traffic light or signal, then the driver of</questionText>	
 		<correctAnswer>2</correctAnswer>			
 		<answerText>the vehicle on the right must yield to the vehicle on the left</answerText>			
@@ -704,7 +320,882 @@
 		<imageFileName>na</imageFileName>
 	</question>	
 	<question>
+		<questionId>33</questionId>	
+		<questionText>In an uncontrolled 'T' intersection which one of these has the right-of-way over over all other</questionText>	
+		<correctAnswer>1</correctAnswer>				
+		<answerText>vehicle turning left</answerText>		
+		<answerText>cross traffic</answerText>		
+		<answerText>vehicle turning right</answerText>
+		<answerText></answerText>		
+		<imageFileName>na</imageFileName>				
+	</question>
+	<question>
+		<questionId>34</questionId>	
+		<questionText>If there is an emergency vehicle with flashing lights behind you while you are in an intersection</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>move to the left lane and stop</answerText>
+		<answerText>move to the right lane and stop</answerText>
+		<answerText>cross the intersection, proceed to the right lane, and stop as soon as you can</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>						
+	</question>					
+	<question>
+		<questionId>35</questionId>	
+		<questionText>You may legally block an intersection</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>when you entered an intersection on a green light</answerText>
+		<answerText>under no circumstances</answerText>
+		<answerText>when there is heavy traffic during peak hours</answerText>
+		<answerText>when the traffic signal shows a flashing yellow</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>		
+	<question>
+		<questionId>36</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>T intersection</answerText>
+		<answerText>Y intersection</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w9</imageFileName>				
+	</question>
+	<question>
+		<questionId>37</questionId>	
+		<questionText>"No turn on Red" is posted at an intersection. Which one of these statement is True?</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>school bus turning right MUST stop while making a right turn</answerText>
+		<answerText>large commercial vehicles turning right MUST stop while making a right turn</answerText>
+		<answerText>all vehicles turning right MUST stop while making a right turn</answerText>
+		<answerText>all of the above</answerText>
+		<imageFileName>na</imageFileName>		
+	</question>		
+	<question>
+		<questionId>38</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>crossroad - a four way intersection ahead</answerText>
+		<answerText>rail road crossing ahead</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w24</imageFileName>		
+	</question>
+	<question>
+		<questionId>39</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>T-intersection</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w28</imageFileName>		
+	</question>	
+	<question>
+		<questionId>40</questionId>	
+		<questionText>A solid yellow line next to a broken yellow line means that</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>vehicles in both direction may pass</answerText>
+		<answerText>only the vehicle next to solid line may pass</answerText>
+		<answerText>only the vehicle next to broken yellow line may pass</answerText>
+		<answerText></answerText>		
+		<imageFileName>na</imageFileName>						
+	</question>		
+	<question>
+		<questionId>41</questionId>	
+		<questionText>Double solid white lines</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>indicate that lane change is prohibited in areas where this type of marking is present</answerText>
+		<answerText>indicate that lane change is allowed</answerText>
+		<answerText>separates lanes of traffic in opposite direction</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>42</questionId>	
+		<questionText>A line composed of yellow dashes separating a two-lane road with traffic moving in both direction indicates</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>passing is allowed</answerText>		
+		<answerText>passing is illegal</answerText>
+		<answerText></answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>				
+	</question>
+	<question>
+		<questionId>43</questionId>	
+		<questionText>A center lane between lanes of traffic in opposite direction</questionText>	
+		<correctAnswer>2</correctAnswer>			
+		<answerText>serves as a median separating flow of traffic in opposite direction</answerText>		
+		<answerText>serves as a passing lane if it is safe to do so</answerText>
+		<answerText>may be designated for left turns only</answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>44</questionId>	
+		<questionText>Pavement markings consisting of shorter and thicker white lines indidate</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>that lane changes are not allowed</answerText>
+		<answerText>that lanes changes are allowed</answerText>
+		<answerText>that the lane will end</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+	<question>
+		<questionId>45</questionId>	
+		<questionText>If you're driving on an Interstate (freeway) and a car is attempting to merge into your lane, you should</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>accelerate quickly</answerText>
+		<answerText>reduce your speed quickly</answerText>
+		<answerText>if possible, safely make room for the merging vehicle</answerText>		
+		<answerText>continue to drive at constant speed as you have right-of-way</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>		
+	<question>
+		<questionId>46</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>additional lane traffic added</answerText>
+		<answerText>traffic merging from right</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w16</imageFileName>		
+	</question>
+	<question>
+		<questionId>47</questionId>	
+		<questionText>If you miss your exit on a freeway</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>back up if it safe to do so</answerText>
+		<answerText>you may make a U-turn if it safe to do so</answerText>
+		<answerText>proceed to the next exit</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>			
+	<question>
+		<questionId>48</questionId>	
+		<questionText>_____ ______ are short, one-way roads that provide access to freeways.</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>exit ramps</answerText>		
+		<answerText>entry ramps</answerText>		
+		<answerText>acceleration lanes</answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>				
+	</question>		
+	<question>
+		<questionId>49</questionId>	
+		<questionText>Parking your vehicle is not allowed</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>in front of mailboxes</answerText>
+		<answerText>within 10 feet of fire hydrant</answerText>
+		<answerText>on a crosswalk or sidewalk</answerText>
+		<answerText>all of above</answerText>
+		<imageFileName>na</imageFileName>				
+	</question>		
+
+	<question>
+		<questionId>50</questionId>	
+		<questionText>Parking your vehicle is not allowed</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>in front of mailboxes</answerText>
+		<answerText>within 10 feet of fire hydrant</answerText>
+		<answerText>on a crosswalk or sidewalk</answerText>
+		<answerText>all of above</answerText>
+		<imageFileName>na</imageFileName>				
+	</question>	
+		
+	<question>
+		<questionId>51</questionId>	
+		<questionText>You may not legally park your vehicle within 50 feet of a railroad crossing</questionText>	
+		<correctAnswer>0</correctAnswer>
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	
+	<question>
+		<questionId>52</questionId>	
+		<questionText>When a vehicle is properly parallel parked, its wheels on the curb side should be positioned no more than _________ from the curb</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>18 inches</answerText>
+		<answerText>12 inches</answerText>
+		<answerText>15 inches</answerText>
+		<answerText>5 inches</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>			
+	<question>
+		<questionId>53</questionId>	
+		<questionText>True or False? Parking is allowed at the street end of a driveway</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>			
+	<question>
+		<questionId>54</questionId>	
+		<questionText>When the front of a parked vehicle points uphill and there is no curb, the wheels should</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>be straight</answerText>
+		<answerText>point towards the shoulder of the road away from the traffic</answerText>		
+		<answerText>point away from the shoulder of the road towards the traffic</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>		
+	<question>
+		<questionId>55</questionId>	
+		<questionText>Parking is illegal along the yellow curb</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>		
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>			
+	<question>
+		<questionId>56</questionId>	
+		<questionText>Parking is not allowed within _______ of STOP sign</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>25 feet</answerText>
+		<answerText>35 feet</answerText>
+		<answerText>30 feet</answerText>
+		<answerText>10 feet</answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+	<question>
+		<questionId>57</questionId>	
+		<questionText>Parking is not allowed within _______ of a fire hydrant</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>15 feet</answerText>		
+		<answerText>18 feet</answerText>		
+		<answerText>10 feet</answerText>		
+		<answerText>20 feet</answerText>
+		<imageFileName>na</imageFileName>				
+	</question>				
+	<question>
+		<questionId>58</questionId>	
+		<questionText>If you leave your vehicle unoccupied on a public road</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>turn the front wheels away from the curb or the shoulder of the road</answerText>
+		<answerText>turn the front wheels towards from the curb or the shoulder of the road and engage the parking brake</answerText>
+		<answerText>wheels should be parallel to the curb or the shoulder</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+	<question>
+		<questionId>59</questionId>	
+		<questionText>While passing a bicyclist, there should be at least _______ between the side of your car and the bicylist</questionText>	
+		<correctAnswer>2</correctAnswer>
+		<answerText>4 feet</answerText>
+		<answerText>5 feet</answerText>
+		<answerText>3 feet</answerText>
+		<answerText>2 feet</answerText>
+		<imageFileName>na</imageFileName>
+	</question>		
+	<question>
+		<questionId>60</questionId>	
+		<questionText>When passing another vehicle, you must return to the</questionText>	
+		<correctAnswer>2</correctAnswer>			
+		<answerText>right side of the road before coming within 200 feet of an oncoming vehicle</answerText>		
+		<answerText>left side of the road before coming within 200 feet of an oncoming vehicle</answerText>		
+		<answerText>right side of the road before coming within 100 feet of an oncoming vehicle</answerText>
+		<answerText>left side of the road before coming within 100 feet of an oncoming vehicle</answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>61</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>no passing zone</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w25</imageFileName>		
+	</question>
+	<question>
+		<questionId>62</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>marks the beginning of no passing zone</answerText>		
+		<answerText>marks the end of no passing zone</answerText>
+		<answerText></answerText>		
+		<answerText></answerText>
+		<imageFileName>w3</imageFileName>				
+	</question>
+	<question>
+		<questionId>63</questionId>	
+		<questionText>It is illegal to pass another vehicle that has stopped for a pedestrian</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>64</questionId>	
+		<questionText>It is illegal to overtake and pass on the right of another vehicle</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>if there is sufficient width for two or more lanes of traffic moving in the same direction and the roadway is free from obstructions such as parked vehicles</answerText>
+		<answerText>by driving on the shoulder if the shoulder is unpaved</answerText>
+		<answerText>when the vehicle overtaken is making or about to make a left turn</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>65</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>blind pedestrian crossing sign</answerText>
+		<answerText>pedestrian crossing sign</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w12</imageFileName>				
+	</question>	
+	<question>
 		<questionId>66</questionId>	
+		<questionText>It is legal to drive in the bicycle lane</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>while entering or exiting the road</answerText>
+		<answerText>while preparing for a turn</answerText>
+		<answerText>Both A and B</answerText>
+		<answerText>when there is no bicyclist using the bicycle lane</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>	
+	<question>
+		<questionId>67</questionId>	
+		<questionText>True or False? Bicyclist riding on urban roads that do not have dedicated bicycle lanes share the same rights and responsibilties as other vehicles</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+	<question>
+		<questionId>68</questionId>	
+		<questionText>It is illegal to pass any vehicle within ________ of a rail road crossing</questionText>	
+		<correctAnswer>2</correctAnswer>			
+		<answerText>150 feet</answerText>		
+		<answerText>200 feet</answerText>		
+		<answerText>100 feet</answerText>
+		<answerText>50 feet</answerText>		
+		<imageFileName>na</imageFileName>
+	</question>		
+	<question>
+		<questionId>69</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>railroad crossing</answerText>
+		<answerText>crossing not allowed</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w14</imageFileName>				
+	</question>	
+	<question>
+		<questionId>70</questionId>	
+		<questionText>At railroad crossing when the lights or gates are activated, you must stop _______ from the nearest rail or gate</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>50 feet</answerText>
+		<answerText>20 feet</answerText>
+		<answerText>15 feet</answerText>
+		<answerText>10 feet</answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+	<question>
+		<questionId>71</questionId>	
+		<questionText>At railroad crossing, if your vehicle has manual transmission</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>do not shift gears while your vehicle is within a crossing</answerText>
+		<answerText>shift down the gear after entering the railroad crossing</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>72</questionId>	
+		<questionText>A school bus is stopped with its red lights flashing and its stop arm extended, you must stop your vehicle at least _______ from the school bus</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>15 feet</answerText>
+		<answerText>20 feet</answerText>
+		<answerText>25 feet</answerText>
+		<answerText>10 feet</answerText>
+		<imageFileName>na</imageFileName>				
+	</question>
+	<question>
+		<questionId>73</questionId>	
+		<questionText>At what time are you allowed to pass a school bus?</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>if the school bus is not in motion and the red lights are flashing</answerText>
+		<answerText>if the school bus is in motion</answerText>
+		<answerText></answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>						
+	</question>	
+	<question>
+		<questionId>74</questionId>	
+		<questionText>Passengers sitting in the back seat are not required to wear seat belts</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+	<question>
+		<questionId>75</questionId>	
+		<questionText>The lap seat belt should be positioned</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>across your abdomen or soft part of your stomach</answerText>		
+		<answerText>across you hipbones or upper thighs</answerText>
+		<answerText></answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>				
+	</question>	
+	<question>
+		<questionId>76</questionId>	
+		<questionText>You are not legally required to wear a seat belt if you are</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>driving a pickup truck while engaged in farm work</answerText>
+		<answerText>driving a neighborhood electric vehicle</answerText>
+		<answerText>riding in the back seat of the vehicle</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>				
+	</question>		
+	<question>
+		<questionId>77</questionId>	
+		<questionText>Which one of these statment's is TRUE about seat belts?</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>if you are driving below or at 12 mph you do not need seat belts</answerText>
+		<answerText>only lap belt is sufficient</answerText>
+		<answerText>seat belt is not required by occupants sitting on the back seat</answerText>
+		<answerText>your chances of surviving a car crash is more if you use the lap and shoulder belts together</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>		
+	<question>
+		<questionId>78</questionId>	
+		<questionText>True or False? Airbags are designed to keep the occupants from being ejected</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>79</questionId>	
+		<questionText>Keep your hands on the _____________  positions on the steering wheel</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>8 and 4 o’clock</answerText>
+		<answerText>10 and 2 o’clock</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+	<question>
+		<questionId>80</questionId>	
+		<questionText>The distance between the driver and the steering should be at least _________</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>10 inches</answerText>
+		<answerText>30 inches</answerText>
+		<answerText>15 inches</answerText>
+		<answerText>5 inches</answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>81</questionId>	
+		<questionText>Which one of the statements is False while driving during winter?</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>use cruise control to maintain traction</answerText>
+		<answerText>use headlight's when it is snowing or sleeting</answerText>
+		<answerText>increase safe stopping distance between vehicles</answerText>
+		<answerText>all of the above</answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+	<question>
+		<questionId>82</questionId>	
+		<questionText>In winter, you should keep a distance of at least ____________ while driving behind snowplows</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>3 car lengths</answerText>
+		<answerText>1 car lengths</answerText>
+		<answerText>5 car lengths</answerText>
+		<answerText>4 car lengths</answerText>
+		<imageFileName>na</imageFileName>		
+	</question>		
+	<question>
+		<questionId>83</questionId>	
+		<questionText>While driving behind a snowplow vehicle, drive close to the slowplow to avoid "whiteout" conditions</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+	<question>
+		<questionId>84</questionId>	
+		<questionText>If your vehicle begins to hydroplane</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>take the foot of the gas pedal</answerText>
+		<answerText>gently pump your your brake pedal</answerText>		
+		<answerText>slowly apply emergency/parking brake</answerText>
+		<answerText>apply more pressure to the gas pedal so as to increase the speed</answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>85</questionId>	
+		<questionText>If you encounter thunderstorms</questionText>	
+		<correctAnswer>1</correctAnswer>				
+		<answerText>keep your headlight's on high beam to reduce glare</answerText>		
+		<answerText>keep your headlight's on low beam to reduce glare</answerText>		
+		<answerText></answerText>
+		<answerText></answerText>		
+		<imageFileName>na</imageFileName>				
+	</question>
+	<question>
+		<questionId>86</questionId>	
+		<questionText>While changing lanes or making a turn, you must signal at least _________ in advance</questionText>	
+		<correctAnswer>1</correctAnswer>			
+		<answerText>50 feet</answerText>
+		<answerText>100 feet</answerText>
+		<answerText>75 feet</answerText>		
+		<answerText>25 feet</answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>87</questionId>	
+		<questionText>When should you use you car signals</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>while turning</answerText>
+		<answerText>while changing lanes</answerText>
+		<answerText>while moving from a parking lane or the curb</answerText>
+		<answerText>all of the above</answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+	<question>
+		<questionId>88</questionId>	
+		<questionText>While changing lanes or making a turn, you must signal at least _________ in advance</questionText>	
+		<correctAnswer>1</correctAnswer>			
+		<answerText>50 feet</answerText>
+		<answerText>100 feet</answerText>
+		<answerText>75 feet</answerText>		
+		<answerText>25 feet</answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>89</questionId>	
+		<questionText>When should you use you car signals</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>while turning</answerText>
+		<answerText>while changing lanes</answerText>
+		<answerText>while moving from a parking lane or the curb</answerText>
+		<answerText>all of the above</answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+	<question>
+		<questionId>90</questionId>	
+		<questionText>Under ideal driving conditions, unless traffic signs indicate otherwise, the speed limit in alleys should be</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>5 mph</answerText>
+		<answerText>between 5 to 15 mph</answerText>
+		<answerText>10 mph</answerText>
+		<answerText>20 mph</answerText>	
+		<imageFileName>na</imageFileName>			
+	</question>
+	<question>
+		<questionId>91</questionId>	
+		<questionText>In urban or town roads under ideal driving conditions the speed limit is ______</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>30 mph</answerText>
+		<answerText>40 mph</answerText>
+		<answerText>20 mph</answerText>
+		<answerText>25 mph</answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>92</questionId>	
+		<questionText>A Neighborhood Electric Vehicle (NEV) can be driven</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>only on streets with speed limit 25 mph of less</answerText>
+		<answerText>only on streets with speed limit 35 mph or less</answerText>		
+		<answerText>only on streets with speed limit 45 mph of less</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>						
+	</question>		
+	<question>
+		<questionId>93</questionId>	
+		<questionText>Under ideal driving conditions, driving faster than the posted speed limit is</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>legal if your speed is within +10 mph over the posted speed limit</answerText>
+		<answerText>legal if the other traffic is driving faster than the posted speed limit</answerText>
+		<answerText>legal if there is no other vehicle in your lane ahead of your vehicle</answerText>
+		<answerText>illegal</answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>94</questionId>	
+		<questionText>This road sign means under ideal driving conditions:</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>minimum speed limit is 50 mph</answerText>
+		<answerText>maximum speed limit is 50 mph</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w30</imageFileName>		
+	</question>	
+	<question>
+		<questionId>95</questionId>	
+		<questionText>When you are merging on to the freeway, you should be driving</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>at the posted speed limit</answerText>
+		<answerText>at or near the same speed as the traffic on the freeway</answerText>		
+		<answerText>as fast as you can</answerText>		
+		<answerText>5 or 10 miles slower than the traffic on the freeway</answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>96</questionId>	
+		<questionText>If a traffic signal is not functioning (blacked out)</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>slow down and proceed through the intersection with caution</answerText>
+		<answerText>treat it as a STOP sign</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+	<question>
+		<questionId>97</questionId>	
+		<questionText>One car per green light</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>is used while turning left on solid green light</answerText>		
+		<answerText>is used at an intersection</answerText>
+		<answerText>is used on freeway ramp meters</answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>				
+	</question>
+	<question>
+		<questionId>98</questionId>	
+		<questionText>A flashing red light traffic signal means</questionText>	
+		<correctAnswer>2</correctAnswer>			
+		<answerText>slow down and drive with caution</answerText>		
+		<answerText>continue with constant speed</answerText>
+		<answerText>come to a complete stop and treat it like a STOP sign</answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>		
+	<question>
+		<questionId>99</questionId>	
+		<questionText>A flashing yellow light or yellow arrow means</questionText>	
+		<correctAnswer>3</correctAnswer>			
+		<answerText>slow down and proceed through the intersection with caution</answerText>		
+		<answerText>yield right of way to vehicles and pedestrian already in the intersection</answerText>
+		<answerText>come to a complete stop and treat it like a STOP sign</answerText>
+		<answerText>both A and B</answerText>		
+		<imageFileName>na</imageFileName>
+	</question>		
+	<question>
+		<questionId>100</questionId>	
+		<questionText>Which of the following traffic lights must you always stop your vehicle</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>solid red lights, flashing yellow lights</answerText>
+		<answerText>solid red lights, flashing red lights, blacked-out traffic signals</answerText>		
+		<answerText>solid red lights, red arrow, yellow lights</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>			
+	<question>
+		<questionId>101</questionId>	
+		<questionText>A steady yellow light or arrow indiates</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>caution the light is about to turn "green"</answerText>
+		<answerText>caution the light is about to turn "red"</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+	<question>
+		<questionId>102</questionId>	
+		<questionText>A steady red X signal means</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>means you should prepare to move into another lane in a safe manner</answerText>
+		<answerText>you cannot drive in the lane under the steady red X signal</answerText>
+		<answerText>freeway lane below the steady downward red arrow will be closed</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>				
+	</question>	
+	<question>
+		<questionId>103</questionId>	
+		<questionText>A steady downward green arrow traffic signal means</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>you can turn in any direction</answerText>
+		<answerText>you are allowed to drive in the lane below the green arrow</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+	<question>
+		<questionId>104</questionId>	
+		<questionText>While waiting to turn</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>keep your wheels straight and your foot on the brake</answerText>
+		<answerText>point your wheels in the direction you intend to turn</answerText>
+		<answerText></answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>105</questionId>	
+		<questionText>If you are in a left turn lane of a multi-lane road, while turning left onto another multi-lane roadway</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>if it is safe to do so you can change lanes during the turn</answerText>
+		<answerText>stay in your lane during the turn</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+	<question>
+		<questionId>106</questionId>	
+		<questionText>On an interstate freeway U-turns are</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>allowed only during day time</answerText>
+		<answerText>allowed</answerText>
+		<answerText>not allowed</answerText>
+		<answerText>none of the above</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>		
+	<question>
+		<questionId>107</questionId>	
+		<questionText>Before you make a left turn, you must signal continuously during the last ______ before the turn</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>25 feet</answerText>
+		<answerText>50 feet</answerText>
+		<answerText>100 feet</answerText>
+		<answerText>80 feet</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>				
+	<question>
+		<questionId>108</questionId>	
+		<questionText>U-turns are illegal on curves where other drivers cannot see you from _________ away</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>500 feet</answerText>
+		<answerText>1200 feet</answerText>		
+		<answerText>1000 feet</answerText>
+		<answerText>900 feet</answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>109</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>2</correctAnswer>
+		<answerText>yield ONLY to pedestrians</answerText>
+		<answerText>yield ONLY to all other vehicles</answerText>
+		<answerText>yield to all other pedestrians and vehicles</answerText>
+		<answerText></answerText>		
+		<imageFileName>w19</imageFileName>		
+	</question>	
+	<question>
+		<questionId>110</questionId>	
+		<questionText>You can avoid dangerous last minute maneuvers by looking __________ ahead of your vehicle at all times</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>10 to 15 seconds</answerText>
+		<answerText>20 to 25 seconds</answerText>
+		<answerText>15 to 30 seconds</answerText>
+		<answerText>0 to 10 seconds</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>				
+	<question>
+		<questionId>111</questionId>	
+		<questionText>Which one of the following statements is True about blind spots</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>blind spots can be eliminated when you use your 2 outside mirrors</answerText>
+		<answerText>tractors, trailers, and large vehicles have larger blind spots than most passenger vehicles</answerText>		
+		<answerText>proper use of all 3 mirrors will eliminate your blind spot</answerText>
+		<answerText>blind spot applies ONLY to trucks and not for smaller vehicles</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>				
+	<question>
+		<questionId>112</questionId>	
+		<questionText>Road signs in Red color indicate</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>informational signs</answerText>
+		<answerText>warning signs</answerText>
+		<answerText>regulatory signs</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>113</questionId>	
+		<questionText>Driving in Minnesota is</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>the right of every US citizen</answerText>
+		<answerText>a privilege</answerText>
+		<answerText>the right of every Minnesota resident</answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>			
+						
+	<question>
+		<questionId>114</questionId>	
+		<questionText>Which one of these statements is True about roundabouts?</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>do not stop, pass, or change lanes within a roundabout</answerText>
+		<answerText>are designed to increase the traffic flow</answerText>
+		<answerText>slow down as you approach the roundabout</answerText>
+		<answerText>all of the above</answerText>
+		<imageFileName>na</imageFileName>
+	</question>		
+	<question>
+		<questionId>115</questionId>	
+		<questionText>If transit or Metro mobility bus is attempting to merge from a bus stop or from a shoulder, drivers in the right lane of traffic</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>must yield</answerText>
+		<answerText>have the right of way</answerText>
+		<answerText>must accelerate quickly</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	
+	<question>
+		<questionId>116</questionId>	
+		<questionText>Before entering a road from a private driveway and there is no STOP sign</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>come to a complete stop</answerText>
+		<answerText>stop only if there is a STOP sign</answerText>		
+		<answerText>slow down and look in right and then left direction</answerText>
+		<answerText>you have the right of way</answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>117</questionId>	
+		<questionText>Which one of these statements should you obey over all other?</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>obey pavement markings</answerText>
+		<answerText>obey road signs</answerText>		
+		<answerText>obey traffic signals</answerText>
+		<answerText>obey the hand signals you are given by the law enforcement officer</answerText>
+		<imageFileName>na</imageFileName>
+	</question>		
+	<question>
+		<questionId>118</questionId>	
+		<questionText>Running out of fuel on a freeway is considered as an emergency</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>		
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>		
+	<question>
+		<questionId>119</questionId>	
+		<questionText>Which one of these can use high occupancy vehicle lanes</questionText>	
+		<correctAnswer>3</correctAnswer>			
+		<answerText>buses</answerText>		
+		<answerText>vehicles carrying two or more people</answerText>
+		<answerText>motorcycles</answerText>
+		<answerText>all of the above</answerText>
+		<imageFileName>na</imageFileName>
+	</question>				
+	<question>
+		<questionId>120</questionId>	
 		<questionText>Backing up is not allowed on freeways or expressway, except by</questionText>	
 		<correctAnswer>0</correctAnswer>			
 		<answerText>emergency vehicles</answerText>		
@@ -714,7 +1205,7 @@
 		<imageFileName>na</imageFileName>
 	</question>
 	<question>
-		<questionId>67</questionId>	
+		<questionId>121</questionId>	
 		<questionText>If you are driving at a slower speed than other traffic on road with two or more lanes in the same direction of the traffic, you must stay in the lane</questionText>	
 		<correctAnswer>1</correctAnswer>			
 		<answerText>nearest to the center of the road</answerText>		
@@ -724,7 +1215,7 @@
 		<imageFileName>na</imageFileName>
 	</question>			
 	<question>
-		<questionId>68</questionId>	
+		<questionId>122</questionId>	
 		<questionText>If you are pulling a camper or trailer with your vehicle, you must maintain at least _______ following distance from other vehicles</questionText>	
 		<correctAnswer>2</correctAnswer>			
 		<answerText>200 feet</answerText>		
@@ -732,31 +1223,9 @@
 		<answerText>500 feet</answerText>		
 		<answerText>100 feet</answerText>
 		<imageFileName>na</imageFileName>
-	</question>
+	</question>		
 	<question>
-		<questionId>69</questionId>	
-		<questionText>If a blind pedestrian is waiting at a crosswalk with a white cane or a guide dog, you must</questionText>	
-		<correctAnswer>2</correctAnswer>			
-		<answerText>use your horn to alert them of your presence</answerText>		
-		<answerText>reduce your speed and proceed slowly</answerText>
-		<answerText>not use your horn or rev your engine</answerText>
-		<answerText>increase your speed and move quickly</answerText>
-		<imageFileName>na</imageFileName>
-	</question>
-		
-	<question>
-		<questionId>70</questionId>	
-		<questionText>When passing another vehicle, you must return to the</questionText>	
-		<correctAnswer>2</correctAnswer>			
-		<answerText>right side of the road before coming within 200 feet of an oncoming vehicle</answerText>		
-		<answerText>left side of the road before coming within 200 feet of an oncoming vehicle</answerText>		
-		<answerText>right side of the road before coming within 100 feet of an oncoming vehicle</answerText>
-		<answerText>left side of the road before coming within 100 feet of an oncoming vehicle</answerText>
-		<imageFileName>na</imageFileName>
-	</question>
-	
-	<question>
-		<questionId>71</questionId>	
+		<questionId>123</questionId>	
 		<questionText>An __________ is the connection of a freeway to a road or another freeway by a series of ramps</questionText>	
 		<correctAnswer>0</correctAnswer>			
 		<answerText>interchange</answerText>		
@@ -765,9 +1234,8 @@
 		<answerText>exit ramp</answerText>
 		<imageFileName>na</imageFileName>
 	</question>	
-
 	<question>
-		<questionId>72</questionId>	
+		<questionId>124</questionId>	
 		<questionText>When making a right turn you should turn the steering wheel using</questionText>	
 		<correctAnswer>1</correctAnswer>			
 		<answerText>a hand-off-hand technique</answerText>		
@@ -776,9 +1244,8 @@
 		<answerText>a single hand technique	</answerText>
 		<imageFileName>na</imageFileName>
 	</question>	
-
 	<question>
-		<questionId>73</questionId>	
+		<questionId>125</questionId>	
 		<questionText>Anyone who flees a police officer using a motor vehicle is sentenced to imprisonment for not more than</questionText>	
 		<correctAnswer>2</correctAnswer>			
 		<answerText>2 years and one day</answerText>		
@@ -786,384 +1253,9 @@
 		<answerText>3 years and one day</answerText>
 		<answerText>4 years and one day</answerText>
 		<imageFileName>na</imageFileName>
-	</question>	
-	
+	</question>				
 	<question>
-		<questionId>74</questionId>	
-		<questionText>Passing a commercial vehicle takes _________ compared to a passenger vehicle on a level highway</questionText>	
-		<correctAnswer>0</correctAnswer>			
-		<answerText>3 to 5 seconds longer</answerText>		
-		<answerText>5 to 8 seconds longer</answerText>		
-		<answerText>3 seconds longer</answerText>
-		<answerText>2 seconds longer</answerText>
-		<imageFileName>na</imageFileName>
-	</question>
-
-	<question>
-		<questionId>75</questionId>	
-		<questionText>While changing lanes or making a turn, you must signal at least _________ in advance</questionText>	
-		<correctAnswer>1</correctAnswer>			
-		<answerText>50 feet</answerText>
-		<answerText>100 feet</answerText>
-		<answerText>75 feet</answerText>		
-		<answerText>25 feet</answerText>
-		<imageFileName>na</imageFileName>
-	</question>
-	
-	<question>
-		<questionId>76</questionId>	
-		<questionText>This road sign means:</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>winding road</answerText>
-		<answerText>road curves sharply ahead</answerText>
-		<answerText>slippery road</answerText>
-		<answerText></answerText>
-		<imageFileName>w1</imageFileName>				
-	</question>
-	
-	<question>
-		<questionId>77</questionId>	
-		<questionText>This road sign means:</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>zoo ahead</answerText>		
-		<answerText>deer crossing warning sign</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w2</imageFileName>				
-	</question>	
-
-	<question>
-		<questionId>78</questionId>	
-		<questionText>A Neighborhood Electric Vehicle (NEV) can be driven</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>only on streets with speed limit 25 mph of less</answerText>
-		<answerText>only on streets with speed limit 35 mph or less</answerText>		
-		<answerText>only on streets with speed limit 45 mph of less</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>						
-	</question>		
-		
-	<question>
-		<questionId>79</questionId>	
-		<questionText>This road sign means:</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>flagger ahead</answerText>
-		<answerText>workers are performing maintainance on the roadway</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w4</imageFileName>				
-	</question>	
-
-	<question>
-		<questionId>80</questionId>	
-		<questionText>This road sign means:</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>divided highway ends</answerText>
-		<answerText>divided highway ahead</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w5</imageFileName>				
-	</question>
-	
-	<question>
-		<questionId>81</questionId>	
-		<questionText>This road sign means:</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>sharp turn ahead sign</answerText>
-		<answerText>sharp curve ahead sign</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w6</imageFileName>				
-	</question>	
-
-	<question>
-		<questionId>82</questionId>	
-		<questionText>This road sign means:</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>traffic signal ahead</answerText>
-		<answerText>traffic signal not working</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w7</imageFileName>				
-	</question>
-	
-	<question>
-		<questionId>83</questionId>	
-		<questionText>This road sign means:</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>roundabout ahead</answerText>
-		<answerText>interchange ahead</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w8</imageFileName>				
-	</question>	
-	
-	<question>
-		<questionId>84</questionId>	
-		<questionText>This road sign means:</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>T intersection</answerText>
-		<answerText>Y intersection</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w9</imageFileName>				
-	</question>
-	
-	<question>
-		<questionId>85</questionId>	
-		<questionText>Under ideal driving conditions, driving faster than the posted speed limit is</questionText>	
-		<correctAnswer>3</correctAnswer>		
-		<answerText>legal if your speed is within +10 mph over the posted speed limit</answerText>
-		<answerText>legal if the other traffic is driving faster than the posted speed limit</answerText>
-		<answerText>legal if there is no other vehicle in your lane ahead of your vehicle</answerText>
-		<answerText>illegal</answerText>
-		<imageFileName>na</imageFileName>
-	</question>	
-	
-	<question>
-		<questionId>86</questionId>	
-		<questionText>This sign means:</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>divided highway ahead</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w11</imageFileName>				
-	</question>
-	
-	<question>
-		<questionId>87</questionId>	
-		<questionText>This sign means:</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>blind pedestrian crossing sign</answerText>
-		<answerText>pedestrian crossing sign</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w12</imageFileName>				
-	</question>	
-
-	<question>
-		<questionId>88</questionId>	
-		<questionText>This sign means:</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>school zone</answerText>
-		<answerText>pedestrian crossing</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w13</imageFileName>				
-	</question>
-	
-	<question>
-		<questionId>89</questionId>	
-		<questionText>This sign means:</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>railroad crossing</answerText>
-		<answerText>crossing not allowed</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w14</imageFileName>				
-	</question>	
-
-	<question>
-		<questionId>90</questionId>	
-		<questionText>This sign means:</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>only heavy trucks allowed</answerText>
-		<answerText>steep grade/hill</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w15</imageFileName>		
-	</question>
-
-	<question>
-		<questionId>91</questionId>	
-		<questionText>This sign means:</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>additional lane traffic added</answerText>
-		<answerText>traffic merging from right</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w16</imageFileName>		
-	</question>
-
-	<question>
-		<questionId>92</questionId>	
-		<questionText>This sign means:</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>Minnesota Highway</answerText>
-		<answerText>Country road</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w17</imageFileName>		
-	</question>
-
-	<question>
-		<questionId>93</questionId>	
-		<questionText>If you encounter thunderstorms</questionText>	
-		<correctAnswer>1</correctAnswer>				
-		<answerText>keep your headlight's on high beam to reduce glare</answerText>		
-		<answerText>keep your headlight's on low beam to reduce glare</answerText>		
-		<answerText></answerText>
-		<answerText></answerText>		
-		<imageFileName>na</imageFileName>				
-	</question>			
-
-	<question>
-		<questionId>94</questionId>	
-		<questionText>This road sign means:</questionText>	
-		<correctAnswer>2</correctAnswer>
-		<answerText>yield ONLY to pedestrians</answerText>
-		<answerText>yield ONLY to all other vehicles</answerText>
-		<answerText>yield to all other pedestrians and vehicles</answerText>
-		<answerText></answerText>		
-		<imageFileName>w19</imageFileName>		
-	</question>
-
-	<question>
-		<questionId>95</questionId>	
-		<questionText>This road sign means:</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>do not enter that lane or road if the sign is facing you</answerText>
-		<answerText>no outlet ahead</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w20</imageFileName>		
-	</question>
-
-	<question>
-		<questionId>96</questionId>	
-		<questionText>You should obey the instructions from the guards in the school zone</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>only during school hours</answerText>
-		<answerText>only when children are present</answerText>
-		<answerText>at all times</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>				
-	</question>	
-
-	<question>
-		<questionId>97</questionId>	
-		<questionText>This sign means:</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>interstate Freeway</answerText>
-		<answerText>county road</answerText>
-		<answerText>U.S. Highway</answerText>
-		<answerText></answerText>
-		<imageFileName>w22</imageFileName>		
-	</question>
-
-	<question>
-		<questionId>98</questionId>	
-		<questionText>This sign means:</questionText>	
-		<correctAnswer>1</correctAnswer>
-		<answerText>interstate Freeway</answerText>		
-		<answerText>U.S. Highway</answerText>
-		<answerText>county road</answerText>
-		<answerText></answerText>
-		<imageFileName>w23</imageFileName>		
-	</question>
-
-	<question>
-		<questionId>99</questionId>	
-		<questionText>This road sign means:</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>crossroad - a four way intersection ahead</answerText>
-		<answerText>rail road crossing ahead</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w24</imageFileName>		
-	</question>
-
-	<question>
-		<questionId>100</questionId>	
-		<questionText>This sign means:</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>no passing zone</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w25</imageFileName>		
-	</question>
-
-	<question>
-		<questionId>101</questionId>	
-		<questionText>This sign means:</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>you are leaving a one way traffic road and entering a two way traffic road</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w26</imageFileName>		
-	</question>
-
-	<question>
-		<questionId>102</questionId>	
-		<questionText>This sign means:</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>fire station sign</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w27</imageFileName>		
-	</question>
-
-	<question>
-		<questionId>103</questionId>	
-		<questionText>This sign means:</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>T-intersection</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w28</imageFileName>		
-	</question>
-
-	<question>
-		<questionId>104</questionId>	
-		<questionText>Which one of these statments is TRUE about seat belts?</questionText>	
-		<correctAnswer>3</correctAnswer>		
-		<answerText>if you are driving below or at 12 mph you do not need seat belts</answerText>
-		<answerText>only lap belt is sufficient</answerText>
-		<answerText>seat belt is not required by occupants sitting on the back seat</answerText>
-		<answerText>your chances of surviving a car crash is more if you use the lap and shoulder belts together</answerText>
-		<imageFileName>na</imageFileName>						
-	</question>		
-
-	<question>
-		<questionId>105</questionId>	
-		<questionText>In what siutuation can children be left unattended in a vehicle</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>only if the children are above 8 years of age</answerText>
-		<answerText>only if the children are safely fastened in a child safety restraint system</answerText>
-		<answerText>never</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>						
-	</question>			
-	
-	<question>
-		<questionId>106</questionId>	
-		<questionText>This road sign means:</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>marks the begining of no passing zone</answerText>		
-		<answerText>marks the end of no passing zone</answerText>
-		<answerText></answerText>		
-		<answerText></answerText>
-		<imageFileName>w3</imageFileName>				
-	</question>
-			
-	<question>
-		<questionId>107</questionId>	
-		<questionText>A steady red X signal means</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>means you should prepare to move into another lane in a safe manner</answerText>
-		<answerText>you cannot drive in the lane under the steady red X signal</answerText>
-		<answerText>freeway lane below the steady downward red arrow will be closed</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>				
-	</question>	
-	
-	<question>
-		<questionId>108</questionId>	
+		<questionId>126</questionId>	
 		<questionText>A three second rule is a way</questionText>	
 		<correctAnswer>2</correctAnswer>		
 		<answerText>to safely merge from a ramp</answerText>
@@ -1171,10 +1263,9 @@
 		<answerText>is a way to help keep a safe distance between you car and the vehicle ahead of you</answerText>
 		<answerText></answerText>
 		<imageFileName>na</imageFileName>				
-	</question>	
-	
+	</question>		
 	<question>
-		<questionId>109</questionId>	
+		<questionId>127</questionId>	
 		<questionText>If you notice fire beneath the hood of your vehicle, DO NOT</questionText>	
 		<correctAnswer>1</correctAnswer>		
 		<answerText>pull off the road</answerText>
@@ -1185,7 +1276,7 @@
 	</question>
 	
 	<question>
-		<questionId>110</questionId>	
+		<questionId>128</questionId>	
 		<questionText>This sign means:</questionText>	
 		<correctAnswer>0</correctAnswer>		
 		<answerText>county road</answerText>
@@ -1195,19 +1286,9 @@
 		<imageFileName>w21</imageFileName>		
 	</question>
 	
-	<question>
-		<questionId>111</questionId>	
-		<questionText>The only way to reduce the concentration of alcohol in your body is by</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>drinking coffee</answerText>
-		<answerText>taking cold showers</answerText>
-		<answerText>waiting</answerText>		
-		<answerText>exercising</answerText>
-		<imageFileName>na</imageFileName>		
-	</question>	
 	
 	<question>
-		<questionId>112</questionId>	
+		<questionId>129</questionId>	
 		<questionText>A class D drivers license allows you to tow a trailer or any other vehicle, if the combined gross weight of the vechile and the trailer is</questionText>	
 		<correctAnswer>2</correctAnswer>		
 		<answerText>28,000 pounds or less</answerText>
@@ -1216,20 +1297,9 @@
 		<answerText>24,000 pounds or less</answerText>
 		<imageFileName>na</imageFileName>		
 	</question>
-	
+		
 	<question>
-		<questionId>113</questionId>	
-		<questionText>Which of the following traffic lights must you always stop your vehicle</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>solid red lights, flashing yellow lights</answerText>
-		<answerText>solid red lights, flashing red lights, blacked-out traffic signals</answerText>		
-		<answerText>solid red lights, red arrow, yellow lights</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>		
-	</question>			
-	
-	<question>
-		<questionId>114</questionId>	
+		<questionId>130</questionId>	
 		<questionText>If your vehicle skids</questionText>	
 		<correctAnswer>1</correctAnswer>		
 		<answerText>slam the brakes</answerText>
@@ -1238,41 +1308,8 @@
 		<answerText></answerText>
 		<imageFileName>na</imageFileName>		
 	</question>		
-	
 	<question>
-		<questionId>115</questionId>	
-		<questionText>When should you use you car signals</questionText>	
-		<correctAnswer>3</correctAnswer>		
-		<answerText>while turning</answerText>
-		<answerText>while changing lanes</answerText>
-		<answerText>while moving from a parking lane or the curb</answerText>
-		<answerText>all of the above</answerText>
-		<imageFileName>na</imageFileName>		
-	</question>		
-	
-	<question>
-		<questionId>116</questionId>	
-		<questionText>If you see orange construction signs and orange cones on an expressway, you must</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>slow down because the lane ahead ends</answerText>
-		<answerText>change the lane and maintain your speed</answerText>
-		<answerText>be prepared for workers and equipment ahead</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>		
-	</question>	
-	
-	<question>
-		<questionId>117</questionId>	
-		<questionText>This road sign means under ideal driving conditions:</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>minimum speed limit is 50 mph</answerText>
-		<answerText>maximum speed limit is 50 mph</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>w30</imageFileName>		
-	</question>	
-	<question>
-		<questionId>118</questionId>	
+		<questionId>131</questionId>	
 		<questionText>To maintain alertness and concentration during long drives, which one of these statements is false</questionText>	
 		<correctAnswer>1</correctAnswer>		
 		<answerText>stop at least once every 100 miles or every 2 hours</answerText>
@@ -1282,37 +1319,7 @@
 		<imageFileName>na</imageFileName>		
 	</question>		
 	<question>
-		<questionId>119</questionId>	
-		<questionText>When a commercial vehicle passes your vehicle, which one of these statements is False</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>speed up</answerText>
-		<answerText>slow down slightly</answerText>
-		<answerText>keep to the far side of your lane</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>		
-	</question>		
-	<question>
-		<questionId>120</questionId>	
-		<questionText>At railroad crossing when the lights or gates are activated, you must stop _______ from the nearest rail or gate</questionText>	
-		<correctAnswer>3</correctAnswer>		
-		<answerText>50 feet</answerText>
-		<answerText>20 feet</answerText>
-		<answerText>15 feet</answerText>
-		<answerText>10 feet</answerText>
-		<imageFileName>na</imageFileName>		
-	</question>
-	<question>
-		<questionId>121</questionId>	
-		<questionText>If you miss your exit on a freeway</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>back up if it safe to do so</answerText>
-		<answerText>you may make a U-turn if it safe to do so</answerText>
-		<answerText>proceed to the next exit</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>		
-	</question>			
-	<question>
-		<questionId>122</questionId>	
+		<questionId>132</questionId>	
 		<questionText>Which one of these distracted driving behaviors is also considered illegal on Minnesota roads?</questionText>	
 		<correctAnswer>1</correctAnswer>		
 		<answerText>adjusting GPS</answerText>
@@ -1322,57 +1329,7 @@
 		<imageFileName>na</imageFileName>		
 	</question>		
 	<question>
-		<questionId>123</questionId>	
-		<questionText>While driving behind a snowplow vehicle, drive close to the slowplow to avoid "whiteout" conditions</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>True</answerText>
-		<answerText>False</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>		
-	</question>
-	<question>
-		<questionId>124</questionId>	
-		<questionText>True or False? A person with higher percentage of fat than another person with the same body weight will reach higher alcohol concentration by consuming the same amount of alcohol</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>True</answerText>
-		<answerText>False</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>		
-	</question>	
-	<question>
-		<questionId>125</questionId>	
-		<questionText>Keep your hands on the _____________  positions on the steering wheel</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>8 and 4 o’clock</answerText>
-		<answerText>10 and 2 o’clock</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>		
-	</question>	
-	<question>
-		<questionId>126</questionId>	
-		<questionText>A steady downward green arrow traffic signal means</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>you can turn in any direction</answerText>
-		<answerText>you are allowed to drive in the lane below the green arrow</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>		
-	</question>		
-	<question>
-		<questionId>127</questionId>	
-		<questionText>Pavement markings consisting of shorter and thicker white lines indidate</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>that lane changes are not allowed</answerText>
-		<answerText>that lanes changes are allowed</answerText>
-		<answerText>that the lane will end</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>		
-	</question>	
-	<question>
-		<questionId>128</questionId>	
+		<questionId>133</questionId>	
 		<questionText>On a freeway if a vehicle behind you is following too closely</questionText>	
 		<correctAnswer></correctAnswer>		
 		<answerText>slow down slightly and allow it to pass</answerText>
@@ -1382,77 +1339,7 @@
 		<imageFileName>na</imageFileName>		
 	</question>	
 	<question>
-		<questionId>129</questionId>	
-		<questionText>When set on high beam the headlight's must make objects visible on the road ahead from at least ________ away</questionText>	
-		<correctAnswer>3</correctAnswer>		
-		<answerText>300 feet</answerText>
-		<answerText>250 feet</answerText>
-		<answerText>400 feet</answerText>
-		<answerText>350 feet</answerText>
-		<imageFileName>na</imageFileName>		
-	</question>	
-	<question>
-		<questionId>130</questionId>	
-		<questionText>If you are in a left turn lane of a multi-lane road, while turning left onto another multi-lane roadway</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>if it is safe to do so you can change lanes during the turn</answerText>
-		<answerText>stay in your lane during the turn</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>		
-	</question>	
-	<question>
-		<questionId>131</questionId>	
-		<questionText>Brown road signs</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>guides and informs</answerText>
-		<answerText>warns and controls in construction zones</answerText>
-		<answerText>indicates historic, cultural, or recreation sites</answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>		
-	</question>	
-	<question>
-		<questionId>132</questionId>	
-		<questionText>"No turn on Red" is posted at an intersection. Which one of these statement is True?</questionText>	
-		<correctAnswer>3</correctAnswer>		
-		<answerText>school bus turning right MUST stop while making a right turn</answerText>
-		<answerText>large commercial vehicles turning right MUST stop while making a right turn</answerText>
-		<answerText>all vehicles turning right MUST stop while making a right turn</answerText>
-		<answerText>all of the above</answerText>
-		<imageFileName>na</imageFileName>		
-	</question>	
-	<question>
-		<questionId>133</questionId>	
-		<questionText>Parking is not allowed within _______ of STOP sign</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>25 feet</answerText>
-		<answerText>35 feet</answerText>
-		<answerText>30 feet</answerText>
-		<answerText>10 feet</answerText>
-		<imageFileName>na</imageFileName>		
-	</question>
-	<question>
 		<questionId>134</questionId>	
-		<questionText>True or False? Bicyclist riding on urban roads that do not have dedicated bicycle lanes share the same rights and responsibilties as other vehicles</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>True</answerText>
-		<answerText>False</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>		
-	</question>	
-	<question>
-		<questionId>135</questionId>	
-		<questionText>If a traffic signal is not functioning (blacked out)</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>slow down and proceed through the intersection with caution</answerText>
-		<answerText>treat it as a STOP sign</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>		
-	</question>	
-	<question>
-		<questionId>136</questionId>	
 		<questionText>Which one of these lights cannot be used by unauthorized vehicles</questionText>	
 		<correctAnswer>3</correctAnswer>		
 		<answerText>blue lights</answerText>
@@ -1462,7 +1349,7 @@
 		<imageFileName>na</imageFileName>		
 	</question>	
 	<question>
-		<questionId>137</questionId>	
+		<questionId>135</questionId>	
 		<questionText>It is illegal to drive a vehicle with a tire having a tire depth of less than ____ of an inch</questionText>	
 		<correctAnswer>1</correctAnswer>		
 		<answerText>1/4th</answerText>
@@ -1472,7 +1359,7 @@
 		<imageFileName>na</imageFileName>		
 	</question>	
 	<question>
-		<questionId>138</questionId>	
+		<questionId>136</questionId>	
 		<questionText>"Zipper merge" is a driving strategy to _____ _____ when you have recognized that the lane will end soon</questionText>	
 		<correctAnswer>1</correctAnswer>		
 		<answerText>merge early</answerText>
@@ -1482,27 +1369,7 @@
 		<imageFileName>na</imageFileName>		
 	</question>	
 	<question>
-		<questionId>139</questionId>	
-		<questionText>Orange road sign</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>warns and controls in construction zones</answerText>
-		<answerText>regulates</answerText>
-		<answerText>warns in school zones</answerText>
-		<answerText>warns and controls in pedestrian crossings</answerText>
-		<imageFileName>na</imageFileName>		
-	</question>
-	<question>
-		<questionId>140</questionId>	
-		<questionText>A steady yellow light or arrow indiates</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>caution the light is about to turn "green"</answerText>
-		<answerText>caution the light is about to turn "red"</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>		
-	</question>
-	<question>
-		<questionId>141</questionId>	
+		<questionId>137</questionId>	
 		<questionText>A load must not stick out ______ in front of the front wheels or bumper of a vehicle</questionText>	
 		<correctAnswer>2</correctAnswer>		
 		<answerText>5 feet</answerText>
@@ -1512,17 +1379,7 @@
 		<imageFileName>na</imageFileName>		
 	</question>
 	<question>
-		<questionId>142</questionId>	
-		<questionText>Which one of the statements is False while driving during winter?</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>use cruise control to maintain traction</answerText>
-		<answerText>use headlight's when it is snowing or sleeting</answerText>
-		<answerText>increase safe stopping distance between vehicles</answerText>
-		<answerText>all of the above</answerText>
-		<imageFileName>na</imageFileName>		
-	</question>
-	<question>
-		<questionId>143</questionId>	
+		<questionId>138</questionId>	
 		<questionText>A recreational vehicle combination should not be more than _______</questionText>	
 		<correctAnswer>2</correctAnswer>		
 		<answerText>60 feet</answerText>
@@ -1532,27 +1389,7 @@
 		<imageFileName>na</imageFileName>		
 	</question>	
 	<question>
-		<questionId>144</questionId>	
-		<questionText>In highway work-zone areas</questionText>	
-		<correctAnswer>3</correctAnswer>		
-		<answerText>reduce your speed</answerText>
-		<answerText>watch out for workers and equipment</answerText>
-		<answerText>if flag person is present, then follow flag person's directions</answerText>
-		<answerText>all of the above</answerText>
-		<imageFileName>na</imageFileName>		
-	</question>
-	<question>
-		<questionId>145</questionId>	
-		<questionText>It is safe for children to ride in the cargo area of a truck or station wagon</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>True</answerText>
-		<answerText>False</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>		
-	</question>
-	<question>
-		<questionId>146</questionId>	
+		<questionId>139</questionId>	
 		<questionText>If a load extends 4 feet or more from the rear of the vehicle</questionText>	
 		<correctAnswer>1</correctAnswer>		
 		<answerText>it is illegal under all circumstances</answerText>
@@ -1562,7 +1399,7 @@
 		<imageFileName>na</imageFileName>		
 	</question>
 	<question>
-		<questionId>147</questionId>	
+		<questionId>140</questionId>	
 		<questionText>GPS or Navigation Devices may be mounted or positioned near the</questionText>	
 		<correctAnswer>2</correctAnswer>		
 		<answerText>middle portion of the windshield</answerText>
@@ -1572,47 +1409,27 @@
 		<imageFileName>na</imageFileName>		
 	</question>
 	<question>
-		<questionId>148</questionId>	
-		<questionText>If you leave your vehicle unoccupied on a public road</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>turn the front wheels away from the curb or the shoulder of the road</answerText>
-		<answerText>turn the front wheels towards from the curb or the shoulder of the road and engage the parking brake</answerText>
-		<answerText>wheels should be parallel to the curb or the shoulder</answerText>
+		<questionId>141</questionId>	
+		<questionText>True or False? If there is sufficient room, it is safe to drive a vehicle alongside a motorcycle in the same lane</questionText>	
+		<correctAnswer>1</correctAnswer>				
+		<answerText>True</answerText>		
+		<answerText>False</answerText>		
 		<answerText></answerText>
-		<imageFileName>na</imageFileName>		
-	</question>
-	<question>
-		<questionId>149</questionId>	
-		<questionText>Passengers sitting in the back seat are not required to wear seat belts</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>True</answerText>
-		<answerText>False</answerText>
-		<answerText></answerText>
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>		
+		<answerText></answerText>		
+		<imageFileName>na</imageFileName>				
 	</question>	
 	<question>
-		<questionId>150</questionId>	
-		<questionText>If you are involved in a crash, and the crash results only in property damage</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>it is mandatory to inform law enforcement immediately</answerText>
-		<answerText>you should contact your auto insurance company, but it is not necessary to inform the property owner</answerText>
-		<answerText>you should inform the property owner immediately</answerText>
+		<questionId>142</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>come to a complete stop</answerText>
 		<answerText></answerText>
-		<imageFileName>na</imageFileName>		
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w18</imageFileName>		
 	</question>
 	<question>
-		<questionId>151</questionId>	
-		<questionText>In winter, you should keep a distance of at least ____________ while driving behind snowplows</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>3 car lengths</answerText>
-		<answerText>1 car lengths</answerText>
-		<answerText>5 car lengths</answerText>
-		<answerText>4 car lengths</answerText>
-		<imageFileName>na</imageFileName>		
-	</question>		
-	<question>
-		<questionId>152</questionId>	
+		<questionId>143</questionId>	
 		<questionText>This road sign means:</questionText>	
 		<correctAnswer>2</correctAnswer>		
 		<answerText>change lane</answerText>		
@@ -1622,83 +1439,207 @@
 		<imageFileName>w31</imageFileName>				
 	</question>	
 	<question>
-		<questionId>153</questionId>	
-		<questionText>The lap seat belt should be positioned</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>across your abdomen or soft part of your stomach</answerText>		
-		<answerText>across you hipbones or upper thighs</answerText>
-		<answerText></answerText>		
+		<questionId>144</questionId>	
+		<questionText>Brown road signs</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>guides and informs</answerText>
+		<answerText>warns and controls in construction zones</answerText>
+		<answerText>indicates historic, cultural, or recreation sites</answerText>
 		<answerText></answerText>
-		<imageFileName>na</imageFileName>				
+		<imageFileName>na</imageFileName>		
 	</question>	
 	<question>
-		<questionId>154</questionId>	
-		<questionText>One car per green light</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>is used while turning left on solid green light</answerText>		
-		<answerText>is used at an intersection</answerText>
-		<answerText>is used on freeway ramp meters</answerText>		
+		<questionId>145</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>interstate Freeway</answerText>
+		<answerText>county road</answerText>
+		<answerText>U.S. Highway</answerText>
 		<answerText></answerText>
-		<imageFileName>na</imageFileName>				
+		<imageFileName>w22</imageFileName>		
+	</question>
+	<question>
+		<questionId>146</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>1</correctAnswer>
+		<answerText>interstate Freeway</answerText>		
+		<answerText>U.S. Highway</answerText>
+		<answerText>county road</answerText>
+		<answerText></answerText>
+		<imageFileName>w23</imageFileName>		
+	</question>
+	<question>
+		<questionId>147</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>you are leaving a one way traffic road and entering a two way traffic road</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w26</imageFileName>		
+	</question>
+	<question>
+		<questionId>148</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>fire station sign</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w27</imageFileName>		
+	</question>
+	<question>
+		<questionId>149</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>sharp turn ahead sign</answerText>
+		<answerText>sharp curve ahead sign</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w6</imageFileName>				
+	</question>	
+	<question>
+		<questionId>150</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>traffic signal ahead</answerText>
+		<answerText>traffic signal not working</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w7</imageFileName>				
+	</question>
+	
+	<question>
+		<questionId>151</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>roundabout ahead</answerText>
+		<answerText>interchange ahead</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w8</imageFileName>				
+	</question>
+		
+	<question>
+		<questionId>152</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>divided highway ahead</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w11</imageFileName>				
+	</question>
+	<question>
+		<questionId>153</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>school zone</answerText>
+		<answerText>pedestrian crossing</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w13</imageFileName>				
+	</question>
+	<question>
+		<questionId>154</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>only heavy trucks allowed</answerText>
+		<answerText>steep grade/hill</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w15</imageFileName>		
 	</question>
 	<question>
 		<questionId>155</questionId>	
-		<questionText>A line composed of yellow dashes separating a two-lane road with traffic moving in both direction indicates</questionText>	
-		<correctAnswer>0</correctAnswer>		
-		<answerText>passing is allowed</answerText>		
-		<answerText>passing is illegal</answerText>
-		<answerText></answerText>		
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>				
-	</question>
-	<question>
-		<questionId>156</questionId>	
-		<questionText>_____ ______ are short, one-way roads that provide access to freeways.</questionText>	
-		<correctAnswer>1</correctAnswer>		
-		<answerText>exit ramps</answerText>		
-		<answerText>entry ramps</answerText>		
-		<answerText>acceleration lanes</answerText>		
-		<answerText></answerText>
-		<imageFileName>na</imageFileName>				
-	</question>
-	<question>
-		<questionId>157</questionId>	
-		<questionText>Parking is not allowed within _______ of a fire hydrant</questionText>	
-		<correctAnswer>2</correctAnswer>		
-		<answerText>15 feet</answerText>		
-		<answerText>18 feet</answerText>		
-		<answerText>10 feet</answerText>		
-		<answerText>20 feet</answerText>
-		<imageFileName>na</imageFileName>				
-	</question>			
-	<question>
-		<questionId>158</questionId>	
-		<questionText>In an uncontrolled 'T' intersection which one of these has the right-of-way over over all other</questionText>	
-		<correctAnswer>1</correctAnswer>				
-		<answerText>vehicle turning left</answerText>		
-		<answerText>cross traffic</answerText>		
-		<answerText>vehicle turning right</answerText>
-		<answerText></answerText>		
-		<imageFileName>na</imageFileName>				
-	</question>			
-	<question>
-		<questionId>159</questionId>	
-		<questionText>True or False? If there is sufficient room, it is safe to drive a vehicle alongside a motorcycle in the same lane</questionText>	
-		<correctAnswer>1</correctAnswer>				
-		<answerText>True</answerText>		
-		<answerText>False</answerText>		
-		<answerText></answerText>
-		<answerText></answerText>		
-		<imageFileName>na</imageFileName>				
-	</question>
-	<question>
-		<questionId>160</questionId>	
 		<questionText>This sign means:</questionText>	
 		<correctAnswer>0</correctAnswer>		
-		<answerText>come to a complete stop</answerText>
+		<answerText>Minnesota Highway</answerText>
+		<answerText>Country road</answerText>
 		<answerText></answerText>
 		<answerText></answerText>
+		<imageFileName>w17</imageFileName>		
+	</question>
+
+	<question>
+		<questionId>156</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>winding road</answerText>
+		<answerText>road curves sharply ahead</answerText>
+		<answerText>slippery road</answerText>
 		<answerText></answerText>
-		<imageFileName>w18</imageFileName>		
+		<imageFileName>w1</imageFileName>				
+	</question>
+	
+	<question>
+		<questionId>157</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>zoo ahead</answerText>		
+		<answerText>deer crossing warning sign</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w2</imageFileName>				
 	</question>	
-</quiz>	
+	<question>
+		<questionId>158</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>right lane ends</answerText>
+		<answerText>additional right lane of traffic begins</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w10</imageFileName>				
+	</question>		
+	<question>
+		<questionId>159</questionId>	
+		<questionText>Blue road signs are</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>informational signs</answerText>
+		<answerText>regulatory signs</answerText>
+		<answerText>warning signs</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>160</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>divided highway ends</answerText>
+		<answerText>divided highway ahead</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w5</imageFileName>				
+	</question>
+	<question>
+		<questionId>161</questionId>	
+		<questionText>You should obey the instructions from the guards in the school zone</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>only during school hours</answerText>
+		<answerText>only when children are present</answerText>
+		<answerText>at all times</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>				
+	</question>	
+	<question>
+		<questionId>162</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>slippery road</answerText>
+		<answerText>winding road</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w29</imageFileName>		
+	</question>		
+	<question>
+		<questionId>163</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>do not enter that lane or road if the sign is facing you</answerText>
+		<answerText>no outlet ahead</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w20</imageFileName>		
+	</question>	
+</quiz>

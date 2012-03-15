@@ -43,6 +43,7 @@ public class QuizActivity extends ListActivity {
 	private HashMap<String, Integer>	roadSignMap;
 
 	private OngoingQuizTracker		quiz_tracker;
+	private ArrayList<QandA>		copyQuizArrayList;
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -50,8 +51,10 @@ public class QuizActivity extends ListActivity {
 
 		initializeRoadSignHashMap();
 
+		copyQuizArrayList = new ArrayList<QandA>(quizArrayList);
+
 		// Shuffle the quiz
-		Collections.shuffle(quizArrayList);
+		Collections.shuffle(copyQuizArrayList);
 
 		quizQuestionNumberText = new StringBuffer();
 
@@ -106,7 +109,7 @@ public class QuizActivity extends ListActivity {
 
 		currentQuestionIndex = 0;
 
-		QandA singleQandA = quizArrayList.get(currentQuestionIndex);
+		QandA singleQandA = copyQuizArrayList.get(currentQuestionIndex);
 
 		ImageView quiz_roadSign_IV = (ImageView) findViewById(R.id.realQuiz_roadSignIV);
 
@@ -241,7 +244,7 @@ public class QuizActivity extends ListActivity {
 			return;
 		}
 
-		QandA singleQandA = quizArrayList.get(currentQuestionIndex);
+		QandA singleQandA = copyQuizArrayList.get(currentQuestionIndex);
 
 		ImageView quiz_roadSign_IV = (ImageView) findViewById(R.id.realQuiz_roadSignIV);
 
@@ -291,7 +294,7 @@ public class QuizActivity extends ListActivity {
 	}
 
 	private String getCorrectAnswerText() {
-		QandA singleQandA = quizArrayList.get(currentQuestionIndex);
+		QandA singleQandA = copyQuizArrayList.get(currentQuestionIndex);
 
 		String ans = singleQandA.getCorrectAnswer();
 		String ansLetter = null;
@@ -310,7 +313,7 @@ public class QuizActivity extends ListActivity {
 	}
 
 	private int getCorrectAnswerPosition() {
-		QandA singleQandA = quizArrayList.get(currentQuestionIndex);
+		QandA singleQandA = copyQuizArrayList.get(currentQuestionIndex);
 
 		String ans = singleQandA.getCorrectAnswer();
 

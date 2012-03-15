@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>81</questionId>	
+		<questionText>Which one of the statements is False while driving during winter?</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>use cruise control to maintain traction</answerText>
+		<answerText>use headlight's when it is snowing or sleeting</answerText>
+		<answerText>increase safe stopping distance between vehicles</answerText>
+		<answerText>all of the above</answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+	<question>
+		<questionId>82</questionId>	
+		<questionText>In winter, you should keep a distance of at least ____________ while driving behind snowplows</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>3 car lengths</answerText>
+		<answerText>1 car lengths</answerText>
+		<answerText>5 car lengths</answerText>
+		<answerText>4 car lengths</answerText>
+		<imageFileName>na</imageFileName>		
+	</question>		
+	<question>
+		<questionId>83</questionId>	
+		<questionText>While driving behind a snowplow vehicle, drive close to the slowplow to avoid "whiteout" conditions</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+	<question>
+		<questionId>84</questionId>	
+		<questionText>If your vehicle begins to hydroplane</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>take the foot of the gas pedal</answerText>
+		<answerText>gently pump your your brake pedal</answerText>		
+		<answerText>slowly apply emergency/parking brake</answerText>
+		<answerText>apply more pressure to the gas pedal so as to increase the speed</answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>85</questionId>	
+		<questionText>If you encounter thunderstorms</questionText>	
+		<correctAnswer>1</correctAnswer>				
+		<answerText>keep your headlight's on high beam to reduce glare</answerText>		
+		<answerText>keep your headlight's on low beam to reduce glare</answerText>		
+		<answerText></answerText>
+		<answerText></answerText>		
+		<imageFileName>na</imageFileName>				
+	</question>
+</quiz>

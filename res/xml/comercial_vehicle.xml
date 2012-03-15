@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>7</questionId>	
+		<questionText>When you are following a commercial vehicle at night</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>you should follow closely so that the commercial vehicle can see your vehicle</answerText>
+		<answerText>always change your headlight's to high beam so that the commercial vehicle can see it in its large side mirrors</answerText>		
+		<answerText>always change your headlight's to low beam</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>8</questionId>	
+		<questionText>Commercial vehicle 'no zone' area includes ____________ of the commercial vehicle</questionText>	
+		<correctAnswer>1</correctAnswer>			
+		<answerText>front</answerText>		
+		<answerText>front, back, and sides</answerText>
+		<answerText>front and back</answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>		
+	<question>
+		<questionId>9</questionId>	
+		<questionText>Passing a commercial vehicle takes _________ compared to a passenger vehicle on a level highway</questionText>	
+		<correctAnswer>0</correctAnswer>			
+		<answerText>3 to 5 seconds longer</answerText>		
+		<answerText>5 to 8 seconds longer</answerText>		
+		<answerText>3 seconds longer</answerText>
+		<answerText>2 seconds longer</answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>10</questionId>	
+		<questionText>When a commercial vehicle passes your vehicle, which one of these statements is False</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>speed up</answerText>
+		<answerText>slow down slightly</answerText>
+		<answerText>keep to the far side of your lane</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>		
+</quiz>

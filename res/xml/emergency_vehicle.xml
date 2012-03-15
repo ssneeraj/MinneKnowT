@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>23</questionId>	
+		<questionText>If an emergency vehicle approaching you is separated from your lane of traffic by a physical barrier such as a fence, wall, or a median then</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>you must slow down your vehicle</answerText>
+		<answerText>you must pull to the right and stop</answerText>
+		<answerText>you must pull to whichever side is the nearest and stop</answerText>
+		<answerText>you do not have to stop</answerText>
+		<imageFileName>na</imageFileName>
+	</question>				
+	<question>
+		<questionId>24</questionId>	
+		<questionText>When you see an emergency vehicle with lights flashing and siren activated behind you</questionText>	
+		<correctAnswer>2</correctAnswer>			
+		<answerText>slam on the brake pedal and stop</answerText>		
+		<answerText>swerve into the other lane if possible to let the vehicle pass</answerText>
+		<answerText>use your turn signal and move to the nearest side of the road and then stop</answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+</quiz>

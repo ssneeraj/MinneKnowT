@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>59</questionId>	
+		<questionText>While passing a bicyclist, there should be at least _______ between the side of your car and the bicylist</questionText>	
+		<correctAnswer>2</correctAnswer>
+		<answerText>4 feet</answerText>
+		<answerText>5 feet</answerText>
+		<answerText>3 feet</answerText>
+		<answerText>2 feet</answerText>
+		<imageFileName>na</imageFileName>
+	</question>		
+	<question>
+		<questionId>60</questionId>	
+		<questionText>When passing another vehicle, you must return to the</questionText>	
+		<correctAnswer>2</correctAnswer>			
+		<answerText>right side of the road before coming within 200 feet of an oncoming vehicle</answerText>		
+		<answerText>left side of the road before coming within 200 feet of an oncoming vehicle</answerText>		
+		<answerText>right side of the road before coming within 100 feet of an oncoming vehicle</answerText>
+		<answerText>left side of the road before coming within 100 feet of an oncoming vehicle</answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>61</questionId>	
+		<questionText>This sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>no passing zone</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>w25</imageFileName>		
+	</question>
+	<question>
+		<questionId>62</questionId>	
+		<questionText>This road sign means:</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>marks the beginning of no passing zone</answerText>		
+		<answerText>marks the end of no passing zone</answerText>
+		<answerText></answerText>		
+		<answerText></answerText>
+		<imageFileName>w3</imageFileName>				
+	</question>
+	<question>
+		<questionId>63</questionId>	
+		<questionText>It is illegal to pass another vehicle that has stopped for a pedestrian</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>64</questionId>	
+		<questionText>It is illegal to overtake and pass on the right of another vehicle</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>if there is sufficient width for two or more lanes of traffic moving in the same direction and the roadway is free from obstructions such as parked vehicles</answerText>
+		<answerText>by driving on the shoulder if the shoulder is unpaved</answerText>
+		<answerText>when the vehicle overtaken is making or about to make a left turn</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+</quiz>

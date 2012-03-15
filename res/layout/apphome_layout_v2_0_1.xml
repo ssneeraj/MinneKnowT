@@ -20,7 +20,7 @@
 	    android:id="@+id/app_title"
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:text="v 2.0"
+	    android:text="v 2.0.1"
 	    android:textSize="12sp"
 	    android:textColor="#353535"
 	    android:gravity="center"

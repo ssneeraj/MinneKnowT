@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>15</questionId>	
+		<questionText>It is legal to block a crosswalk if it is unmarked</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>True</answerText>
+		<answerText>False</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>16</questionId>	
+		<questionText>If a blind pedestrian is waiting at a crosswalk with a white cane or a guide dog, you must</questionText>	
+		<correctAnswer>2</correctAnswer>			
+		<answerText>use your horn to alert them of your presence</answerText>		
+		<answerText>reduce your speed and proceed slowly</answerText>
+		<answerText>not use your horn or rev your engine</answerText>
+		<answerText>increase your speed and move quickly</answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+</quiz>

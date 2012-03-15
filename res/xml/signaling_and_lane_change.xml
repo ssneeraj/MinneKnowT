@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>86</questionId>	
+		<questionText>While changing lanes or making a turn, you must signal at least _________ in advance</questionText>	
+		<correctAnswer>1</correctAnswer>			
+		<answerText>50 feet</answerText>
+		<answerText>100 feet</answerText>
+		<answerText>75 feet</answerText>		
+		<answerText>25 feet</answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>87</questionId>	
+		<questionText>When should you use you car signals</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>while turning</answerText>
+		<answerText>while changing lanes</answerText>
+		<answerText>while moving from a parking lane or the curb</answerText>
+		<answerText>all of the above</answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+	<question>
+		<questionId>88</questionId>	
+		<questionText>While changing lanes or making a turn, you must signal at least _________ in advance</questionText>	
+		<correctAnswer>1</correctAnswer>			
+		<answerText>50 feet</answerText>
+		<answerText>100 feet</answerText>
+		<answerText>75 feet</answerText>		
+		<answerText>25 feet</answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>89</questionId>	
+		<questionText>When should you use you car signals</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>while turning</answerText>
+		<answerText>while changing lanes</answerText>
+		<answerText>while moving from a parking lane or the curb</answerText>
+		<answerText>all of the above</answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+</quiz>

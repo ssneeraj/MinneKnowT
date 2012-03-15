@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>104</questionId>	
+		<questionText>While waiting to turn</questionText>	
+		<correctAnswer>0</correctAnswer>		
+		<answerText>keep your wheels straight and your foot on the brake</answerText>
+		<answerText>point your wheels in the direction you intend to turn</answerText>
+		<answerText></answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>105</questionId>	
+		<questionText>If you are in a left turn lane of a multi-lane road, while turning left onto another multi-lane roadway</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>if it is safe to do so you can change lanes during the turn</answerText>
+		<answerText>stay in your lane during the turn</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+	<question>
+		<questionId>106</questionId>	
+		<questionText>On an interstate freeway U-turns are</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>allowed only during day time</answerText>
+		<answerText>allowed</answerText>
+		<answerText>not allowed</answerText>
+		<answerText>none of the above</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>		
+	<question>
+		<questionId>107</questionId>	
+		<questionText>Before you make a left turn, you must signal continuously during the last ______ before the turn</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>25 feet</answerText>
+		<answerText>50 feet</answerText>
+		<answerText>100 feet</answerText>
+		<answerText>80 feet</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>				
+	<question>
+		<questionId>108</questionId>	
+		<questionText>U-turns are illegal on curves where other drivers cannot see you from _________ away</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>500 feet</answerText>
+		<answerText>1200 feet</answerText>		
+		<answerText>1000 feet</answerText>
+		<answerText>900 feet</answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+</quiz>

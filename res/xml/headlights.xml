@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>25</questionId>	
+		<questionText>Your headlight's must be turned on and used</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>30 minutes before sunset</answerText>
+		<answerText>at sunset and used until sun rise</answerText>
+		<answerText>only when there are no street lights</answerText>
+		<answerText>15 minutes before sunset and 15 minutes after sunrise</answerText>
+		<imageFileName>na</imageFileName>				
+	</question>
+	<question>
+		<questionId>26</questionId>	
+		<questionText>Headlight's must be turned on any time you cannot clearly see the road ahead for a distance of at least ________</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>600 feet</answerText>
+		<answerText>500 feet</answerText>		
+		<answerText>300 feet</answerText>
+		<answerText>450 feet</answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>27</questionId>	
+		<questionText>Your headlight's must be set to low beam when you are within _________ of an on-coming vehicle</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>500 feet</answerText>
+		<answerText>800 feet</answerText>
+		<answerText>1000 feet</answerText>
+		<answerText>950 feet</answerText>
+		<imageFileName>na</imageFileName>						
+	</question>
+	<question>
+		<questionId>28</questionId>	
+		<questionText>When you are following another vehicle at a distance of 200 feet or less, then your headlight's must be set on ________ </questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>high beam</answerText>
+		<answerText>low beam</answerText>
+		<answerText>parking lights</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>
+	<question>
+		<questionId>29</questionId>	
+		<questionText>If your headlight's suddenly go out (stop working) what will you do that will give you enough light to guide you to drive off the road?</questionText>	
+		<correctAnswer>3</correctAnswer>			
+		<answerText>turn on parking lights</answerText>		
+		<answerText>turn on hazard lights</answerText>
+		<answerText>turn on turn lights</answerText>		
+		<answerText>any one of the above</answerText>
+		<imageFileName>na</imageFileName>
+	</question>	
+	<question>
+		<questionId>30</questionId>	
+		<questionText>When set on high beam the headlight's must make objects visible on the road ahead from at least ________ away</questionText>	
+		<correctAnswer>3</correctAnswer>		
+		<answerText>300 feet</answerText>
+		<answerText>250 feet</answerText>
+		<answerText>400 feet</answerText>
+		<answerText>350 feet</answerText>
+		<imageFileName>na</imageFileName>		
+	</question></quiz>	
+	

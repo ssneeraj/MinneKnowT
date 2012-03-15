@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>96</questionId>	
+		<questionText>If a traffic signal is not functioning (blacked out)</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>slow down and proceed through the intersection with caution</answerText>
+		<answerText>treat it as a STOP sign</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>	
+	<question>
+		<questionId>97</questionId>	
+		<questionText>One car per green light</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>is used while turning left on solid green light</answerText>		
+		<answerText>is used at an intersection</answerText>
+		<answerText>is used on freeway ramp meters</answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>				
+	</question>
+	<question>
+		<questionId>98</questionId>	
+		<questionText>A flashing red light traffic signal means</questionText>	
+		<correctAnswer>2</correctAnswer>			
+		<answerText>slow down and drive with caution</answerText>		
+		<answerText>continue with constant speed</answerText>
+		<answerText>come to a complete stop and treat it like a STOP sign</answerText>		
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>
+	</question>		
+	<question>
+		<questionId>99</questionId>	
+		<questionText>A flashing yellow light or yellow arrow means</questionText>	
+		<correctAnswer>3</correctAnswer>			
+		<answerText>slow down and proceed through the intersection with caution</answerText>		
+		<answerText>yield right of way to vehicles and pedestrian already in the intersection</answerText>
+		<answerText>come to a complete stop and treat it like a STOP sign</answerText>
+		<answerText>both A and B</answerText>		
+		<imageFileName>na</imageFileName>
+	</question>		
+	<question>
+		<questionId>100</questionId>	
+		<questionText>Which of the following traffic lights must you always stop your vehicle</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>solid red lights, flashing yellow lights</answerText>
+		<answerText>solid red lights, flashing red lights, blacked-out traffic signals</answerText>		
+		<answerText>solid red lights, red arrow, yellow lights</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>			
+	<question>
+		<questionId>101</questionId>	
+		<questionText>A steady yellow light or arrow indiates</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>caution the light is about to turn "green"</answerText>
+		<answerText>caution the light is about to turn "red"</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+	<question>
+		<questionId>102</questionId>	
+		<questionText>A steady red X signal means</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>means you should prepare to move into another lane in a safe manner</answerText>
+		<answerText>you cannot drive in the lane under the steady red X signal</answerText>
+		<answerText>freeway lane below the steady downward red arrow will be closed</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>				
+	</question>	
+	<question>
+		<questionId>103</questionId>	
+		<questionText>A steady downward green arrow traffic signal means</questionText>	
+		<correctAnswer>1</correctAnswer>		
+		<answerText>you can turn in any direction</answerText>
+		<answerText>you are allowed to drive in the lane below the green arrow</answerText>
+		<answerText></answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+</quiz>

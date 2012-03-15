@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<question>
+		<questionId>1</questionId>	
+		<questionText>If you are involved in a crash</questionText>	
+		<correctAnswer>3</correctAnswer>			
+		<answerText>pull off the driving lane if possible and turn of the ignition to prevent risk of fire</answerText>		
+		<answerText>do what you can to make injured persons comfortable</answerText>
+		<answerText>call nearest law enforcement agency or 911 quickly if someone is injured or killed</answerText>		
+		<answerText>all of the above</answerText>
+		<imageFileName>na</imageFileName>
+	</question>		
+	<question>
+		<questionId>2</questionId>	
+		<questionText>If you are involved in a crash, and the crash results only in property damage</questionText>	
+		<correctAnswer>2</correctAnswer>		
+		<answerText>it is mandatory to inform law enforcement immediately</answerText>
+		<answerText>you should contact your auto insurance company, but it is not necessary to inform the property owner</answerText>
+		<answerText>you should inform the property owner immediately</answerText>
+		<answerText></answerText>
+		<imageFileName>na</imageFileName>		
+	</question>
+
+</quiz>

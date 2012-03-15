@@ -10,10 +10,9 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.CheckBox;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -41,25 +40,52 @@ public class FlashCardsActivity extends ListActivity {
 
 	private float				touchX;
 
-	private int				actualCurrentQuestionId;
-
-	private final int			ADD_BOOKMARK		= 1;
-	private final int			REMOVE_BOOKMARK		= 2;
-
-	public void setActualCurrentQuestionId(int actualCurrentQuestionId) {
-		this.actualCurrentQuestionId = actualCurrentQuestionId;
-	}
+	private int				questionEndIndex;
+	private int				questionStartIndex;
+	private int[]				questionRange;
+	private int				totalQuestions;
+	private int				subset_questionIndex;
+	private ArrayList<QandA>		copyQuizArrayList;
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+
+		copyQuizArrayList = new ArrayList<QandA>(quizArrayList);
+
+		subset_questionIndex = 1;
+		Bundle bundle = getIntent().getExtras();
+
+		questionRange = new int[2];
+
+		questionRange = bundle.getIntArray("questionRange");
+
+		this.questionStartIndex = questionRange[0];
+		this.questionEndIndex = questionRange[1];
+
+		this.totalQuestions = questionEndIndex - questionStartIndex + 1;
+
 		setContentView(R.layout.flashcards_layout_v2);
 
-		QuestionBookmark.getInstance();
+		ImageButton shuffleButton = (ImageButton) this
+				.findViewById(R.id.flashcards_refreshButton);
+		TextView shuffleText = (TextView) this
+				.findViewById(R.id.shuffle_textView);
+
+		if (shuffleButton != null) {
+			if (questionStartIndex == 0 && questionEndIndex == 162) {
+				shuffleButton.setVisibility(View.VISIBLE);
+				shuffleText.setVisibility(View.VISIBLE);
+
+				// Shuffle the questions
+				Collections.shuffle(copyQuizArrayList);
+
+			} else {
+				shuffleButton.setVisibility(View.GONE);
+				shuffleText.setVisibility(View.GONE);
+			}
+		}
 
 		initializeRoadSignHashMap();
-
-		// Shuffle the questions
-		Collections.shuffle(quizArrayList);
 
 		quizQuestionNumberText = new StringBuffer();
 
@@ -72,35 +98,6 @@ public class FlashCardsActivity extends ListActivity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater inflator = getMenuInflater();
 		inflator.inflate(R.menu.flashcards_menu, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-
-		if (item.getItemId() == R.id.add_bookmark_menu_item) {
-			manageBookmarkfromOptionsMenu(ADD_BOOKMARK);
-		} else if (item.getItemId() == R.id.remove_bookmark_menu_item) {
-			manageBookmarkfromOptionsMenu(REMOVE_BOOKMARK);
-		}
-		return true;
-	}
-
-	@Override
-	public boolean onPrepareOptionsMenu(Menu menu) {
-
-		// Read from QBookmark singleton
-		int bookmarkStatus = QBookmark.getInstance()
-				.getIndividualBookMark(
-						this.actualCurrentQuestionId);
-		if (bookmarkStatus == 0) { // show add bookmark menu item
-			menu.getItem(0).setVisible(true);
-			menu.getItem(1).setVisible(false);
-		} else if (bookmarkStatus == 1) {// show remove bookmark menu
-			menu.getItem(0).setVisible(false);
-			menu.getItem(1).setVisible(true);
-		}
-
 		return true;
 	}
 
@@ -141,9 +138,12 @@ public class FlashCardsActivity extends ListActivity {
 
 	private void showIndividualFlashCard() {
 
-		currentQuestionIndex = 0;
+		// currentQuestionIndex = 0;
+		currentQuestionIndex = this.questionStartIndex;
+		subset_questionIndex = 1;
 
-		QandA singleQandA = quizArrayList.get(currentQuestionIndex);
+		QandA singleQandA = copyQuizArrayList.get(currentQuestionIndex);
+
 		ImageView flashCards_roadSign_IV = (ImageView) findViewById(R.id.flashcards_roadSignIV);
 
 		// Check if it is a road sign questions if so, then show the
@@ -158,10 +158,10 @@ public class FlashCardsActivity extends ListActivity {
 		}
 
 		quizQuestionNumberText.setLength(0);
-		quizQuestionNumberText.append(currentQuestionIndex + 1);
+		quizQuestionNumberText.append(subset_questionIndex);
 		quizQuestionNumberText.append(" of ");
-		quizQuestionNumberText.append(QuizCache
-				.getQuizTotalNumberofQuestion());
+
+		quizQuestionNumberText.append(totalQuestions);
 
 		System.arraycopy(singleQandA.getAnswers(), 0, answerData, 0, 4);
 
@@ -176,68 +176,9 @@ public class FlashCardsActivity extends ListActivity {
 		flashcards_questionNumberTextView
 				.setText(quizQuestionNumberText);
 
-		manageBookmark(singleQandA);
-
 		// This binds the array adapter to our QuizActvity
 		// setListAdapter(array_adapter);
 		setListAdapter(custom_adapter);
-	}
-
-	private void manageBookmarkfromOptionsMenu(int value) {
-		// CheckBox checkbox = (CheckBox)
-		// findViewById(R.id.flashcards_checkbox);
-		ImageView checkbox = (ImageView) findViewById(R.id.flashcards_checkbox);
-		if (value == ADD_BOOKMARK) {
-			QBookmark.getInstance().setBookmarks(
-					(actualCurrentQuestionId), 1);
-			// checkbox.setChecked(true);
-			checkbox.setVisibility(View.VISIBLE);
-		} else if (value == REMOVE_BOOKMARK) {
-			QBookmark.getInstance().setBookmarks(
-					(actualCurrentQuestionId), 0);
-			// checkbox.setChecked(false);
-			checkbox.setVisibility(View.GONE);
-		}
-
-	}
-
-	private void manageBookmark(QandA currentQandA) {
-		// Get the current question number
-		this.actualCurrentQuestionId = Integer.parseInt(currentQandA
-				.getQuestionNumber());
-
-		if (this.actualCurrentQuestionId > 0)
-			this.actualCurrentQuestionId = this.actualCurrentQuestionId - 1;
-		// save the current actual question Id so that this can be used
-		// by options menu
-		// setActualCurrentQuestionId(actualQuestionId);
-
-		// look up the bookmark value for the current question number in
-		// Singleton
-		int currentQandABookmark = QBookmark.getInstance()
-				.getIndividualBookMark(
-						this.actualCurrentQuestionId);
-
-		// Set the checkbox depending on the value of bookmark
-		// CheckBox checkbox = (CheckBox)
-		// findViewById(R.id.flashcards_checkbox);
-		ImageView checkbox = (ImageView) findViewById(R.id.flashcards_checkbox);
-
-		if (currentQandABookmark == 0) {
-			// checkbox.setChecked(false);
-			checkbox.setVisibility(View.GONE);
-		} else if (currentQandABookmark == 1) {
-			// checkbox.setChecked(true);
-			checkbox.setVisibility(View.VISIBLE);
-		}
-
-	}
-
-	private void manageCheckBox(boolean checkedStatus,
-			int checkBoxVivibility) {
-		CheckBox checkbox = (CheckBox) findViewById(R.id.flashcards_checkbox);
-		checkbox.setChecked(checkedStatus);
-		checkbox.setVisibility(checkBoxVivibility);
 	}
 
 	public void showNextQuestion(View view) {
@@ -245,17 +186,17 @@ public class FlashCardsActivity extends ListActivity {
 		// first increment the currentQuestionIndex so that we advance
 		// to the next question
 		currentQuestionIndex++;
+		subset_questionIndex++;
 
 		// If all the flash cards have been read, the go back to the
 		// first flash card
-		if (currentQuestionIndex > QuizCache
-				.getQuizTotalNumberofQuestion() - 1) {
+		if (currentQuestionIndex > this.questionEndIndex) {
 
 			showIndividualFlashCard();
-
 		}
 
-		QandA singleQandA = quizArrayList.get(currentQuestionIndex);
+		QandA singleQandA = copyQuizArrayList.get(currentQuestionIndex);
+
 		ImageView flashCards_roadSign_IV = (ImageView) findViewById(R.id.flashcards_roadSignIV);
 
 		// Check if it is a road sign questions if so, then show the
@@ -271,10 +212,9 @@ public class FlashCardsActivity extends ListActivity {
 
 		// Setup quiz question number text
 		quizQuestionNumberText.setLength(0);
-		quizQuestionNumberText.append(currentQuestionIndex + 1);
+		quizQuestionNumberText.append(subset_questionIndex);
 		quizQuestionNumberText.append(" of ");
-		quizQuestionNumberText.append(QuizCache
-				.getQuizTotalNumberofQuestion());
+		quizQuestionNumberText.append(totalQuestions);
 
 		TextView question = (TextView) this
 				.findViewById(R.id.flashcards_questionText);
@@ -306,8 +246,6 @@ public class FlashCardsActivity extends ListActivity {
 		peekBar.setTextColor(getResources().getColor(R.color.white));
 		peekBar.setGravity(Gravity.RIGHT);
 
-		manageBookmark(singleQandA);
-
 		setListAdapter(custom_adapter);
 	}
 
@@ -317,14 +255,14 @@ public class FlashCardsActivity extends ListActivity {
 
 	public void shuffleQuiz(View view) {
 		currentQuestionIndex = -1;
-		QuizCache.getInstance().shuffleQuizCache();
+		subset_questionIndex = 0;
+		Collections.shuffle(copyQuizArrayList);
 		showNextQuestion(view);
 	}
 
 	public void peekCorrectAnswer(View view) {
 
-		QandA singleQandA = quizArrayList.get(currentQuestionIndex);
-
+		QandA singleQandA = copyQuizArrayList.get(currentQuestionIndex);
 		String ans = singleQandA.getCorrectAnswer();
 		String ansLetter = null;
 
@@ -368,7 +306,6 @@ public class FlashCardsActivity extends ListActivity {
 	public boolean onTouchEvent(MotionEvent event) {
 
 		switch (event.getAction()) {
-
 			case MotionEvent.ACTION_DOWN:
 				touchX = event.getX();
 				break;
